@@ -3,7 +3,7 @@ layout: post
 title: Welcome to my Site! 
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+My name is Aelxander Jung and I am a tenured Associate Professor for Machine Learning. Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
