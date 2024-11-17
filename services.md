@@ -24,7 +24,7 @@ I specialize in creating and delivering high-quality courses in the areas of:
 - **Summer Schools**: Designed and taught innovative programs like "Human-Centered Machine Learning" offered within the European university alliance [Unite!](/assets/HCLSS.pdf)
 
 ### 3. **Thesis Supervision**
-With extensive experience supervising over 100 Master’s theses, I provide guidance on topics such as:
+With extensive experience supervising over [100 Master’s theses](/assets/MasterThesisSupervisedNov24.pdf), I provide guidance on topics such as:
 - Machine learning applications (e.g., Federated Learning, Network Intrusion Detection).
 - AI in industry contexts (e.g., Art Fraud Detection, Predictive Maintenance).
 - Advanced research in Explainable AI and Reinforcement Learning.
