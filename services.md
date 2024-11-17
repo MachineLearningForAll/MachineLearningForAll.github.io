@@ -4,10 +4,9 @@ title: "Services"
 permalink: /services/
 ---
 
-#  Services
-
-Welcome to my portfolio of educational offerings, developed over a decade of experience in education, curriculum development, and mentoring. 
-My approach to teaching combines innovative methods, hands-on exercises, and a strong focus on student learning outcomes.
+Welcome to my portfolio of educational offerings, developed over a decade of experience in education, 
+curriculum development, and mentoring. My approach to teaching combines innovative methods, 
+hands-on exercises, and a strong focus on student learning outcomes.
 
 ---
 
@@ -15,14 +14,14 @@ My approach to teaching combines innovative methods, hands-on exercises, and a s
 
 ### 1. **Course Design and Delivery**
 I specialize in creating and delivering high-quality courses in the areas of:
-- **Machine Learning**: Including foundational courses like [Machine Learning: Basic Principles](https://github.com/alexjungaalto) and advanced topics such as Deep Learning and Federated Learning.
+- **Machine Learning**: Including foundational courses and advanced topics such as [Federated Learning](https://github.com/alexjungaalto/FederatedLearning).
 - **Artificial Intelligence**: Covering modern AI methodologies and practical applications.
 - **Optimization and Data Science**: With a focus on real-world applications for large-scale datasets.
 
 ### 2. **Custom Workshops and Seminars**
-- **Executive Education**: Led tailored programs like "Diploma in Artificial Intelligence" and "Aalto-SUTD Modular Master in Technology and Management."
+- **Executive Education**: Led tailored programs like "Diploma in Artificial Intelligence" for [Aalto Executive Education](https://www.aaltoee.fi/)
 - **International Bootcamps**: Facilitated intensive learning experiences such as the "Machine Learning and Artificial Intelligence Workshop" at Salo IoT campus.
-- **Summer Schools**: Designed and taught innovative programs like "Human-Centered Machine Learning."
+- **Summer Schools**: Designed and taught innovative programs like "Human-Centered Machine Learning" offered within the European university alliance [Unite!](/assets/HCLSS.pdf)
 
 ### 3. **Thesis Supervision**
 With extensive experience supervising over 100 Master’s theses, I provide guidance on topics such as:
@@ -55,5 +54,6 @@ With extensive experience supervising over 100 Master’s theses, I provide guid
 
 ## **Let's Collaborate!**
 
-If you're interested in my teaching services, curriculum development expertise, or would like to collaborate on an educational project, please [get in touch](mailto:alex.jung@aalto.fi).
+If you're interested in my teaching services, curriculum development expertise, 
+or would like to collaborate on an educational project, please [get in touch](mailto:alexjung235@gmail.com).
 
