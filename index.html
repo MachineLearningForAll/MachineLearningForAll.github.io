@@ -11,10 +11,7 @@ layout: default
       <div class="entry">
         {{ post.content }}
       </div>
-
-     {% if post.content | strip_html | size > post.excerpt | strip_html | size %}
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-     {% endif %}
+      
     </article>
   {% endfor %}
 </div>
