@@ -16,7 +16,7 @@ group at the Department of Computer Science of Aalto University (Finland). Our c
 underpinnings of trustworthy artificial intelligence. The research is backed by the following grants: 
 
 * **A Mathematical Theory of Trustworthy Federated Learning**, Research Council of Finland, Funding decision number 363624, [more info](https://research.fi/en/results/funding/81387)
-* **A Mathematical Theory of Federated Learning (TRUST-FELT)**, JAES, Funding decision number A835, [more info](https://research.fi/en/results/funding/81021)
+* **A Mathematical Theory of Federated Learning (TRUST-FELT)**, Jane and Aatos Erkko Foundation, Funding decision number A835, [more info](https://research.fi/en/results/funding/81021)
 * **Forward-Looking AI Governance in Banking & Insurance (FLAIG)**, Business Finland 
 
 
