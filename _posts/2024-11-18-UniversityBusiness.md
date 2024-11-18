@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Education is More Than a Business: Defending the Integrity of Taxpayer-Funded Universities 
-date: 2024-11-18 23:22:00 +0000
+title: Education is More Than a Business 
+date: 2024-11-18
 ---
 
 # Education is More Than a Business: Defending the Integrity of Taxpayer-Funded Universities 
