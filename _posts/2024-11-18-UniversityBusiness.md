@@ -3,6 +3,8 @@ layout: post
 title: Education is Not a Business: Defending the Integrity of Taxpayer-Funded Universities 
 ---
 
+# Education is Not a Business: Defending the Integrity of Taxpayer-Funded Universities 
+
 In recent years, there’s been a troubling trend in higher education: the gradual transformation of taxpayer-funded universities 
 into profit-driven entities. Under the guise of **global competitiveness**, many institutions are becoming little more than 
 research factories, churning out papers and funding applications to sustain bloated systems while neglecting their core 
