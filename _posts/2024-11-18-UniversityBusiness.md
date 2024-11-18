@@ -3,12 +3,10 @@ layout: post
 title: Education is Not a Business: Defending the Integrity of Taxpayer-Funded Universities 
 ---
 
-# Education is Not a Business: Defending the Integrity of Taxpayer-Funded Universities
-
-In recent years, there’s been a troubling trend in higher education: the gradual transformation 
-of taxpayer-funded universities into profit-driven entities. Under the guise of **global competitiveness,** 
-many institutions are becoming little more than research factories, churning out papers 
-and funding applications to sustain bloated systems, while neglecting their core missions—education and the public good.
+In recent years, there’s been a troubling trend in higher education: the gradual transformation of taxpayer-funded universities 
+into profit-driven entities. Under the guise of **global competitiveness**, many institutions are becoming little more than 
+research factories, churning out papers and funding applications to sustain bloated systems while neglecting their core 
+missions—education and the public good.
 
 ## The Commodification of Knowledge
 
@@ -47,8 +45,8 @@ norm as resources are funneled into research output rather than teaching quality
 
 It’s time to reclaim universities as public institutions dedicated to serving society. Here are three steps we must take:
 
-1. **Prioritize Education**: Public funding must be used to ensure high-quality education. Smaller class sizes, better resources, 
-and more support for students should take precedence over expanding research portfolios.
+1. **Prioritize Education**: Public funding must be used to ensure high-quality education instead of 
+funnelling tax-payer money into expanding research portfolios.
 2. **Value Impact Over Metrics**: Shift the focus away from publication counts and grant amounts. Reward meaningful research 
 that directly benefits society, rather than research done for the sake of securing the next funding cycle (Moher et al., 2018).
 3. **Protect Academic Freedom**: Universities must provide faculty with the freedom to pursue research and teaching without the 
@@ -77,4 +75,4 @@ Let’s ensure that universities remain places of inspiration, innovation, and i
 Let me know your thoughts: Are you seeing this trend in your own university or organization? How can we push back against it?
 
 
-![Alex in full effect during a lecture on Convex Optimization.]({{ site.baseurl }}/images/AlexBlackboard.jpg)
+![Alex in full effect during a lecture on Convex Optimization.]({{ site.baseurl }}/images/AlexFotoLectureBlur.jpg)
