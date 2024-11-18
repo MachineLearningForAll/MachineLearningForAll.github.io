@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Education is More Than a Business 
+title: "Education is More Than a Business" 
 date: 2024-11-18
 ---
-
-# Education is More Than a Business: Defending the Integrity of Taxpayer-Funded Universities 
 
 In recent years, there’s been a troubling trend in higher education: the gradual transformation of taxpayer-funded universities 
 into profit-driven entities. Under the guise of **global competitiveness**, many institutions are becoming little more than 
