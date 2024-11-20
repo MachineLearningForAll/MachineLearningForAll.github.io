@@ -27,9 +27,10 @@ and explainable AI. These efforts are supported by several prestigious grants:
 
 ### Federated Learning for Network-Structured Data
 
-The era of **big data over networks** demands solutions for handling interconnected, heterogeneous datasets. 
-A prime example is pandemic management, where wearables and smartphones generate local datasets tied by 
-physical, social, or biological network structures. These datasets often vary in statistical properties but exhibit 
+The era of **big data over networks** demands solutions for handling interconnected, 
+heterogeneous datasets. A prime example is pandemic management, where wearables 
+and smartphones generate local datasets tied by physical, social, or biological network 
+structures. These datasets often vary in statistical properties but exhibit 
 intrinsic relationships.
 
 My research introduces **networked exponential families**, a cutting-edge probabilistic model that addresses these challenges. The model enables:

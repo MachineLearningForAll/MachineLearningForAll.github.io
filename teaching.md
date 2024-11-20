@@ -1,10 +1,8 @@
 ---
 layout: page
-title: "Teaching"
+title: "A Framework for Machine Learning Education"
 permalink: /teaching/
 ---
-
-# Teaching: A Framework for Machine Learning Education
 
 Machine learning is transforming nearly every field of science and technology, 
 leading to its growing popularity across diverse disciplines. As a result, teaching 
@@ -14,7 +12,7 @@ varying student backgrounds.
 To tackle this, I developed an innovative teaching framework that simplifies and 
 structures the learning process for students from diverse fields.
 
-## The Three Pillars of Machine Learning Education
+## A Three-Component Perspective on Machine Learning
 
 At the core of my teaching philosophy are three fundamental components of machine learning:
 
