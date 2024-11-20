@@ -65,7 +65,7 @@ My research introduces **networked exponential families**, a cutting-edge probab
 
 ## Explainable AI (XAI): Personalized and Transparent Models
 
-![Explainable Machine Learning](images/ProbModelXML.png "Explainable Machine Learning")
+![Explainable Machine Learning](images/ProbModelXML.png)
 
 ### Building Trust Through Personalized Explainability
 
