@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Services"
-permalink: /services/
+title: "Offerings"
+permalink: /offerings/
 ---
 
 Welcome to my portfolio of educational offerings, developed over a decade of experience in education, 
