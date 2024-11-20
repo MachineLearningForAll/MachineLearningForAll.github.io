@@ -22,7 +22,7 @@ researchers, and professionals worldwide.
 
 ## Follow Me on YouTube 🎥
 
-Explore machine learning concepts in action! On my **YouTube channel** [@alexjung1111](https://www.youtube.com/@alexjung1111), I share:  
+Explore machine learning concepts in action! On my **YouTube channel** [@alexjung111](https://www.youtube.com/@alexjung111), I share:  
 - **Engaging video tutorials** on machine learning and AI  
 - **Explainer videos** breaking down complex topics  
 - **Tips for students and researchers** in AI and data science  
