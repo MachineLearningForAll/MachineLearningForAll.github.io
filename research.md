@@ -25,7 +25,7 @@ and explainable AI. These efforts are supported by several prestigious grants:
 
 ## Federated Learning: Computational and Statistical Innovations
 
-![Federated Learning in Pandemic Management](images/Pandemics.jpg "Federated Learning in Pandemic Management")
+![Federated Learning in Pandemic Management](images/Pandemics.jpg)
 
 ### Federated Learning for Network-Structured Data
 
