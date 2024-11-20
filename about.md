@@ -4,8 +4,6 @@ title: About Alexander Jung | Machine Learning Expert
 permalink: /about/
 ---
 
-# About Alexander Jung
-
 Welcome! My name is **Alexander Jung**, and I am a tenured **Associate Professor in Machine Learning**
  at Aalto University, Finland. With over **15 years of experience in research and education**, I am passionate 
  about advancing the field of machine learning and mentoring the next generation of AI and data science experts.
@@ -43,11 +41,6 @@ On this site, you can find:
 - **Insights on cutting-edge machine learning trends**  
 - **Educational resources** for enthusiasts and professionals  
 - **Research breakthroughs** in AI and data science  
-
-## Why Connect with Me?
-
-Whether you're new to machine learning or a seasoned expert, my mission is to simplify complex ideas and empower 
-individuals to harness the power of AI and data. Together, let's explore the fascinating world of machine learning!
 
 ## Contact Me
 
