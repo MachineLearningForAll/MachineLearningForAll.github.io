@@ -1,10 +1,8 @@
 ---
 layout: page
-title: "Research"
+title: "Towards Trustworthy AI via Federated and Explainable Machine Learning"
 permalink: /research/
 ---
-
-# Towards Trustworthy AI via Federated and Explainable Machine Learning
 
 I am dedicated to advancing the frontiers of **trustworthy artificial intelligence (AI)**. My research 
 focuses on exploring the fundamental limits and developing practical methods for federated learning 
