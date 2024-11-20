@@ -15,6 +15,11 @@ avatar: /images/AlexanderJung.jpg #.jpghttps://raw.githubusercontent.com/barrycl
 # Flags below are optional
 #
 
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true 
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
