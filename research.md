@@ -4,49 +4,81 @@ title: "Research"
 permalink: /research/
 ---
 
+# Research: Advancing Federated Learning and Explainable AI
+
+Explore my research contributions to cutting-edge topics in federated learning and explainable AI (XAI), 
+focusing on computational and statistical innovations.
+
+---
+
 ## Computational and Statistical Aspects of Total Variation Minimization for Federated Learning
 
+![Federated Learning in Pandemic Management](images/Pandemics.jpg "Federated Learning in Pandemic Management")
 
-![Federated Learning during pandemics](images/Pandemics.jpg)
+### Federated Learning for Network-Structured Data
 
-Many important application domains generate collections of local datasets that are 
-related by an intrinsic network structure (**big data over networks**). A timely application 
-domain that generates such big data over networks is the management of pandemics. 
+Modern applications generate interconnected datasets with inherent network structures (**big data over networks**). 
+A prominent use case is pandemic management, where smartphones and wearables collect biophysical parameters. 
+These local datasets are often heterogeneous but exhibit statistical relationships through physical ("contact networks"), 
+social, or biological proximity.
 
-Individuals generate local datasets via their smartphones and wearables that measure biophysical 
-parameters. The statistical properties of local datasets are related via different network structures that reflect physical ("contact networks"), 
-social or biological proximity. In general, local datasets are heterogeneous in the sense of having different statistical distributions. 
-However, we can often approximate local datasets that form a tight-knit cluster by a common cluster-specific distribution. 
- 
+I have recently introduced**networked exponential families**—a novel probabilistic model for analyzing big data over networks. 
+This model enables:
+- Adaptive pooling of statistically similar datasets to create personalized predictions.
+- Robust, privacy-preserving, and scalable distributed optimization techniques.
+- Effective handling of statistical and computational imperfections.
 
-To capitalize on the information in local datasets and their network structure, we have recently proposed networked exponential 
-families as a novel probabilistic model for big data over networks. Networked exponential families are appealing statistically and 
-computationally. They allow us to adaptively pool local datasets with similar statistical properties as training sets to learn personalized 
-predictions tailored to each local dataset. We can compute these personalized predictions using highly scalable distributed 
-convex optimization methods. These methods are robust against various types of imperfections (statistically and computationally) 
-and typically offer a high level of privacy protection. 
+#### Key Publications
 
-*Relevant Publications:*
+- **"Clustered Federated Learning via Generalized Total Variation Minimization"**  
+  *Y. SarcheshmehPour, Y. Tian, L. Zhang and A. Jung, IEEE Transactions on Signal Processing, 2023.*  
+  [Read more](https://ieeexplore.ieee.org/document/10292435) (DOI: 10.1109/TSP.2023.3322848)
 
-- A. Jung, "On the Duality Between Network Flows and Network Lasso," in IEEE Signal Processing Letters, vol. 27, pp. 940-944, 2020, {{<a href="https://ieeexplore.ieee.org/document/9103236"  target="_blank">doi: 10.1109/LSP.2020.2998400</a>}}. 
-- A. Jung, "Networked Exponential Families for Big Data Over Networks," in IEEE Access, vol. 8, pp. 202897-202909, 2020, {{<a href="https://ieeexplore.ieee.org/document/9239959"  target="_blank">doi: 10.1109/ACCESS.2020.3033817</a>}}.
-- A. Jung, A. O. Hero, III, A. C. Mara, S. Jahromi, A. Heimowitz and Y. C. Eldar, "Semi-Supervised Learning in Network-Structured Data via Total Variation Minimization," in IEEE Transactions on Signal Processing, vol. 67, no. 24, pp. 6256-6269, Dec., 2019, {{<a href="https://ieeexplore.ieee.org/document/8902040"  target="_blank">doi: 10.1109/TSP.2019.2953593</a>}}.
-- A. Jung and N. Tran, "Localized Linear Regression in Networked Data," in IEEE Signal Processing Letters, vol. 26, no. 7, pp. 1090-1094, July 2019, {{<a href="https://ieeexplore.ieee.org/document/8721536"  target="_blank">doi: 10.1109/LSP.2019.2918933</a>}}.
+- **"On the Duality Between Network Flows and Network Lasso"**  
+  *A. Jung, IEEE Signal Processing Letters, 2020.*  
+  [Read more](https://ieeexplore.ieee.org/document/9103236) (DOI: 10.1109/LSP.2020.2998400)
 
+- **"Networked Exponential Families for Big Data Over Networks"**  
+  *A. Jung, IEEE Access, 2020.*  
+  [Read more](https://ieeexplore.ieee.org/document/9239959) (DOI: 10.1109/ACCESS.2020.3033817)
 
-## Explainable AI (XAI) 
+- **"Semi-Supervised Learning in Network-Structured Data via Total Variation Minimization"**  
+  *A. Jung et al., IEEE Transactions on Signal Processing, 2019.*  
+  [Read more](https://ieeexplore.ieee.org/document/8902040) (DOI: 10.1109/TSP.2019.2953593)
 
-![Federated Learning during pandemics](images/ProbModelXML.png)
-Current AI systems make heavy use of machine learning. 
-A key challenge for the widespread use of machine learning methods is the explainability of their predictions. We have recently 
-developed a novel approach to constructing personalized explanations for the predictions delivered by machine learning method. 
-We measure the effect of an explanation by the reduction in the conditional entropy of the prediction given the summary that a 
-particular user associates with data points. The user summary is used to characterise the background knowledge of the "explainee" 
-in order to compute explanations that are tailored for her. To compute the explanations our method only requires some training samples that consists of data points and their corresponding 
-predictions and user summaries. Thus, our method is model agnostic and can be used to compute explanations for different machine learning methods. 
+- **"Localized Linear Regression in Networked Data"**  
+  *A. Jung and N. Tran, IEEE Signal Processing Letters, 2019.*  
+  [Read more](https://ieeexplore.ieee.org/document/8721536) (DOI: 10.1109/LSP.2019.2918933)
 
-*Relevant Publications:*
+---
 
-- L. Zhang, G. Karakasidis, A. Odnoblyudova, et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). {{<a href="https://doi.org/10.1007/s00521-023-09269-3"  target="_blank">link</a>}}  
-- A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, {{<a href="https://ieeexplore.ieee.org/document/9089200"  target="_blank">doi: 10.1109/LSP.2020.2993176</a>}}.
+## Explainable AI (XAI)
 
+![Explainable Machine Learning](images/ProbModelXML.png "Explainable Machine Learning")
+
+### Personalized Explainable Machine Learning
+
+Explainability is essential for the widespread adoption of AI systems. My research focuses on 
+creating personalized explanations for machine learning predictions. The core idea involves 
+measuring the **effectiveness of explanations** through their impact on reducing the conditional 
+entropy of predictions, tailored to the user's background knowledge.
+
+#### Highlights of the Method:
+
+- **Personalized Explanations**: Tailored to the user's understanding, using summaries that reflect their background knowledge.
+- **Model-Agnostic**: Applicable across different machine learning models.
+- **Training Data Efficient**: Requires only data points, predictions, and user-provided summaries.
+
+#### Key Publications
+
+- **"Explainable Empirical Risk Minimization"**  
+  *L. Zhang, G. Karakasidis, A. Odnoblyudova, et al., Neural Computing and Applications, 2024.*  
+  [Read more](https://doi.org/10.1007/s00521-023-09269-3)
+
+- **"An Information-Theoretic Approach to Personalized Explainable Machine Learning"**  
+  *A. Jung and P. H. J. Nardelli, IEEE Signal Processing Letters, 2020.*  
+  [Read more](https://ieeexplore.ieee.org/document/9089200) (DOI: 10.1109/LSP.2020.2993176)
+
+---
+
+### Keywords: federated learning, explainable AI, big data over networks, networked exponential families, personalized predictions, total variation minimization, machine learning explainability
