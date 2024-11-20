@@ -48,4 +48,4 @@ Have questions or want to collaborate?  [Send me an email](mailto:alexjung235@gm
 
 ---
 
-*Discover more about machine learning on my [blog](https://machinelearningforall.github.io/blog).*  
+*Discover more about machine learning on my [blog](https://machinelearningforall.github.io).*  
