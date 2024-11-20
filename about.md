@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Alexander Jung | Machine Learning Expert
+title: Alexander Jung | Machine Learning Expert
 permalink: /about/
 ---
 
@@ -44,8 +44,7 @@ On this site, you can find:
 
 ## Contact Me
 
-Have questions or want to collaborate?  
-[Send me an email](mailto:alexjung235@gmail.com), and let's connect!
+Have questions or want to collaborate?  [Send me an email](mailto:alexjung235@gmail.com), and let's connect!
 
 ---
 
