@@ -4,28 +4,42 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-## A Three-Component Picture of Machine Learning
+# Teaching: A Framework for Machine Learning Education
 
-Machine learning methods have been and are currently popularized in virtually any field of 
-science and technology. As a result, machine learning courses attract students from different 
-study programs. Thus, a key challenge in teaching basic machine learning courses is the heterogeneity 
-of student backgrounds. To cope with this challenge, I have developed a new teaching 
-concept for machine learning. 
+Machine learning is transforming nearly every field of science and technology, 
+leading to its growing popularity across diverse disciplines. As a result, teaching 
+introductory machine learning courses often means addressing the challenge of 
+varying student backgrounds. 
 
-This teaching concept revolves around three main components of machine learning: data, models and 
-loss functions. By decomposing every machine learning methods into specific design choices for data 
-representation, model and loss function, students learn to navigate the vast landscape of machine 
-learning methods and applications.
+To tackle this, I developed an innovative teaching framework that simplifies and 
+structures the learning process for students from diverse fields.
 
-![image](images/MLLandscape.png)
+## The Three Pillars of Machine Learning Education
+
+At the core of my teaching philosophy are three fundamental components of machine learning:
+
+1. **Data Representation**  
+2. **Model Design**  
+3. **Loss Functions**
+
+This framework decomposes any machine learning method into these three components, 
+enabling students to grasp the core ideas and systematically explore the broad landscape 
+of machine learning methods and applications.
+
+![Three-Component Framework for Machine Learning](images/MLLandscape.png)
+
+The principles of this framework are extensively discussed in my textbook:  
+**[Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6)**  
+*A. Jung, Springer, 2022.*
+
+## Collaborate with Me
+
+I am open to collaboration on teaching initiatives, curriculum design, and educational projects. 
+If you're interested in leveraging my expertise in machine learning education, feel free to [contact me](mailto:alexjung235@gmail.com).
+
+---
+
+### Keywords: machine learning teaching, data representation, model design, loss functions, machine learning textbook, A. Jung
 
 
- The three-component picture of machine learning is the main subject of my [textbook](https://link.springer.com/book/10.1007/978-981-16-8193-6)
- 
- A. Jung, "Machine Learning: The Basics," Springer, 2022. 
-
-## **Let's Collaborate!**
-
-If you're interested in my teaching services, curriculum development expertise, 
-or would like to collaborate on an educational project, please [get in touch](mailto:alexjung235@gmail.com).
 
