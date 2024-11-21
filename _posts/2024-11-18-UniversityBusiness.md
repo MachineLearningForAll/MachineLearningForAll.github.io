@@ -4,10 +4,19 @@ title: "Education is More Than a Business"
 date: 2024-11-18
 ---
 
-In recent years, there’s been a troubling trend in higher education: the gradual transformation of taxpayer-funded universities 
-into profit-driven entities. Under the guise of **global competitiveness**, many institutions are becoming little more than 
-research factories, churning out papers and funding applications to sustain bloated systems while neglecting their core 
-missions—education and the public good.
+
+<figure>
+  <img src="{{ site.baseurl }}/images/AlexFotoLectureBlur.jpg" alt="Alex in full effect during a lecture on Convex Optimization.">
+  <figcaption>Alex in full effect during a lecture on Convex Optimization.</figcaption>
+</figure>
+
+
+In recent years, there’s been a troubling trend in higher education: 
+the gradual transformation of taxpayer-funded universities into profit-driven 
+entities. Under the guise of **global competitiveness**, many institutions are 
+becoming little more than research factories, churning out papers and 
+funding applications to sustain bloated systems while neglecting their 
+core missions—education and the public good.
 
 ## The Commodification of Knowledge
 
@@ -76,4 +85,3 @@ Let’s ensure that universities remain places of inspiration, innovation, and i
 Let me know your thoughts: Are you seeing this trend in your own university or organization? How can we push back against it?
 
 
-![Alex in full effect during a lecture on Convex Optimization.]({{ site.baseurl }}/images/AlexFotoLectureBlur.jpg)
