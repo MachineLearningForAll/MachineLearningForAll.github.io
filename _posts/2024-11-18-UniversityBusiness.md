@@ -7,7 +7,7 @@ date: 2024-11-18
 
 <figure>
   <img src="{{ site.baseurl }}/images/AlexFotoLectureBlur.jpg" alt="Alex in full effect during a lecture on Convex Optimization.">
-  <figcaption>Alex in full effect during a lecture on Convex Optimization.</figcaption>
+  <figcaption>Alex teaching a class during a Machine Learning course at Aalto University.</figcaption>
 </figure>
 
 
