@@ -4,9 +4,9 @@ title: "Towards Trustworthy AI via Federated and Explainable Machine Learning"
 permalink: /research/
 ---
 
-I am dedicated to advancing the frontiers of **trustworthy artificial intelligence (AI)**. My research 
-focuses on exploring the fundamental limits and developing practical methods for federated learning 
-and explainable AI. These efforts are supported by several prestigious grants:
+The overarching motivation of my research is to advance the frontiers of trustworthy artificial intelligence (AI). 
+My current research focus is on  the fundamental limits and practical methods for federated and explainable 
+machine learning. Several prestigious grants support these efforts:
 
 - **A Mathematical Theory of Trustworthy Federated Learning (MATHFUL)**  
   *Funded by the Research Council of Finland (Decision #363624)*  
