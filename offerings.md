@@ -12,25 +12,24 @@ hands-on exercises, and a strong focus on student learning outcomes.
 
 ## **Core Offerings**
 
-### 1. **Machine Learning Curriculum Design and Delivery**
-I have designed and implemented several courses that can form the backbone of machine learning curricula 
-(Bachelor and Master level). These courses cover the basic theory and practical methods for optimization, 
-machine learning and artificial intelligence. I have also designed and co-taught the summer school  [**Human-Centered Machine Learning**](assets/HCLSS.pdf)
+### **Machine Learning Curriculum Design and Delivery**
+At Aalto University, I have designed and implemented several courses that form the backbone of a 
+machine learning curricula (Bachelor and Master level). Some of these courses have also been offered 
+to adult learners via the [**Finnish Institute of Technology (FITech.io)**](https://fitech.io/en/about-fitech/). 
+I have also designed the summer school  [**Human-Centered Machine Learning**](assets/HCLSS.pdf) 
 offered at Aalto University in 2022 for the [**European University Networks for Innovation, Technology and Engineering (Unite!)**](https://www.unite-university.eu/).  
 
-
-For example 
-- **Machine Learning**: Including foundational courses and advanced topics such as [Federated Learning](https://github.com/alexjungaalto/FederatedLearning).
-- **Artificial Intelligence**: Covering modern AI methodologies and practical applications.
-- **Optimization and Data Science**: With a focus on real-world applications for large-scale datasets.
+<figure>
+  <img src="{{ site.baseurl }}/assets/CurriculumAalto.png" alt="A machine learning curriculum.">
+  <figcaption>Core courses for a machine learning curriculum.</figcaption>
+</figure>
 
 ###  **Customised Tutorials, Seminars and Workshops for Industry**. [Here are more details.](/ml-bootcamp/)
 - **Executive Education**: Led tailored programs like "Diploma in Artificial Intelligence" for [Aalto Executive Education](https://www.aaltoee.fi/)
 - **International Bootcamps**: Facilitated intensive learning experiences such as the "Machine Learning and Artificial Intelligence Workshop" at Salo IoT campus.
-- **Summer Schools**: Designed and taught innovative programs like "" 
 
 
-### 3. **Thesis Supervision**
+### **Your Personal ML Coach**
 With extensive experience supervising over [100 Master’s theses](/assets/MasterThesisSupervisedNov24.pdf), 
 I provide guidance on topics such as:
 - Machine learning applications (e.g., Federated Learning, Network Intrusion Detection).
