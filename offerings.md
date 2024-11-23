@@ -21,9 +21,14 @@ offered at Aalto University in 2022 for the European [**University Network for I
   <figcaption>Core courses for a machine learning curriculum.</figcaption>
 </figure>
 
-##  **Customised Tutorials, Seminars and Workshops for Industry**. [Here are more details.](/ml-bootcamp/)
-- **Executive Education**: Led tailored programs like "Diploma in Artificial Intelligence" for [Aalto Executive Education](https://www.aaltoee.fi/)
-- **International Bootcamps**: Facilitated intensive learning experiences such as the "Machine Learning and Artificial Intelligence Workshop" at Salo IoT campus.
+--
+
+##  **Training Solutions for Industry**.
+I have developed and implemented ML training solutions for [Aalto Executive Education](https://www.aaltoee.fi/en), 
+[Integrify Ry](https://www.integrify.io/), [Swedish National Audit Office](https://www.riksrevisionen.se/en.html), [Salo IoT Campus](https://www.saloiotcampus.fi/en), 
+[City of Helsinki](https://www.hel.fi/en) and [The Actuarial Society of Finland](https://www.actuary.fi/in-english). 
+These solutions range from plenary talks, over intensive one-day work-shops to full diploma programs including 
+several modules. 
 
 ---
 ## **Your Personal ML Coach**
