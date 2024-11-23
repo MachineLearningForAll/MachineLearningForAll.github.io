@@ -30,6 +30,28 @@ The principles of this framework are extensively discussed in my textbook:
 **[Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6)**  
 *A. Jung, Springer, 2022.*
 
+## **Teaching Philosophy**
+
+### Evidence-Based Approach
+- Strong emphasis on **interactive learning** using online quizzes, coding assignments, and project-based assessments.
+- Focus on **conceptual clarity** with practical exercises, such as Python notebooks hosted on [JupyterHub](https://jupyter.cs.aalto.fi/).
+
+### Key Principles
+1. Keep lectures concise and targeted to specific learning goals.
+2. Provide curated resources, including textbooks ([Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6)), YouTube playlists, and GitHub repositories.
+3. Foster a feedback-adaptive teaching cycle while maintaining a consistent course schedule.
+
+---
+
+## **Student and Peer Recognition**
+
+- **Teacher of the Year 2018**, Department of Computer Science, Aalto University.
+- Consistently high student ratings in teaching evaluations.
+- Invited speaker and lecturer at multiple international institutions and conferences.
+
+---
+
+
 ## Collaborate with Me
 
 I am open to collaboration on teaching initiatives, curriculum design, and educational projects. 
