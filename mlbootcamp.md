@@ -1,37 +1,50 @@
 ---
 layout: page  # or post, or any other layout template you have
-title: "Machine Learning Bootcamp"
+title: "Executive Training in Machine Learning"
 permalink: /ml-bootcamp/  # This is the URL path where the page will be accessible
 ---
 
+Join Alexander Jung, a seasoned educator and practitioner, for a comprehensive training session 
+designed specifically for executives and senior management. Drawing on a wealth of 
+experience from academia and industry collaborations, this program offers strategic insights 
+into leveraging machine learning for business innovation and leadership.
 
 ### About the Instructor
-**Alexander Jung, PhD**
-- Associate Professor at Aalto University
-- Instructor for Aalto Executive Education
-- Over 10 years of experience in teaching and applying machine learning
-- Supervised over 100 master thesis projects in applied ML
-- Regular contributor to international ML conferences and journals
+**[Your Name], PhD**
+- Associate Professor at Aalto University and a key instructor for [Aalto Executive Education]().
+- Developer of industry-focused ML mini-courses for [Integrify](https://www.integrify.io/), the [Salo IoT campus](https://www.saloiotcampus.fi/en), or the [City of Helsinki](). 
+- Worked closely with Helsinki City Planners to implement machine learning solutions for urban development projects.
+- Over 10 years of experience in teaching and applying advanced machine learning concepts.
+- Regular contributor to international conferences and journals on machine learning and data science.
 
-### Course Offerings
+### Example Solutions
+
 #### One-Day Intensive
-A crash course covering ML basics, ideal for quick learning.
+
+A crash course covering ML basics, ideal for quick learning. After completing this course, participants  
+- know the main building blocks of ML applications 
+- know some main design principles for ML solutions 
+- can critically evaluate and compare different ML methods 
 
 #### Two-Week Bootcamp
-Comprehensive training including hands-on sessions on data science tools, ML algorithms, and real-world problem solving.
+
+Comprehensive training including hands-on sessions on data science tools, 
+ML algorithms, and real-world problem solving. After completing this course, 
+participants 
+- are able to precisely formulate a ML application 
+- implement state-of-the art ML methods 
+- are aware of key requirements for trustworthy AI
 
 ### Training Benefits
 - Enhance your team’s analytical capabilities.
 - Apply ML techniques to optimize workflows and decision-making.
 - Gain insights from big data more efficiently and effectively.
 
-### Testimonials
-"Professor [Your Last Name]'s bootcamp not only upgraded our skills but also transformed our approach to data-driven decision making." - [Previous Participant's Job Title], [Institution Name]
-
 ### Contact Us
-Ready to elevate your team's skills? Contact us to customize a training program suited to your needs:
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **Phone**: (123) 456-7890
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+Interested in transforming your organization's approach to technology and strategy? 
+Contact us to tailor a program that fits your needs:
+- [**Email**](mailto:alexjung235@gmail.com)
+- [**LinkedIn**](https://www.linkedin.com/in/aljung/)
 
-![QR Code](URL_to_QR)  <!-- Replace URL_to_QR with the actual URL of your QR code image -->
+![QR Code](URL_to_QR) 
+
