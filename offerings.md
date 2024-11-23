@@ -18,10 +18,11 @@ I specialize in creating and delivering high-quality courses in the areas of:
 - **Artificial Intelligence**: Covering modern AI methodologies and practical applications.
 - **Optimization and Data Science**: With a focus on real-world applications for large-scale datasets.
 
-### 2. **Custom Workshops and Seminars**
+###  **Custom Workshops and Seminars**. [Here are more details.](/ml-bootcamp/)
 - **Executive Education**: Led tailored programs like "Diploma in Artificial Intelligence" for [Aalto Executive Education](https://www.aaltoee.fi/)
 - **International Bootcamps**: Facilitated intensive learning experiences such as the "Machine Learning and Artificial Intelligence Workshop" at Salo IoT campus.
 - **Summer Schools**: Designed and taught innovative programs like "Human-Centered Machine Learning" offered within the European university alliance [Unite!](/assets/HCLSS.pdf)
+
 
 ### 3. **Thesis Supervision**
 With extensive experience supervising over [100 Master’s theses](/assets/MasterThesisSupervisedNov24.pdf), I provide guidance on topics such as:
