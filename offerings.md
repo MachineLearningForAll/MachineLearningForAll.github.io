@@ -21,15 +21,24 @@ offered at Aalto University in 2022 for the European [**University Network for I
   <figcaption>Core courses for a machine learning curriculum.</figcaption>
 </figure>
 
---
+---
 
-##  **Training Solutions for Industry**.
-I have developed and implemented ML training solutions for [Aalto Executive Education](https://www.aaltoee.fi/en), 
-[Integrify Ry](https://www.integrify.io/), [Swedish National Audit Office](https://www.riksrevisionen.se/en.html), [Salo IoT Campus](https://www.saloiotcampus.fi/en), 
-[City of Helsinki](https://www.hel.fi/en) and [The Actuarial Society of Finland](https://www.actuary.fi/in-english). 
-These solutions range from plenary talks, over intensive one-day work-shops to full diploma programs including 
-several modules. 
+##  **Tailored Solutions for Industry**
 
+I have developed and implemented ML training solutions for [
+- Aalto Executive Education](https://www.aaltoee.fi/en), 
+- [Integrify Ry](https://www.integrify.io/), 
+- [Swedish National Audit Office](https://www.riksrevisionen.se/en.html), 
+- [Salo IoT Campus](https://www.saloiotcampus.fi/en), 
+- [City of Helsinki](https://www.hel.fi/en) and 
+- [The Actuarial Society of Finland](https://www.actuary.fi/in-english). 
+My offerings are meticulously designed to fit varying needs, including:
+- Engaging Plenary Talks that inspire. 
+- Intensive One-Day Workshops for deep skill acquisition. 
+- Comprehensive Diploma Programs with multiple learning modules. 
+Each training solution is tailored to not only impart essential ML skills but also 
+to foster innovative thinking and problem-solving abilities that participants can 
+immediately apply in their professional roles.
 ---
 ## **Your Personal ML Coach**
 With extensive experience supervising over [100 Master’s theses](/assets/MasterThesisSupervisedNov24.pdf), 
