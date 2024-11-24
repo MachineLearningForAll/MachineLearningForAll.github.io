@@ -48,7 +48,7 @@ and professionals in machine learning.
 
 ### **Federated Learning - From Theory to Algorithms**
 
-![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
+![Federated Learning Book](images/FLBookSnapshot.png) 
 **Language**: English  
 **Format**: PDF  
 
@@ -62,7 +62,7 @@ looking to understand federated learning's theoretical foundations and practical
 
 ### **The Aalto Dictionary for Machine Learning**
 
-![The Aalto Dictionary for Machine Learning](images/FLBookSnapshot.png) 
+![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
 
 **Language**: English  
 **Format**: PDF 
