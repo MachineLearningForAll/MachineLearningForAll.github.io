@@ -48,10 +48,9 @@ and professionals in machine learning.
 
 ### **Federated Learning - From Theory to Algorithms**
 
-[![Federated Learning Lecture Notes](https://img.icons8.com/ios/250/federated-learning.png)](https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf)
-
+![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
 **Language**: English  
-**Format**: Lecture Notes (PDF)  
+**Format**: PDF  
 
 This textbook provides an in-depth introduction to federated learning, an emerging area in 
 machine learning focused on decentralized data processing. Ideal for students and researchers 
@@ -63,10 +62,10 @@ looking to understand federated learning's theoretical foundations and practical
 
 ### **The Aalto Dictionary for Machine Learning**
 
-![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
+![The Aalto Dictionary for Machine Learning](images/FLBookSnapshot.png) 
 
 **Language**: English  
-**Format**: PDF  
+**Format**: PDF 
 
 The Aalto Dictionary for Machine Learning is a curated glossary of essential terms and concepts in machine learning. 
 It's a handy resource for students, professionals, and anyone looking to navigate the field with confidence.
