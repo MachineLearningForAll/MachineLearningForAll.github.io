@@ -63,7 +63,7 @@ learning's theoretical foundations and practical applications.
 
 ### **The Aalto Dictionary for Machine Learning**
 
-[![Aalto Dictionary for Machine Learning](https://img.icons8.com/ios/250/book-dictionary.png)](https://aaltodictionaryofml.github.io/ADictML.pdf)
+[![Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png)](https://aaltodictionaryofml.github.io/ADictML.pdf)
 
 **Language**: English  
 **Format**: PDF  
@@ -71,14 +71,13 @@ learning's theoretical foundations and practical applications.
 The Aalto Dictionary for Machine Learning is a curated glossary of essential terms and concepts in machine learning. 
 It's a handy resource for students, professionals, and anyone looking to navigate the field with confidence.
 
-[📄 Download the Dictionary (PDF)](https://aaltodictionaryofml.github.io/ADictML.pdf)
+[📄 Download a current draft (PDF)](https://aaltodictionaryofml.github.io/ADictML.pdf)
 
 ---
 
 ## Additional Resources
 
 - 🎥 [Watch my YouTube Channel for Video Lectures](https://www.youtube.com/@alexjung111)  
-- ✍️ [Read My Blog on Machine Learning Topics](/blog/)  
-- 📚 [Learn More About My Courses at Aalto University](https://aalto.fi)
+
 
 Stay tuned for updates on upcoming books and projects!
