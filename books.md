@@ -48,7 +48,7 @@ and professionals in machine learning.
 
 ### **Federated Learning - From Theory to Algorithms**
 
-![Federated Learning Book](images/FLBookSnapshot.png){width=500}
+![Federated Learning Book](images/FLBookSnapshot.png)
 
 **Language**: English  
 **Format**: PDF  
