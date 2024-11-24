@@ -46,18 +46,18 @@ and professionals in machine learning.
 
 ## **Current Working Drafts**
 
-### **Federated Learning Lecture Notes**
+### **Federated Learning - From Theory to Algorithms**
 
 [![Federated Learning Lecture Notes](https://img.icons8.com/ios/250/federated-learning.png)](https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf)
 
 **Language**: English  
 **Format**: Lecture Notes (PDF)  
 
-These lecture notes provide an in-depth introduction to federated learning, an emerging area in machine learning 
-focused on decentralized data processing. Ideal for students and researchers looking to understand federated 
-learning's theoretical foundations and practical applications.
+This textbook provides an in-depth introduction to federated learning, an emerging area in 
+machine learning focused on decentralized data processing. Ideal for students and researchers 
+looking to understand federated learning's theoretical foundations and practical applications.
 
-[📄 Download the Lecture Notes (PDF)](https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf)
+[📄 Download the current draft (PDF)](https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf)
 
 ---
 
