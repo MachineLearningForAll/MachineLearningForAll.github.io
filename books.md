@@ -8,6 +8,7 @@ During my academic career, I’ve taught and mentored thousands of students in m
 I am passionate about breaking down complex concepts into clear, practical, and insightful materials that resonate 
 with learners and professionals alike. I particularly enjoy crafting textbooks that offer accessible introductions to the 
 core ideas of machine learning, bridging the gap between theory and application.
+
 ---
 
 ## **Published Books**
