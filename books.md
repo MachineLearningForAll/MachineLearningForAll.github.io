@@ -63,7 +63,7 @@ learning's theoretical foundations and practical applications.
 
 ### **The Aalto Dictionary for Machine Learning**
 
-<div style="border: 2px solid black;"> ![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) </div>
+![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
 
 **Language**: English  
 **Format**: PDF  
