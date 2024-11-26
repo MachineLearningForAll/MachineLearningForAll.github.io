@@ -41,7 +41,7 @@ further improved significantly by rigorously addressing the feedback collected b
 
 ### 📣 **Testimonial from VP Education of Aalto University**
 
-*"I learnt to know Alex in 2015 in my earlier role, VP Education of Aalto University, when Alex joined thefaculty of Aalto University School of Science as an Assistant Professor. My first impression was hisdedication and passion to create powerful learning experience to all his students. It was no surprisethat the student feedback was extremely positive since day one."*
+*"...I learnt to know Alex in 2015 in my earlier role, VP Education of Aalto University, when Alex joined thefaculty of Aalto University School of Science as an Assistant Professor. My first impression was hisdedication and passion to create powerful learning experience to all his students. It was no surprisethat the student feedback was extremely positive since day one...."*
 
 ---
 
