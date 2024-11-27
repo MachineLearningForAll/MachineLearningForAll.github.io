@@ -21,9 +21,15 @@ end_time = end_time.isoformat(timespec="seconds") + "Z"
 
 
 
+# the code snippet below reads in data from web interface 
+
+# bbox=19,59.859,32.035,70.170     for entire finlan 
+
+#bbox = 21.02, 60.7, 21.03, 60.73 for Kustavi Isokaari
+
 
 obs = download_stored_query("fmi::observations::weather::multipointcoverage",
-                            args=["bbox=19,59.859,32.035,70.170",
+                            args=["bbox=21.02, 60.7, 21.03, 60.73 ",
                                   "starttime=" + start_time,
                                   "endtime=" + end_time,
                                   "timeseries=True"])
