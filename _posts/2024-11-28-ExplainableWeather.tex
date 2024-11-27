@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Explainable AI for Weather Prediction: A Case Study with FMI Data"
+date: 2024-11-27
+author: Alexander Jung
+image: https://upload.wikimedia.org/wikipedia/commons/1/19/Isokari.jpg
+categories: explainable-ai weather-prediction
+tags: explainable-ai machine-learning weather-data decision-trees
+---
+
+## Explainable AI Meets Weather Prediction
+
+In the rapidly advancing world of artificial intelligence, explainability has 
+become a cornerstone of trustworthy and practical machine learning. In this 
+blog post, we explore explainable AI (XAI) using a straightforward weather 
+prediction example based on real-world data from the Finnish Meteorological Institute (FMI). 
+
+The data was recorded at the Kustavi Isokari weather station, a picturesque location illustrated below:
+
+![Kustavi Isokari Weather Station](https://upload.wikimedia.org/wikipedia/commons/1/19/Isokari.jpg)
+
+Our goal is to create an explainable weather prediction model that aligns with human intuition and domain knowledge.
+
+---
+
+## The Problem: Predicting Maximum Daytime Temperature
+
+Given historical weather data, our task is to predict the **maximum daytime temperature** using various features such as:
+
+- Minimum temperature from the previous night
+- Humidity
+- Wind speed
+- Atmospheric pressure
+
+One key piece of domain knowledge we can incorporate is **the relationship between minimum and maximum temperatures**. Intuitively, **a lower minimum temperature should result in a lower maximum daytime temperature**. Incorporating this intuition helps us not only improve predictions but also make our model more interpretable.
+
+---
+
+## The Approach: Regularizing a Decision Tree
+
+We use a decision tree as our base model, a popular choice for XAI due to its transparency. However, plain decision trees can overfit or produce splits that contradict our domain knowledge. To mitigate this, we introduce **regularization** to enforce consistency with the intuition that "lower minimum temperature implies lower maximum temperature."
+
+### Implementation Highlights
+
+1. **Data Source:** Historical weather data from the FMI, specifically from Kustavi Isokari station.
+2. **Model:** A decision tree trained to predict maximum temperature, regularized with our intuitive constraint.
+3. **Regularization:** During training, we penalize splits that violate the monotonicity constraint: lower minimum temperature → lower maximum temperature.
+
+---
+
+## Results and Visualization
+
+The resulting decision tree respects our intuition, with clear splits and conditions that align with human understanding. Below is a simplified version of the tree:
+
+
+
+
+![Kustavi Isokari Weather Station](https://upload.wikimedia.org/wikipedia/commons/1/19/Isokari.jpg)
+
+*Image: [Isokari](https://commons.wikimedia.org/wiki/File:Isokari.jpg) licensed under [Creative Commons Attribution-Share Alike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/deed.en)*
