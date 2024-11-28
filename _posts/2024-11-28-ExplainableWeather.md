@@ -2,7 +2,32 @@
 layout: post
 title: "Explainable AI Meets Weather Prediction" 
 date: 2024-11-28
+seo_title: "Explainable AI for Weather Prediction: Enhancing Trust and Accuracy"
+seo_description: "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "author": {
+    "@type": "Person",
+    "name": "Your Name"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MachineLearningForAll",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://your-site-url.com/logo.png"
+    }
+  },
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/path-to-image.jpg",
+  "description": "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
+}
+</script>
 
 
 A key requirement for trustworthy artificial intelligence (AI) is its explainability to human users. 
@@ -13,7 +38,7 @@ is (to this specific user).
 In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
 can be captured by the notion of a user signal [[^1]]. The user signal is some subjective characteristic of 
 data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
-Formally, we denote the user signal u(x) as a function of the raw features $x$ of a data point. 
+Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
 
 
 In this blog post, we explore explainable ML using a straightforward weather prediction example based 
@@ -35,13 +60,13 @@ and domain knowledge.
 
 ---
 
-## The Problem: Predicting Maximum Daytime Temperature
+## Predicting Maximum Daytime Temperature with Explainable AI: A Real-World Example
 
-Given historical weather data, we want to learn to predict the **maximum daytime temperature** (max.temp.)
-solely from the **minimum daytime temperature** (min.temp.). To this end, we first download weather recordings 
+Given historical weather data, we want to learn to predict the **maximum daytime temperature** (maxtemp)
+solely from the **minimum daytime temperature** (mintemp). To this end, we first download weather recordings 
 from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
-![FMI Download Site](assets/PostEERM/FMIDownloadSite.jpg)
+![Finnish Meteorological Institute weather data download site](assets/PostEERM/FMIDownloadSite.jpg)
 
 into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file [[^2]]: 
 ```python
@@ -79,7 +104,7 @@ poly_model.fit(X_train_poly, y)
 ```
 We then plot the predictions of the trained models along with training data.
 
-![Trained Models and Training Data](assets/PostEERM/dtpolyreg.png)
+![AI models for weather prediction: Decision Tree and Polynomial Regression](assets/PostEERM/dtpolyreg.png)
 
 How do you like the behaviour of the trained models? Note that both models predict increasing 
 max. temp. for decreasing min.  temp. near the coldest day in training set. Moreover, 
@@ -90,7 +115,7 @@ counter-intuitive - at least for me.
 
 ---
 
-## Explainability via Data Augmentation
+## Enhancing Explainability in AI with Data Augmentation
 
 It seems reasonable to assume that higher min. temps. result in higher max.temps. 
 We can exploit this intuition (or user knowledge) to regularize the above model training 
@@ -144,9 +169,9 @@ now respect my (your?) intuition that max. temp. is monotonically increasing
 with min. temp. In this sense, these models can be considered more explainable 
 than the trained models without data augmentation. 
 
-![More Explainable Models](assets/PostEERM/dtpolyregexplainable.png)
+![Improved weather prediction models with data augmentation](assets/PostEERM/dtpolyregexplainable.png)
 
-## References 
+## References and Further Reading on Explainable AI 
 
 [^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
 
