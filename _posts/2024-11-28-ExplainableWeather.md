@@ -5,14 +5,15 @@ date: 2024-11-28
 ---
 
 
-A key requirement for trustworthy artificial intelligence (AI) is its explainability to human users. One principled 
-approach to explainable AI is via the concept of simulatability: Roughly speaking, the more 
-explainable an AI is to a specific user, the better is she able to predict or anticipate its behaviour.  
+A key requirement for trustworthy artificial intelligence (AI) is its explainability to human users. 
+One principled approach to explainable AI is via the concept of simulatability: Roughly speaking, 
+the better a specific human user can anticipate the behaviour of an AI, the more explainable it 
+is (to this specific user). 
 
 In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
 can be captured by the notion of a user signal[^1]. The user signal is some subjective characteristic of 
 data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
-Formally, we denote the user signal $u(x)$ as a function of the raw features $x$ of a data point. 
+Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
 
 
 In this blog post, we explore explainable ML using a straightforward weather prediction example based 
@@ -101,8 +102,8 @@ additional data points
 2. One data point is obtained by subtracting 1 degree from x and y. 
 
 Note that this data augmentation strategy can be interpreted as 
-a specific choice for a user signal $u(x)$. In particular, the user signal 
-satisfies $`u(x\!+\!1) = y\!+\!1$` and $u(x\!-\!1) =y\!-\!1$ for any data point $(x,y)$ 
+a specific choice for a user signal u(x). In particular, the user signal 
+satisfies u(x+1)=y+1 and u(x-1)=y-1 for any data point (x,y) 
 in the original training set. 
 
 The following code snippet implements the above data augmentation and 
@@ -139,7 +140,7 @@ poly_model.fit(X_train_poly, y_augmented)
 
 And here are the resulting trained DT and polynomial regressor, along with the 
 original and augmented data points. Carefully note that the trained models 
-now respect my (our?) intuition that max. temp. is monotonically increasing 
+now respect my (your?) intuition that max. temp. is monotonically increasing 
 with min. temp. In this sense, these models can be considered more explainable 
 than the trained models without data augmentation. 
 
