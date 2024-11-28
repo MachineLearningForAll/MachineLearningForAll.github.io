@@ -45,7 +45,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 ![Finnish Meteorological Institute weather data download site](assets/PostEERM/FMIDownloadSite.jpg)
 
 into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file 
-and stored their features and labels in numpy arrays `X` and `y` [[^2]]: 
+and stored their features and labels in numpy arrays `X` and `y` [[^3]]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -63,8 +63,8 @@ X = data[["Minimum temperature [°C]"]]
 y = data["Maximum temperature [°C]"]    
 ```
 
-Using the features and labels, stored in the numpy arrays `X` and `y`, we next train two basic ML models: 
-a decision tree regressor and a polynomial regressor. 
+Using the features `X` and labels `y`, we next train two basic ML models: 
+a decision tree regressor and a polynomial regressor [[^2. 
 ```python
 # Train a Decision Tree Regressor
 maxdep=3 
@@ -84,8 +84,9 @@ We then plot the predictions of the trained models along with training data.
 ![AI models for weather prediction: Decision Tree and Polynomial Regression](assets/PostEERM/dtpolyreg.png)
 
 How do you like the behaviour of the trained models? Note that both models predict increasing maxtemp 
-for decreasing mintemp near the coldest day in the training set. Moreover, the polynomial regressor 
-predicts decreasing maxtemp with increasing mintemp for hot days. This is counter-intuitive - at least for me.
+for decreasing mintemp for very cold days (towards the left in the above plot). Moreover, the polynomial regressor 
+predicts decreasing maxtemp with increasing mintemp for very warm days (towards the right in the above plot). 
+This is counter-intuitive - at least for me.
 
 
 ---
@@ -94,7 +95,7 @@ predicts decreasing maxtemp with increasing mintemp for hot days. This is counte
 
 It seems reasonable to assume that higher min. temps. result in higher max.temps. 
 We can exploit this intuition (or user knowledge) to regularize the above model training 
-via data augmentation [[^3]]:
+via data augmentation [[^4]]:
 
 For each original data point, with mintemp x and maxtemp y, we add two 
 additional data points: 
@@ -140,8 +141,8 @@ poly_model.fit(X_train_poly, y_augmented)
 
 And here are the resulting trained DT and polynomial regressor, along with the 
 original and augmented data points. Carefully note that the trained models 
-now respect my (your?) intuition that max. temp. is monotonically increasing 
-with min. temp. In this sense, these models can be considered more explainable 
+now respect my (your?) intuition that maxtemp is monotonically increasing 
+with mintemp. In this sense, these models can be considered more explainable 
 than the trained models without data augmentation. 
 
 ![Improved weather prediction models with data augmentation](assets/PostEERM/dtpolyregexplainable.png)
@@ -152,7 +153,9 @@ than the trained models without data augmentation.
 
 [^2]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
-[^3]: Zhang, L., Karakasidis, G., Odnoblyudova, A. et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
+[^3]: A. Jung, *Machine Learning: The Basics,* Springer, 2022. https://doi.org/10.1007/978-981-16-8193-6
+
+[^4]: L. Zhang, G. Karakasidis, A. Odnoblyudova, et al., "Explainable empirical risk minimization," in Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
 
 
 
