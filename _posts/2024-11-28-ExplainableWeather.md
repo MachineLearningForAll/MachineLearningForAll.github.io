@@ -45,7 +45,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 ![Finnish Meteorological Institute weather data download site](assets/PostEERM/FMIDownloadSite.jpg)
 
 into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file 
-and stored their features and labels in numpy arrays `X` and `y` [[^3]]: 
+and stored their features and labels in numpy arrays `X` and `y` [[^2]]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
