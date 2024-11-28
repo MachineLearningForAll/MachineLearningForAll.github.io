@@ -21,7 +21,7 @@ on real-world data from the Finnish Meteorological Institute (FMI). The data was
 station near Kustavi Isokari 
 
 <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi&z=10"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi&z=6"
   width="600"
   height="450"
   style="border:0;"
@@ -43,7 +43,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
 ![FMI Download Site](assets/PostEERM/FMIDownloadSite.jpg)
 
-into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file[^3]: 
+into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file[^2]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -94,7 +94,7 @@ counter-intuitive - at least for me.
 
 It seems reasonable to assume that higher min. temps. result in higher max.temps. 
 We can exploit this intuition (or user knowledge) to regularize the above model training 
-via data augmentation[^2]:
+via data augmentation[^3]:
 
 Ffor each original data point, with min. temp. x and max. temp. y, we add two 
 additional data points
@@ -150,9 +150,10 @@ than the trained models without data augmentation.
 
 [^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176. 
 
-[^2]: Zhang, L., Karakasidis, G., Odnoblyudova, A. et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
+[^2]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
-[^3]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
+[^3]: Zhang, L., Karakasidis, G., Odnoblyudova, A. et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
+
 
 
 
