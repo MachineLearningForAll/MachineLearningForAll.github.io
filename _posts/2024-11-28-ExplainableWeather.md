@@ -148,7 +148,7 @@ than the trained models without data augmentation.
 
 ## References 
 
-[^1] A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
+[^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
 
 [^2]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
