@@ -11,7 +11,7 @@ the better a specific human user can anticipate the behaviour of an AI, the more
 is (to this specific user). 
 
 In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
-can be captured by the notion of a user signal<sup id="fnref1"><a href="#fn1">1</a></sup>. The user signal is some subjective characteristic of 
+can be captured by the notion of a user signal[^1]. The user signal is some subjective characteristic of 
 data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
 Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
 
@@ -148,7 +148,7 @@ than the trained models without data augmentation.
 
 ## References 
 
-<p id="fn1">1. A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  <a href="#fnref1">↩</a></p>
+[^1] A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
 
 [^2]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
