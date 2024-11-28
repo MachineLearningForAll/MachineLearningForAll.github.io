@@ -6,30 +6,6 @@ seo_title: "Explainable AI for Weather Prediction: Enhancing Trust and Accuracy"
 seo_description: "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title }}",
-  "author": {
-    "@type": "Person",
-    "name": "Your Name"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "MachineLearningForAll",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://your-site-url.com/logo.png"
-    }
-  },
-  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/path-to-image.jpg",
-  "description": "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
-}
-</script>
-
-
 A key requirement for trustworthy artificial intelligence (AI) is its explainability to human users. 
 One principled approach to explainable AI is via the concept of simulatability: Roughly speaking, 
 the better a specific human user can anticipate the behaviour of an AI, the more explainable it 
@@ -68,7 +44,8 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
 ![Finnish Meteorological Institute weather data download site](assets/PostEERM/FMIDownloadSite.jpg)
 
-into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file [[^2]]: 
+into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file 
+and stored their features and labels in numpy arrays `X` and `y` [[^2]]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -86,7 +63,7 @@ X = data[["Minimum temperature [°C]"]]
 y = data["Maximum temperature [°C]"]    
 ```
 
-Using the features and labels, we next train two basic ML models: 
+Using the features and labels, stored in the numpy arrays `X` and `y`, we next train two basic ML models: 
 a decision tree regressor and a polynomial regressor. 
 ```python
 # Train a Decision Tree Regressor
@@ -106,11 +83,9 @@ We then plot the predictions of the trained models along with training data.
 
 ![AI models for weather prediction: Decision Tree and Polynomial Regression](assets/PostEERM/dtpolyreg.png)
 
-How do you like the behaviour of the trained models? Note that both models predict increasing 
-max. temp. for decreasing min.  temp. near the coldest day in training set. Moreover, 
-the polynomial regressor predicts decreasing max. temp with 
-increasing min. temp. for very warm days. This is somewhat 
-counter-intuitive - at least for me. 
+How do you like the behaviour of the trained models? Note that both models predict increasing maxtemp 
+for decreasing mintemp near the coldest day in the training set. Moreover, the polynomial regressor 
+predicts decreasing maxtemp with increasing mintemp for hot days. This is counter-intuitive - at least for me.
 
 
 ---
