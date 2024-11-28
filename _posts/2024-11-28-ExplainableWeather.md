@@ -18,7 +18,7 @@ Formally, we denote the user signal u(x) as a function of the raw features x of 
 
 In this blog post, we explore explainable ML using a straightforward weather prediction example based 
 on real-world data from the Finnish Meteorological Institute (FMI). The data was recorded at a FMI weather 
-station near Kustavi Isokari 
+station near *Kustavi Isokari*
 
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi&z=6"
