@@ -64,7 +64,7 @@ y = data["Maximum temperature [°C]"]
 ```
 
 Using the features `X` and labels `y`, we next train two basic ML models: 
-a decision tree regressor and a polynomial regressor [[^2. 
+a decision tree regressor and a polynomial regressor [[^3]]. 
 ```python
 # Train a Decision Tree Regressor
 maxdep=3 
