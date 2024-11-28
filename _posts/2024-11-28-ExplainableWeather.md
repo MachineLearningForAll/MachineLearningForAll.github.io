@@ -40,7 +40,7 @@ Given historical weather data, we want to learn to predict the **maximum daytime
 solely from the **minimum daytime temperature** (min.temp.). To this end, we first download weather recordings 
 from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
-![FMI Download Site](FMIDownloadSite.jpg)
+![FMI Download Site](assets/PostEERM/FMIDownloadSite.jpg)
 
 into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file: 
 ```python
@@ -95,14 +95,14 @@ It seems reasonable to assume that higher min. temps. result in higher max.temps
 We can exploit this intuition (or user knowledge) to regularize the above model training 
 via data augmentation[^2]:
 
-Ffor each original data point, with min. temp. $x$ and max. temp. $y$, we add two 
+Ffor each original data point, with min. temp. x and max. temp. y, we add two 
 additional data points
 1. One data point is obtained by adding 1 degree to x and y. 
-2. One data point is obtained by subtracting 1 degree from $x$ and $y$. 
+2. One data point is obtained by subtracting 1 degree from x and y. 
 
 Note that this data augmentation strategy can be interpreted as 
 a specific choice for a user signal $u(x)$. In particular, the user signal 
-satisfies $u(x\!+\!1) = y\!+\!1$ and $u(x\!-\!1) =y\!-\!1$ for any data point $(x,y)$ 
+satisfies $`u(x\!+\!1) = y\!+\!1$` and $u(x\!-\!1) =y\!-\!1$ for any data point $(x,y)$ 
 in the original training set. 
 
 The following code snippet implements the above data augmentation and 
