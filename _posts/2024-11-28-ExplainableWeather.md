@@ -20,13 +20,14 @@ on real-world data from the Finnish Meteorological Institute (FMI). The data was
 station near Kustavi Isokari 
 
 <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5215125001336!2d144.96316531531972!3d-37.818491979751994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce840!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sfi!4v1632870046790!5m2!1sen!2sfi"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi"
   width="600"
   height="450"
   style="border:0;"
   allowfullscreen=""
   loading="lazy"
-></iframe>
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 
 Our goal is to create an explainable weather prediction model that aligns with human intuition 
 and domain knowledge.
@@ -146,8 +147,7 @@ than the trained models without data augmentation.
 
 ## References 
 
-[^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, 
-vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176. 
+[^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176. 
 
 [^2]: Zhang, L., Karakasidis, G., Odnoblyudova, A. et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
 
