@@ -69,9 +69,9 @@ plt.plot(min_temp_range, predicted_max_temp_dt, color='red', label=f"dec. tree (
 plt.plot(min_temp_range, predicted_max_temp_poly, color='black',linestyle='--',  label=f"PolyReg. (degree {poly_degree})", linewidth=6)
 
 # Add axis labels, title, and legend
-plt.xlabel("Minimum Temperature [°C]")
-plt.ylabel("Maximum Temperature [°C]")
-plt.title("Trained Models and Training Data")
+plt.xlabel("mintemp [°C]")
+plt.ylabel("maxtemp [°C]")
+plt.title("trained models and training data")
 plt.legend()
 # Save the plot before showing it
 plt.savefig("dtpolyreg.png", dpi=100, bbox_inches='tight')
@@ -129,7 +129,7 @@ plt.figure(figsize=(10, 6))
 
 # Plot the original data points
 plt.scatter(
-    X, y, color='blue', label="original data", marker='o',s=500
+    X, y, color='blue', label="orig. data", marker='o',s=500
 )
 
 # Plot the augmented data points with +1 shifts
@@ -151,11 +151,11 @@ plt.plot(min_temp_range, predicted_max_temp_dt, color='red', label="dec. tree", 
 plt.plot(min_temp_range, predicted_max_temp_poly, linestyle = "--",color='black', label=f"PolyReg", linewidth=6)
 
 # Add axis labels, title, and legend
-plt.xlabel("Minimum Temperature [°C]")
-plt.ylabel("Maximum Temperature [°C]")
-plt.title("Explainable DT and PolyReg")
+plt.xlabel("mintemp [°C]")
+plt.ylabel("maxtemp [°C]")
+plt.title("explainable DT and PolyReg")
 plt.legend(loc='upper left')
-plt.savefig("dtpolyregexplainable.png", dpi=100, bbox_inches='tight')
+plt.savefig("dtpolyregexplainable.png", dpi=100)
 plt.show()
 ""
 
