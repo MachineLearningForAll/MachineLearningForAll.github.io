@@ -11,7 +11,7 @@ the better a specific human user can anticipate the behaviour of an AI, the more
 is (to this specific user). 
 
 In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
-can be captured by the notion of a user signal[[^1]]. The user signal is some subjective characteristic of 
+can be captured by the notion of a user signal [[^1]]. The user signal is some subjective characteristic of 
 data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
 Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
 
@@ -43,7 +43,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
 ![FMI Download Site](assets/PostEERM/FMIDownloadSite.jpg)
 
-into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file[^2]: 
+into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file [[^2]]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -94,12 +94,12 @@ counter-intuitive - at least for me.
 
 It seems reasonable to assume that higher min. temps. result in higher max.temps. 
 We can exploit this intuition (or user knowledge) to regularize the above model training 
-via data augmentation[^3]:
+via data augmentation [[^3]]:
 
-Ffor each original data point, with min. temp. x and max. temp. y, we add two 
-additional data points
-1. One data point is obtained by adding 1 degree to x and y. 
-2. One data point is obtained by subtracting 1 degree from x and y. 
+For each original data point, with mintemp x and maxtemp y, we add two 
+additional data points: 
+1. one with mintemp x+1 and maxtemp y+1
+2. one with mintemp x-1 and maxtemp y-1 
 
 Note that this data augmentation strategy can be interpreted as 
 a specific choice for a user signal u(x). In particular, the user signal 
