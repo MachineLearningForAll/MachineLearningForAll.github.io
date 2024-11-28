@@ -21,7 +21,7 @@ on real-world data from the Finnish Meteorological Institute (FMI). The data was
 station near Kustavi Isokari 
 
 <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d21.123456!3d60.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sIsokari%2C%20Kustavi%2C%20Finland!5e0!3m2!1sen!2sfi!4v1695775176803!5m2!1sen!2sfi&z=10"
   width="600"
   height="450"
   style="border:0;"
@@ -43,7 +43,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 
 ![FMI Download Site](assets/PostEERM/FMIDownloadSite.jpg)
 
-into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file: 
+into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file[^3]: 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -62,7 +62,7 @@ y = data["Maximum temperature [°C]"]
 ```
 
 Using the features and labels, we next train two basic ML models: 
-a decision tree regressor and a polyomial regressor. 
+a decision tree regressor and a polynomial regressor. 
 ```python
 # Train a Decision Tree Regressor
 maxdep=3 
@@ -152,6 +152,7 @@ than the trained models without data augmentation.
 
 [^2]: Zhang, L., Karakasidis, G., Odnoblyudova, A. et al. Explainable empirical risk minimization. Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
 
+[^3]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
 
 
