@@ -11,7 +11,7 @@ the better a specific human user can anticipate the behaviour of an AI, the more
 is (to this specific user). 
 
 In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
-can be captured by the notion of a user signal[^1]. The user signal is some subjective characteristic of 
+can be captured by the notion of a user signal[[^1]]. The user signal is some subjective characteristic of 
 data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
 Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
 
