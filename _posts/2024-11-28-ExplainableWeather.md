@@ -6,15 +6,15 @@ seo_title: "Explainable AI for Weather Prediction: Enhancing Trust and Accuracy"
 seo_description: "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
 ---
 
-A key requirement for trustworthy artificial intelligence (AI) is its explainability to human users. 
+An essential requirement for trustworthy artificial intelligence (AI) is its explainability to human users [[^1]]. 
 One principled approach to explainable AI is via the concept of simulatability: Roughly speaking, 
 the better a specific human user can anticipate the behaviour of an AI, the more explainable it 
-is (to this specific user). 
+is (to this particular user). 
 
-In the context of machine learning (ML), which is at the core of many current AI systems, explainability 
-can be captured by the notion of a user signal [[^1]]. The user signal is some subjective characteristic of 
-data points. We can think of a user signal as a specific type of feature that a user assigns to a data point. 
-Formally, we denote the user signal u(x) as a function of the raw features x of a data point. 
+In the context of machine learning (ML), which is at the core of many current AI systems, we can formalize 
+explainability by the notion of a user signal [[^2]]. The user signal is some subjective characteristic of 
+data points. We can think of a user signal as a specific feature that a user assigns to a data point. 
+We denote the user signal u(x) as a function of the raw features x of a data point. 
 
 
 In this blog post, we explore explainable ML using a straightforward weather prediction example based 
@@ -31,8 +31,8 @@ station near *Kustavi Isokari*
   referrerpolicy="no-referrer-when-downgrade">
 </iframe>
 
-Our goal is to create an explainable weather prediction model that aligns with human intuition 
-and domain knowledge.
+We aim to create an explainable weather prediction model that aligns with human 
+intuition. Some user signal models this intuition.
 
 ---
 
@@ -45,7 +45,7 @@ from the [FMI website](https://en.ilmatieteenlaitos.fi/download-observations)
 ![Finnish Meteorological Institute weather data download site](assets/PostEERM/FMIDownloadSite.jpg)
 
 into a csv file `KustaviIsokari.csv`. The following code snippet reads in the downloaded data from the csv file 
-and stored their features and labels in numpy arrays `X` and `y` [[^2]]: 
+and stores their features and labels in the variables `X` and `y`, respectively [[^3]], 
 ```python
 # Load the data from the CSV file
 file_path = "KustaviIsokari.csv"  # Replace with the actual file path
@@ -64,7 +64,7 @@ y = data["Maximum temperature [°C]"]
 ```
 
 Using the features `X` and labels `y`, we next train two basic ML models: 
-a decision tree regressor and a polynomial regressor [[^3]]. 
+a decision tree regressor and a polynomial regressor [[^4]]. 
 ```python
 # Train a Decision Tree Regressor
 maxdep=3 
@@ -83,10 +83,10 @@ We then plot the predictions of the trained models along with training data.
 
 ![AI models for weather prediction: Decision Tree and Polynomial Regression](assets/PostEERM/dtpolyreg.png)
 
-How do you like the behaviour of the trained models? Note that both models predict increasing maxtemp 
-for decreasing mintemp for very cold days (towards the left in the above plot). Moreover, the polynomial regressor 
-predicts decreasing maxtemp with increasing mintemp for very warm days (towards the right in the above plot). 
-This is counter-intuitive - at least for me.
+How do you like the behaviour of the trained models? Both models predict increasing maxtemp for 
+decreasing mintemp for very cold days (towards the left in the above plot). Moreover, the polynomial 
+regressor predicts decreasing maxtemp with increasing mintemp for warm days (towards the right in 
+the above plot). Predicting a decreasing maxtemp for increasing mintemp is counter-intuitive.
 
 
 ---
@@ -95,7 +95,7 @@ This is counter-intuitive - at least for me.
 
 It seems reasonable to assume that higher min. temps. result in higher max.temps. 
 We can exploit this intuition (or user knowledge) to regularize the above model training 
-via data augmentation [[^4]]:
+via data augmentation [[^5]]:
 
 For each original data point, with mintemp x and maxtemp y, we add two 
 additional data points: 
@@ -149,13 +149,15 @@ than the trained models without data augmentation.
 
 ## References and Further Reading on Explainable AI 
 
-[^1]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
+[^1]: High-Level Expert Group on Artificial Intelligence. (2019). Ethics guidelines for trustworthy AI. European Commission. [click here](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
 
-[^2]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
+[^2]: A. Jung and P. H. J. Nardelli, "An Information-Theoretic Approach to Personalized Explainable Machine Learning," in IEEE Signal Processing Letters, vol. 27, pp. 825-829, 2020, doi: 10.1109/LSP.2020.2993176.  
 
-[^3]: A. Jung, *Machine Learning: The Basics,* Springer, 2022. https://doi.org/10.1007/978-981-16-8193-6
+[^3]: You can find a Python script to reproduce the presented results here: [click me](assets/PostEERM/ExplainableML.py) 
 
-[^4]: L. Zhang, G. Karakasidis, A. Odnoblyudova, et al., "Explainable empirical risk minimization," in Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
+[^4]: A. Jung, *Machine Learning: The Basics,* Springer, 2022. https://doi.org/10.1007/978-981-16-8193-6
+
+[^5]: L. Zhang, G. Karakasidis, A. Odnoblyudova, et al., "Explainable empirical risk minimization," in Neural Comput & Applic 36, 3983–3996 (2024). https://doi.org/10.1007/s00521-023-09269-3
 
 
 
