@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Explainable AI Meets Weather Prediction" 
+title: "Explainable AI for Weather Prediction" 
 date: 2024-11-28
 seo_title: "Explainable AI for Weather Prediction: Enhancing Trust and Accuracy"
 seo_description: "Explore how explainable AI models can improve weather prediction accuracy using data from the Finnish Meteorological Institute. Learn about user signals and data augmentation."
