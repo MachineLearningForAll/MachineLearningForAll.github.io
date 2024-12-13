@@ -13,11 +13,10 @@ machine learning education.
 <div class="campaign-container">
   <div class="campaign-card">
     <div class="campaign-card-content">
-      <h2 class="campaign-title">Machine Learning Bootcamp</h2>
+      <h2 class="campaign-title">ML Day</h2>
       <p class="campaign-details">
         <ul>
-          <li><strong>One Day</strong></li>
-          <li><strong>No Coding Required</strong></li>
+          <li><strong>09:00 - 17:00</strong></li>
           <li><strong>Online, In-Person, or Hybrid</strong></li>
         </ul>
       </p>
