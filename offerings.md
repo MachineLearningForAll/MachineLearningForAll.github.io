@@ -14,14 +14,31 @@ machine learning education.
   <div class="campaign-card-content">
     <h2 class="campaign-title">Learn Machine Learning in Just One Day!</h2>
     <p class="campaign-details">
-      📅 <strong>Date & Time:</strong> Negotiable <br>
-      📍 <strong>Location:</strong> Online, In-Person, or Hybrid <br>
-      🎓 <strong>Instructor:</strong> Prof. Alexander Jung, Associate Professor at Aalto University <br>
+      <strong>  Single Day Crashcourse  </strong> <br>
+       <strong> Tailored Exercises </strong> <br>
+       <strong> No Coding Required </strong> <br>
+       <strong> Online, In-Person, or Hybrid</strong>  <br>
+       <strong></strong> 
     </p>
     <p class="campaign-features">
-      🚀 <strong>Core Benefits:</strong> Practical, Hands-on Practice, Zero Bullshit 
+      🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
     </p>
-    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me to Register</a>
+    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+  </div>
+</div>
+
+<div class="campaign-card">
+  <div class="campaign-card-content">
+    <h2 class="campaign-title">Personal ML Trainer</h2>
+    <p class="campaign-details">
+      <strong>  Tailored Consulting </strong> <br>
+       <strong> Online or In-Person </strong>  <br>
+       <strong></strong> 
+    </p>
+    <p class="campaign-features">
+      🚀 <strong> Pump-Up your AI literacy!</strong> 
+    </p>
+    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
   </div>
 </div>
 
