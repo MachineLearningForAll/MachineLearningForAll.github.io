@@ -13,12 +13,13 @@ machine learning education.
 <div class="campaign-container">
   <div class="campaign-card">
     <div class="campaign-card-content">
-      <h2 class="campaign-title">Learn Machine Learning in Just One Day!</h2>
+      <h2 class="campaign-title">Machine Learning Bootcamp</h2>
       <p class="campaign-details">
-        <strong>Single Day Crashcourse</strong> <br>
-        <strong>Tailored Exercises</strong> <br>
-        <strong>No Coding Required</strong> <br>
-        <strong>Online, In-Person, or Hybrid</strong> <br>
+        <ul>
+          <li><strong>One Day</strong></li>
+          <li><strong>No Coding Required</strong></li>
+          <li><strong>Online, In-Person, or Hybrid</strong></li>
+        </ul>
       </p>
       <p class="campaign-features">
         🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
@@ -31,7 +32,7 @@ machine learning education.
     <div class="campaign-card-content">
       <h2 class="campaign-title">Personal ML Trainer</h2>
       <p class="campaign-details">
-        <strong>Tailored Consulting</strong> <br>
+        <strong>One Hour Session</strong> <br>
         <strong>Online or In-Person</strong> <br>
       </p>
       <p class="campaign-features">
