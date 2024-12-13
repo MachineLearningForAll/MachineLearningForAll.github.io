@@ -15,10 +15,8 @@ machine learning education.
     <div class="campaign-card-content">
       <h2 class="campaign-title">ML Day</h2>
       <p class="campaign-details">
-        <ul>
-          <li><strong>09:00 - 17:00</strong></li>
-          <li><strong>Online, In-Person, or Hybrid</strong></li>
-        </ul>
+       <strong>09:00 - 17:00</strong> <br>
+       <strong>Online, In-Person, or Hybrid</strong> <br>
       </p>
       <p class="campaign-features">
         🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
