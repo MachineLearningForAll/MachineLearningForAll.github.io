@@ -283,55 +283,58 @@ footer {
   text-align: center;
 }
 
-.campaign-card {
-  background-color: #f8f9fa; /* Light gray background */
-  border: 2px solid #007BFF; /* Aalto blue for border */
-  border-radius: 10px;
+/* Container for the cards */
+.campaign-container {
+  display: flex;              /* Flexbox layout */
+  gap: 20px;                  /* Spacing between cards */
+  justify-content: center;   /* Center the cards */
+  flex-wrap: wrap;           /* Wrap on small screens */
   padding: 20px;
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for each campaign card */
+.campaign-card {
+  background-color: #f9f9f9;  /* Light background color */
+  border-radius: 10px;        /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px;               /* Fixed width for card */
+  padding: 20px;              /* Internal padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;  /* Smooth hover effect */
 }
 
 .campaign-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .campaign-card-content {
-  text-align: center;
+  text-align: center;         /* Center text in the card */
 }
 
 .campaign-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007BFF; /* Aalto University brand blue */
+  font-size: 1.5rem;
   margin-bottom: 10px;
-}
-
-.campaign-details {
-  font-size: 16px;
   color: #333;
-  margin-bottom: 15px;
 }
 
+.campaign-details, 
 .campaign-features {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
+  font-size: 1rem;
   margin-bottom: 15px;
+  color: #555;
 }
 
 .campaign-btn {
   display: inline-block;
-  background-color: #007BFF; /* Aalto University brand blue */
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
+  background-color: #007bff;  /* Blue background for button */
+  color: #fff;                /* White text */
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.2s ease;
 }
 
 .campaign-btn:hover {

@@ -10,37 +10,38 @@ focus on learning outcomes. Explore how I can help you or your organization exce
 machine learning education.
 
 
-<div class="campaign-card">
-  <div class="campaign-card-content">
-    <h2 class="campaign-title">Learn Machine Learning in Just One Day!</h2>
-    <p class="campaign-details">
-      <strong>  Single Day Crashcourse  </strong> <br>
-       <strong> Tailored Exercises </strong> <br>
-       <strong> No Coding Required </strong> <br>
-       <strong> Online, In-Person, or Hybrid</strong>  <br>
-       <strong></strong> 
-    </p>
-    <p class="campaign-features">
-      🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
-    </p>
-    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+<div class="campaign-container">
+  <div class="campaign-card">
+    <div class="campaign-card-content">
+      <h2 class="campaign-title">Learn Machine Learning in Just One Day!</h2>
+      <p class="campaign-details">
+        <strong>Single Day Crashcourse</strong> <br>
+        <strong>Tailored Exercises</strong> <br>
+        <strong>No Coding Required</strong> <br>
+        <strong>Online, In-Person, or Hybrid</strong> <br>
+      </p>
+      <p class="campaign-features">
+        🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
+      </p>
+      <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+    </div>
+  </div>
+
+  <div class="campaign-card">
+    <div class="campaign-card-content">
+      <h2 class="campaign-title">Personal ML Trainer</h2>
+      <p class="campaign-details">
+        <strong>Tailored Consulting</strong> <br>
+        <strong>Online or In-Person</strong> <br>
+      </p>
+      <p class="campaign-features">
+        🚀 <strong>Pump-Up your AI literacy!</strong> 
+      </p>
+      <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+    </div>
   </div>
 </div>
 
-<div class="campaign-card">
-  <div class="campaign-card-content">
-    <h2 class="campaign-title">Personal ML Trainer</h2>
-    <p class="campaign-details">
-      <strong>  Tailored Consulting </strong> <br>
-       <strong> Online or In-Person </strong>  <br>
-       <strong></strong> 
-    </p>
-    <p class="campaign-features">
-      🚀 <strong> Pump-Up your AI literacy!</strong> 
-    </p>
-    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
-  </div>
-</div>
 
 
 ---
