@@ -283,6 +283,62 @@ footer {
   text-align: center;
 }
 
+.campaign-card {
+  background-color: #f8f9fa; /* Light gray background */
+  border: 2px solid #007BFF; /* Aalto blue for border */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.campaign-card-content {
+  text-align: center;
+}
+
+.campaign-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007BFF; /* Aalto University brand blue */
+  margin-bottom: 10px;
+}
+
+.campaign-details {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.campaign-features {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.campaign-btn {
+  display: inline-block;
+  background-color: #007BFF; /* Aalto University brand blue */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.campaign-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

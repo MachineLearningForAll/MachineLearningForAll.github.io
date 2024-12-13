@@ -9,6 +9,23 @@ my educational offerings combine innovative methods, hands-on exercises, and a s
 focus on learning outcomes. Explore how I can help you or your organization excel in 
 machine learning education.
 
+
+<div class="campaign-card">
+  <div class="campaign-card-content">
+    <h2 class="campaign-title">Learn Machine Learning in Just One Day!</h2>
+    <p class="campaign-details">
+      📅 <strong>Date & Time:</strong> Negotiable <br>
+      📍 <strong>Location:</strong> Online, In-Person, or Hybrid <br>
+      🎓 <strong>Instructor:</strong> Prof. Alexander Jung, Associate Professor at Aalto University <br>
+    </p>
+    <p class="campaign-features">
+      🚀 <strong>Core Benefits:</strong> Practical, Hands-on Practice, Zero Bullshit 
+    </p>
+    <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me to Register</a>
+  </div>
+</div>
+
+
 ---
 
 ## 🌟 **Machine Learning Curriculum Design and Delivery**
@@ -41,7 +58,10 @@ further improved significantly by rigorously addressing the feedback collected b
 
 ### 📣 **Testimonial from VP Education of Aalto University**
 
-*"...I learnt to know Alex in 2015 in my earlier role, VP Education of Aalto University, when Alex joined thefaculty of Aalto University School of Science as an Assistant Professor. My first impression was hisdedication and passion to create powerful learning experience to all his students. It was no surprisethat the student feedback was extremely positive since day one...."*
+*"...I learnt to know Alex in 2015 in my earlier role, VP Education of Aalto University, when Alex joined the
+faculty of Aalto University School of Science as an Assistant Professor. My first impression was his
+dedication and passion to create powerful learning experience to all his students. It was no surprise
+that the student feedback was extremely positive since day one...."*
 
 ---
 
