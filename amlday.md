@@ -38,6 +38,9 @@ Inspire your audience with a high-level view of the latest ML trends and emergin
 technologies. These dynamic keynotes are designed to spark curiosity and provoke 
 thoughtful discussion.
 
+🎥 **Watch a recent keynote by Alexander Jung on YouTube**:    
+[![Watch on YouTube](https://img.youtube.com/vi/eBuL-GZAdz8/hqdefault.jpg)](https://www.youtube.com/watch?v=eBuL-GZAdz8)  
+
 **Perfect for:**  
 - Industry conferences  
 - Executive strategy retreats  

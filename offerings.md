@@ -35,54 +35,10 @@ machine learning education.
       <p class="campaign-features">
         🚀 <strong>Pump-Up your AI literacy!</strong> 
       </p>
-      <a href="{{ site.baseurl }}/aml-day/" class="campaign-btn">Details</a>
+      <a href="{{ site.baseurl }}/personal-ml-coach/" class="campaign-btn">Details</a>
     </div>
   </div>
 </div>
-
-
-
----
-## 💼 **Tailored Solutions for Industry**
-
-I provide tailored ML training solutions for organizations such as:
-- [Aalto Executive Education](https://www.aaltoee.fi/en)
-- [Integrify Ry](https://www.integrify.io/)
-- [Swedish National Audit Office](https://www.riksrevisionen.se/en.html)
-- [Salo IoT Campus](https://www.saloiotcampus.fi/en)
-- [City of Helsinki](https://www.hel.fi/en)
-- [The Actuarial Society of Finland](https://www.actuary.fi/in-english)
-
-### Formats Offered:
-- **Engaging Plenary Talks:** Inspire your audience with key insights into machine learning trends.
-- **Intensive Workshops:** One-day sessions for focused skill-building.
-- **Diploma Programs:** Comprehensive, multi-module learning journeys.
-
-Each solution is designed to meet your unique needs, enabling participants to 
-apply the training directly in their professional roles.
----
-
-## 🎓 **Your Personal ML Coach**
-
-As a seasoned mentor with over [100 Master’s theses supervised](/assets/MasterThesisSupervisedNov24.pdf), 
-I offer personal coaching on:
-- Machine learning applications (e.g., **Federated Learning**, **Network Intrusion Detection**).
-- AI in industry contexts (e.g., **Art Fraud Detection**, **Predictive Maintenance**).
-- Advanced topics like **Explainable AI** and **Reinforcement Learning**.
-
-### Why Work With Me?
-- Proven track record of guiding students to academic and professional success.
-- Expertise in cutting-edge research areas.
-- Personalized advice tailored to your needs.
-
----
-
-## 🤝 **Let's Collaborate!**
-
-Interested in my teaching services, curriculum development expertise, or collaborating on an educational project? Let’s make it happen! 
-
-- **Email Me:** [alexjung235@gmail.com](mailto:alexjung235@gmail.com)
-- **Explore More:** Visit my [blog](https://machinelearningforall.github.io/) for additional insights.
 
 ---
 
