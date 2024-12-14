@@ -4,10 +4,10 @@ title: "Offerings"
 permalink: /offerings/
 ---
 
-With over a decade of experience in education, curriculum development, and mentoring, 
-my educational offerings combine innovative methods, hands-on exercises, and a strong 
-focus on learning outcomes. Explore how I can help you or your organization excel in 
-machine learning education.
+With over a decade of experience in **education, curriculum development, and mentoring**, 
+I offer personalized training solutions for individuals and organizations. 
+My educational approach blends **innovative methods**, **hands-on exercises**, 
+and a strong focus on **learning outcomes**. 
 
 
 <div class="campaign-container">
