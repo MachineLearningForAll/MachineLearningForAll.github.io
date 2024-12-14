@@ -4,8 +4,6 @@ title: "A ML Day: Tailored Machine Learning Solutions for Industry"
 permalink: /aml-day/
 ---
 
-# 🧠 **A ML Day: Tailored Machine Learning Solutions for Industry**
-
 Do you want to upskill your team in machine learning? **A ML Day** offers 
 customizable machine learning (ML) training programs designed to meet the 
 unique needs of your organization. From inspiring keynote talks to hands-on 
