@@ -21,7 +21,7 @@ machine learning education.
       <p class="campaign-features">
         🚀 <strong>Minimum Theory. Maximum Practicality.</strong> 
       </p>
-      <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+      <a href="{{ site.baseurl }}/aml-day/" class="campaign-btn">Details</a>
     </div>
   </div>
 
@@ -35,7 +35,7 @@ machine learning education.
       <p class="campaign-features">
         🚀 <strong>Pump-Up your AI literacy!</strong> 
       </p>
-      <a href="mailto:alexjung235@gmail.com" class="campaign-btn">Contact Me for Details</a>
+      <a href="{{ site.baseurl }}/aml-day/" class="campaign-btn">Details</a>
     </div>
   </div>
 </div>
