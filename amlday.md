@@ -91,6 +91,6 @@ Want to bring **A ML Day** to your organization? Let’s discuss how we can tail
 ## 📅 **Get in Touch**
 
 **Ready to upskill your team?**  
-📧 Contact me at [your email] or [your website's contact form link] to discuss how I can tailor a machine learning solution for your organization.  
+📧 Contact me by email or via social media to discuss your needs. 
 
 ---
