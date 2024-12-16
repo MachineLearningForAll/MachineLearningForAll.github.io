@@ -26,7 +26,7 @@ and a strong focus on **learning outcomes**.
 
   <div class="campaign-card">
     <div class="campaign-card-content">
-      <h2 class="campaign-title">Personal ML Trainer</h2>
+      <h2 class="campaign-title">ML Coaching</h2>
       <p class="campaign-details">
         <strong>Online or In-Person</strong> <br>
       </p>
