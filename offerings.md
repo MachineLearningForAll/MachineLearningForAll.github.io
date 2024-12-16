@@ -15,7 +15,6 @@ and a strong focus on **learning outcomes**.
     <div class="campaign-card-content">
       <h2 class="campaign-title">ML Day</h2>
       <p class="campaign-details">
-       <strong>09:00 - 17:00</strong> <br>
        <strong>Online, In-Person, or Hybrid</strong> <br>
       </p>
       <p class="campaign-features">
@@ -29,7 +28,6 @@ and a strong focus on **learning outcomes**.
     <div class="campaign-card-content">
       <h2 class="campaign-title">Personal ML Trainer</h2>
       <p class="campaign-details">
-        <strong>One Hour Session</strong> <br>
         <strong>Online or In-Person</strong> <br>
       </p>
       <p class="campaign-features">

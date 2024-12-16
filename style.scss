@@ -287,59 +287,72 @@ footer {
 .campaign-container {
   display: flex;              /* Flexbox layout */
   gap: 20px;                  /* Spacing between cards */
-  justify-content: center;   /* Center the cards */
-  flex-wrap: wrap;           /* Wrap on small screens */
+  justify-content: center;    /* Center the cards */
+  flex-wrap: wrap;            /* Wrap on small screens */
   padding: 20px;
 }
 
 /* Styling for each campaign card */
 .campaign-card {
-  background-color: #f9f9f9;  /* Light background color */
-  border: 3px solid #007bff;  /* Blue border with 3px width */
-  border-radius: 10px;        /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  width: 300px;               /* Fixed width for card */
-  padding: 20px;              /* Internal padding */
+  background-color: #f9f9f9;      /* Light background color */
+  border: 3px solid #007bff;      /* Blue border with 3px width */
+  border-radius: 12px;            /* Slightly more rounded corners */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Enhanced subtle shadow */
+  width: 320px;                   /* Slightly wider for better spacing */
+  padding: 24px;                  /* Increased internal padding */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.3s ease;  /* Smooth hover effect */
+  transition: all 0.3s ease;      /* Smooth hover effect */
 }
 
 .campaign-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-8px);    /* Lift effect on hover */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.15); /* Shadow intensifies */
+  border-color: #0056b3;          /* Darker blue on hover */
 }
 
 .campaign-card-content {
-  text-align: center;         /* Center text in the card */
+  text-align: center;             /* Center text in the card */
 }
 
 .campaign-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.75rem;             /* Slightly larger font size */
+  margin-bottom: 15px;            /* Increased spacing below title */
+  font-weight: bold;
   color: #333;
 }
 
 .campaign-details, 
 .campaign-features {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;            /* Improved spacing for readability */
   color: #555;
+  line-height: 1.6;               /* Slightly increased line height */
 }
 
 .campaign-btn {
   display: inline-block;
-  background-color: #007bff;  /* Blue background for button */
-  color: #fff;                /* White text */
+  background-color: #007bff;      /* Blue background for button */
+  color: #fff;                    /* White text */
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 24px;             /* Increased button padding */
+  border-radius: 6px;             /* Slightly more rounded */
   font-weight: bold;
+  font-size: 1rem;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
 }
 
 .campaign-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;      /* Darker blue on hover */
+  transform: scale(1.05);         /* Slight growth effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Added subtle hover effect for cards */
+.campaign-card:hover .campaign-title {
+  color: #007bff;                 /* Title color changes on hover */
 }
 
 
