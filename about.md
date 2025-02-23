@@ -10,7 +10,7 @@ Welcome! My name is **Alexander Jung**, and I am a tenured **Associate Professor
 
 ## My Background
 
-I earned my **Dipl.-Ing. (MSc)** and **Dr.techn. (PhD)** degrees in **electrical engineering and signal processing** 
+I earned my **Dipl.-Ing. (MSc)** and [**Dr.techn. (PhD)**](/assets/AlexHiFi.jpg) degrees in **electrical engineering and signal processing** 
 from **TU Vienna** in 2008 and 2012, respectively. Currently, I lead the **Machine Learning for Big Data** group at 
 the Department of Computer Science at Aalto University. My research focuses on:  
 - **Federated Learning**  
