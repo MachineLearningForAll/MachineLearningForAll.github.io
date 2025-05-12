@@ -5,6 +5,7 @@ date: 2025-05-12
 seo_title: "Geometric Median – A Robust Alternative to the Mean in Machine Learning"
 seo_description: "Understand the geometric median, a key concept in robust statistics and 
 machine learning, minimizing total distance to data points and outperforming the mean under outliers."
+markdown: kramdown
 ---
 
 The **geometric median** $\boldsymbol{z}$ of a set of vectors $\boldsymbol{x}^{(1)}, \ldots, \boldsymbol{x}^{(n)}$ minimizes the total Euclidean distance:

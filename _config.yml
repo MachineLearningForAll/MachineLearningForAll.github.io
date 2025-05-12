@@ -66,8 +66,8 @@ version: v1.2.0
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  math_engine: mathjax
   input: GFM
-  math_engine: katex
   # Enable syntax highlighting with Rouge
   syntax_highlighter: rouge
   syntax_highlighter_opts:
