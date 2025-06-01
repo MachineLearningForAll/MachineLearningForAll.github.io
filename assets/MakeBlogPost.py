@@ -115,6 +115,42 @@ def generate_texfile_with_image(term, description, image_path, output_dir="../")
 
         
 
+def convert_pandoc_figures_to_html(md_text):
+    """
+    Converts Pandoc-style image+caption blocks to HTML <figure> with <figcaption>,
+    preserving inline LaTeX and width attributes.
+    """
+    figure_pattern = re.compile(
+        r'!\[([^\]]+)\]\(([^)]+)\)\{([^}]*)\}',
+        flags=re.DOTALL
+    )
+
+    def repl(match):
+        caption = match.group(1).strip()
+        img_path = match.group(2).strip()
+        attr_string = match.group(3).strip()
+
+        # Extract width="..." if present
+        width_match = re.search(r'width\s*=\s*["\']?([\d.]+%)["\']?', attr_string)
+        width_attr = f' width="{width_match.group(1)}"' if width_match else ''
+
+        # Optionally extract id from #fig:xyz
+        id_match = re.search(r'#([a-zA-Z0-9\-_]+)', attr_string)
+        id_attr = f' id="{id_match.group(1)}"' if id_match else ''
+
+        alt_attr = caption.replace('"', '')
+
+        return (
+            f'<figure{id_attr}>\n'
+            f'  <img src="{img_path}" alt="{alt_attr}"{width_attr}>\n'
+            f'  <figcaption>\n'
+            f'    {caption}\n'
+            f'  </figcaption>\n'
+            f'</figure>'
+        )
+
+    return figure_pattern.sub(repl, md_text)
+
 
 def generate_blog_post(
     tex_file,
@@ -166,9 +202,13 @@ def generate_blog_post(
         print("❌ Pandoc conversion failed:", e)
         return
 
-    # Read and wrap with front matter
+
+    # Read and post-process the generated Markdown
     with open(temp_md_path, "r", encoding="utf-8") as f:
         markdown_body = f.read()
+
+    # Convert Pandoc-style figures to HTML
+    markdown_body = convert_pandoc_figures_to_html(markdown_body)
 
     front_matter = f"""---
 layout: post
@@ -358,7 +398,7 @@ try:
        tex_file="../"+blog_sample_term+".tex" ,
        bib_file="/Users/junga1/AaltoDictionaryofML.github.io/assets/Literature.bib",
        post_slug=slug,post_date=heute,
-       title="Aalto Dictionary of ML – "+blog_sample_term,
+       title="Aalto Dictionary of ML – "+slug,
        seo_title="Generalization – How Machine Learning Models Handle Unseen Data",
        seo_description="Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data.",
        output_dir=output_folder

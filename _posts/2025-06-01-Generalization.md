@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aalto Dictionary of ML – generalization"
+title: "Aalto Dictionary of ML – Generalization"
 date: 2025-06-01
 seo_title: "Generalization – How Machine Learning Models Handle Unseen Data"
 seo_description: "Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data."
@@ -34,27 +34,35 @@ risk $\widehat{L}\big(\hat{h}|\mathcal{D}^{(\rm train)}\big)$ is known
 as the generalization gap. Tools from probability theory, such as
 concentration inequalities and uniform convergence, allow us to bound
 this gap under certain conditions (Shalev-Shwartz and Ben-David 2014).\
-**Generalization without probability.**
-[probability]{acronym-label="probability" acronym-form="singular+short"}
-theory is one way to study how well a model generalizes beyond the
-training set, but it is not the only way. Another option is to use
-simple, deterministic changes to the data points in the training set.
-The basic idea is that a good model $\hat{h}$ should be robust: its
-prediction $\hat{h}({\bf x})$ should not change much if we slightly
-change the features ${\bf x}$ of a data point ${\bf z}$. For example, an
-object detector trained on smartphone photos should still detect the
-object if a few random pixels are masked (Su, Vargas, and Sakurai 2019).
-Similarly, it should deliver the same result if we rotate the object in
-the image (Mallat 2016).
+**Generalization without probability.** Probability theory is one way to
+study how well a model generalizes beyond the training set, but it is
+not the only way. Another option is to use simple, deterministic changes
+to the data points in the training set. The basic idea is that a good
+model $\hat{h}$ should be robust: its prediction $\hat{h}({\bf x})$
+should not change much if we slightly change the features ${\bf x}$ of a
+data point ${\bf z}$. For example, an object detector trained on
+smartphone photos should still detect the object if a few random pixels
+are masked (Su, Vargas, and Sakurai 2019). Similarly, it should deliver
+the same result if we rotate the object in the image (Mallat 2016).
 
-![Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
+<figure id="fig">
+  <img src="../images/generalization_tikz.png" alt="Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
 training set to learn a hypothesis $\hat{h}$ via empirical risk
 minimization (ERM). We can evaluate $\hat{h}$ outside
 $\mathcal{D}^{(\rm train)}$ either by an independent and identically
 distributed assumption (i.i.d. assumption) with some underlying
 probability distribution $p({\bf z})$ or by perturbing the data
-points.](../images/generalization_tikz.png){#fig:polynomial_fit_dict
-width="80%"}
+points." width="80%">
+  <figcaption>
+    Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
+training set to learn a hypothesis $\hat{h}$ via empirical risk
+minimization (ERM). We can evaluate $\hat{h}$ outside
+$\mathcal{D}^{(\rm train)}$ either by an independent and identically
+distributed assumption (i.i.d. assumption) with some underlying
+probability distribution $p({\bf z})$ or by perturbing the data
+points.
+  </figcaption>
+</figure>
 
 See also: machine learning (ML), artificial intelligence (AI), empirical
 risk minimization (ERM), model, hypothesis, loss, empirical risk, data
