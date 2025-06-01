@@ -222,8 +222,7 @@ markdown: kramdown
 """
 
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write(front_matter + markdown_body)
-
+        f.write(front_matter+markdown_body)
     os.remove(temp_md_path)
     os.remove(tex_file)
     print(f"✅ Blog post written to: {output_path}")
@@ -379,6 +378,30 @@ def clean_markdown_file(input_path: Path, output_path: Path):
         f.write(content)
 
     print(f"✅ Cleaned: {output_path.name}")
+    
+    
+    
+def append_footer_to_markdown(md_path):
+    footer = """
+---
+
+📚 This explanation is part of the [Aalto Dictionary of Machine Learning](https://AaltoDictionaryofML.github.io) — 
+an open-access multi-lingual glossary developed at Aalto University to support 
+accessible and precise communication in ML.
+"""
+
+    path = Path(md_path)
+    content = path.read_text(encoding="utf-8")
+
+    if "Aalto Dictionary of Machine Learning" not in content:
+        content = content.rstrip() + "\n\n" + footer.strip() + "\n"
+        path.write_text(content, encoding="utf-8")
+        print(f"✅ Footer added to: {md_path}")
+    else:
+        print(f"⚠️ Footer already present in: {md_path}")
+        
+        
+########## MAIN 
 
 
 blog_sample_term= "generalization"
@@ -411,4 +434,5 @@ except Exception as e:
 output_path = Path(output_folder+"/"+f"{heute}-{slug}.md")
 fix_latex_in_file(mdfilename)
 clean_markdown_file(mdfilename,output_path)
+append_footer_to_markdown(output_path)
 os.remove(mdfilename)

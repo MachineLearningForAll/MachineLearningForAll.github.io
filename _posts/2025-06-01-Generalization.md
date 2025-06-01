@@ -85,3 +85,9 @@ Press.
 Su, J., D. V. Vargas, and K. Sakurai. 2019. "One Pixel Attack for
 Fooling Deep Neural Networks." *IEEE Trans. Evol. Comput.* 23 (5):
 828--41. <https://doi.org/10.1109/TEVC.2019.2890858>.
+
+---
+
+📚 This explanation is part of the [Aalto Dictionary of Machine Learning](https://AaltoDictionaryofML.github.io) — 
+an open-access multi-lingual glossary developed at Aalto University to support 
+accessible and precise communication in ML.
