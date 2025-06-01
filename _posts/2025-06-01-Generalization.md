@@ -24,9 +24,15 @@ Here, we interpret data points as independent random variable (RV)s with
 an identical probability distribution $p({\bf z})$. This probability
 distribution, which is assumed fixed but unknown, allows us to define
 risk of a trained model $\hat{h}$ as the expected loss
+{% raw %}
 $$\risk{\hat{h}} := \expect_{{\bf z} \sim p({\bf z})} \big\{ L(\hat{h}, {\bf z}) \big\}.$$
+{% endraw %}
+{% raw %}
 The difference between risk $\risk{\hat{h}}$ and empirical risk
+{% endraw %}
+{% raw %}
 $\emprisk{\hat{h}}{\mathcal{D}^{(\rm train)}}$ is known as the
+{% endraw %}
 generalization gap. Tools from probability theory, such as concentration
 inequalities and uniform convergence, allow us to bound this gap under
 certain conditions (Shalev-Shwartz and Ben-David 2014).\
