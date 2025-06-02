@@ -17,15 +17,16 @@ $\hat{h} \in \mathcal{H}$ by minimizing the average loss over a training
 set of data points ${\bf z}^{(1)}, \ldots, {\bf z}^{(m)}$, denoted as
 $\mathcal{D}^{(\rm train)}$. However, success on the training set does
 not guarantee success on unseen data - this discrepancy is the challenge
-of generalization. To study generalization mathematically, we need to
-formalize the notion of "unseen" data. A widely used approach is to
-assume a probabilistic model for data generation, such as the
-i.i.d. assumption. Here, we interpret data points as independent RVs
-with an identical probability distribution $p({\bf z})$. This
-probability distribution, which is assumed fixed but unknown, allows us
-to define risk of a trained model $\hat{h}$ as the expected loss
+of generalization.\
+To study generalization mathematically, we need to formalize the notion
+of "unseen" data. A widely used approach is to assume a probabilistic
+model for data generation, such as the i.i.d. assumption. Here, we
+interpret data points as independent RVs with an identical probability
+distribution $p({\bf z})$. This probability distribution, which is
+assumed fixed but unknown, allows us to define risk of a trained model
+$\hat{h}$ as the expected loss
 {% raw %}
-$$\bar{L} \big( \hat{h} \big) := \mathbb{E} _{{\bf z} \sim p({\bf z})} \big\{ L(\hat{h}, {\bf z}) \big\}.$$
+$$\bar{L} \big( \hat{h} \big) =\mathbb{E} _{{\bf z} \sim p({\bf z})} \big\{ L(\hat{h}, {\bf z}) \big\}.$$
 {% endraw %}
 The difference between risk $\bar{L} \big( \hat{h} \big)$ and empirical
 risk $\widehat{L}\big(\hat{h}|\mathcal{D}^{(\rm train)}\big)$ is known
@@ -38,10 +39,11 @@ not the only way. Another option is to use simple, deterministic changes
 to the data points in the training set. The basic idea is that a good
 model $\hat{h}$ should be robust: its prediction $\hat{h}({\bf x})$
 should not change much if we slightly change the features ${\bf x}$ of a
-data point ${\bf z}$. For example, an object detector trained on
-smartphone photos should still detect the object if a few random pixels
-are masked (Su, Vargas, and Sakurai 2019). Similarly, it should deliver
-the same result if we rotate the object in the image (Mallat 2016).
+data point ${\bf z}$.\
+For example, an object detector trained on smartphone photos should
+still detect the object if a few random pixels are masked (Su, Vargas,
+and Sakurai 2019). Similarly, it should deliver the same result if we
+rotate the object in the image (Mallat 2016).
 
 <figure id="fig">
   <img src="../images/generalization_tikz.png" alt="Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
@@ -61,8 +63,8 @@ points.
 </figure>
 
 See also: ML, AI, ERM, model, hypothesis, loss, empirical risk, data
-point, training set, probabilistic model, i.i.d. assumption, data, iid,
-realization, probability distribution, risk, RV, prediction.
+point, training set, probabilistic model, i.i.d. assumption, data,
+i.i.d., realization, probability distribution, risk, RV, prediction.
 
 **References**
 
