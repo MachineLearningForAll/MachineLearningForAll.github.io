@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aalto Dictionary of ML – Generalization"
-date: 2025-06-01
+date: 2025-06-02
 seo_title: "Generalization – How Machine Learning Models Handle Unseen Data"
 seo_description: "Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data."
 markdown: kramdown
@@ -11,21 +11,19 @@ markdown: kramdown
 
 Generalization refers to the ability of a model trained on a training
 set to make accurate predictions on new, unseen data points. This is a
-central goal of machine learning (ML) and artificial intelligence (AI):
-to learn patterns that extend beyond the training set. Most machine
-learning (ML) systems use empirical risk minimization (ERM) to learn a
-hypothesis $\hat{h} \in \mathcal{H}$ by minimizing the average loss over
-a training set of data points ${\bf z}^{(1)}, \ldots, {\bf z}^{(m)}$,
-denoted as $\mathcal{D}^{(\rm train)}$. However, success on the training
-set does not guarantee success on unseen data - this discrepancy is the
-challenge of generalization. To study generalization mathematically, we
-need to formalize the notion of "unseen" data. A widely used approach is
-to assume a probabilistic model for data generation, such as the
-independent and identically distributed assumption (i.i.d. assumption).
-Here, we interpret data points as independent random variable (RV)s with
-an identical probability distribution $p({\bf z})$. This probability
-distribution, which is assumed fixed but unknown, allows us to define
-risk of a trained model $\hat{h}$ as the expected loss
+central goal of ML and AI: to learn patterns that extend beyond the
+training set. Most ML systems use ERM to learn a hypothesis
+$\hat{h} \in \mathcal{H}$ by minimizing the average loss over a training
+set of data points ${\bf z}^{(1)}, \ldots, {\bf z}^{(m)}$, denoted as
+$\mathcal{D}^{(\rm train)}$. However, success on the training set does
+not guarantee success on unseen data - this discrepancy is the challenge
+of generalization. To study generalization mathematically, we need to
+formalize the notion of "unseen" data. A widely used approach is to
+assume a probabilistic model for data generation, such as the
+i.i.d. assumption. Here, we interpret data points as independent RVs
+with an identical probability distribution $p({\bf z})$. This
+probability distribution, which is assumed fixed but unknown, allows us
+to define risk of a trained model $\hat{h}$ as the expected loss
 {% raw %}
 $$\bar{L} \big( \hat{h} \big) := \mathbb{E} _{{\bf z} \sim p({\bf z})} \big\{ L(\hat{h}, {\bf z}) \big\}.$$
 {% endraw %}
@@ -47,29 +45,24 @@ the same result if we rotate the object in the image (Mallat 2016).
 
 <figure id="fig">
   <img src="../images/generalization_tikz.png" alt="Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
-training set to learn a hypothesis $\hat{h}$ via empirical risk
-minimization (ERM). We can evaluate $\hat{h}$ outside
-$\mathcal{D}^{(\rm train)}$ either by an independent and identically
-distributed assumption (i.i.d. assumption) with some underlying
-probability distribution $p({\bf z})$ or by perturbing the data
+training set to learn a hypothesis $\hat{h}$ via ERM. We can evaluate
+$\hat{h}$ outside $\mathcal{D}^{(\rm train)}$ either by an
+i.i.d. assumption with some underlying probability distribution
+$p({\bf z})$ or by perturbing the data
 points." width="80%">
   <figcaption>
     Two data points ${\bf z}^{(1)},{\bf z}^{(2)}$ that are used as a
-training set to learn a hypothesis $\hat{h}$ via empirical risk
-minimization (ERM). We can evaluate $\hat{h}$ outside
-$\mathcal{D}^{(\rm train)}$ either by an independent and identically
-distributed assumption (i.i.d. assumption) with some underlying
-probability distribution $p({\bf z})$ or by perturbing the data
+training set to learn a hypothesis $\hat{h}$ via ERM. We can evaluate
+$\hat{h}$ outside $\mathcal{D}^{(\rm train)}$ either by an
+i.i.d. assumption with some underlying probability distribution
+$p({\bf z})$ or by perturbing the data
 points.
   </figcaption>
 </figure>
 
-See also: machine learning (ML), artificial intelligence (AI), empirical
-risk minimization (ERM), model, hypothesis, loss, empirical risk, data
-point, training set, probabilistic model, independent and identically
-distributed assumption (i.i.d. assumption), data, independent and
-identically distributed (i.i.d.), realization, probability distribution,
-risk, random variable (RV), prediction.
+See also: ML, AI, ERM, model, hypothesis, loss, empirical risk, data
+point, training set, probabilistic model, i.i.d. assumption, data, iid,
+realization, probability distribution, risk, RV, prediction.
 
 **References**
 
