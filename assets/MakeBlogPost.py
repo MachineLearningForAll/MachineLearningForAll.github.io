@@ -404,8 +404,8 @@ accessible and precise communication in ML.
 ########## MAIN 
 
 
-blog_sample_term= "tbd"
-slug="tbd"
+blog_sample_term= "sample"
+slug="sample"
 output_folder = "../_posts"
 heute = date.today().isoformat()
 entry_text = glossary[blog_sample_term]
