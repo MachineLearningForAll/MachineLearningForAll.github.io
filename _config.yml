@@ -97,3 +97,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+  title: "Aalto Dictionary of Machine Learning"
+  description: "Multilingual glossary of core ML concepts"
