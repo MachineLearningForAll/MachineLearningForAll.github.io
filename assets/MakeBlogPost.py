@@ -8,8 +8,10 @@ import os
 from pathlib import Path
 from datetime import date
 import subprocess
+from typing import Union
 from pdf2image import convert_from_path
 
+PathLike = Union[str, Path]
 
 # --- LaTeX + Markdown safety wrappers (add near imports) ---
 RAW_OPEN  = "{% raw %}"
@@ -471,32 +473,80 @@ accessible and precise communication in ML.
         print(f"⚠️ Footer already present in: {md_path}")
         
         
-def make_substack_ready(md_in_path: str | Path,
-                        md_out_path: str | Path,
-                        image_base_url: str = BASE_IMAGE_URL) -> None:
-    text = Path(md_in_path).read_text(encoding="utf-8")
+def remove_math_and_raw(text: str) -> str:
+    """
+    Remove LaTeX math and Jekyll raw tags from Markdown text.
+    Keeps all other Markdown content intact.
+    """
 
-    # 1) Remove Jekyll Liquid guards and tags
+    # --- 1) Remove Jekyll raw / Liquid tags ---
     text = re.sub(r"{%\s*raw\s*%}", "", text)
     text = re.sub(r"{%\s*endraw\s*%}", "", text)
     text = re.sub(r"{%.*?%}", "", text, flags=re.DOTALL)
     text = re.sub(r"{{.*?}}", "", text, flags=re.DOTALL)
 
-    # 2) Optional: simplify glossary macros \gls{term} -> term
-    text = re.sub(r"\\gls\{([^}]+)\}", r"\1", text)
+    # --- 2) Remove LaTeX display math ---
+    text = re.sub(r"\$\$(.*?)\$\$", "", text, flags=re.DOTALL)   # $$...$$
+    text = re.sub(r"\\\[(.*?)\\\]", "", text, flags=re.DOTALL)   # \[...\]
 
-    # 3) Un-escape LaTeX math if present
-    text = text.replace(r"\$", "$")
-    text = re.sub(r"\\([{}])", r"\1", text)  # remove backslashes before { }
+    # --- 3) Remove math environments ---
+    envs = r"(equation\*?|align\*?|gather\*?|multline\*?|eqnarray\*?)"
+    text = re.sub(
+        rf"\\begin\{{{envs}\}}.*?\\end\{{\1\}}",
+        "",
+        text,
+        flags=re.DOTALL
+    )
 
-    # 4) Make image paths absolute for Substack
-    #    e.g., ../images/foo.png  -> https://.../images/foo.png
-    text = text.replace("../images/", image_base_url)
+    # --- 4) Remove inline math ---
+    text = re.sub(r"\\\((.*?)\\\)", "", text, flags=re.DOTALL)   # \( ... \)
+    text = re.sub(r"(?<!\$)\$(?!\$)([^$]*?)(?<!\$)\$(?!\$)", "", text, flags=re.DOTALL)
 
-    # 5) Tidy spacing
-    text = re.sub(r"\n{3,}", "\n\n", text)
+    # --- 5) Remove \ensuremath{...} ---
+    text = re.sub(r"\\ensuremath\{.*?\}", "", text, flags=re.DOTALL)
 
-    Path(md_out_path).write_text(text, encoding="utf-8")
+    # --- 6) Tidy up spacing ---
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+
+    return text
+
+
+def make_substack_ready(md_in_path: PathLike, md_out_path: PathLike) -> None:
+    """
+    Make a Markdown post 'Substack-ready' by removing LaTeX math and raw tags.
+    """
+    raw = Path(md_in_path).read_text(encoding="utf-8")
+    cleaned = remove_math_and_raw(raw)
+    Path(md_out_path).write_text(cleaned, encoding="utf-8")
+
+        
+        
+# def make_substack_ready(md_in_path: str | Path,
+#                         md_out_path: str | Path,
+#                         image_base_url: str = BASE_IMAGE_URL) -> None:
+#     text = Path(md_in_path).read_text(encoding="utf-8")
+
+#     # 1) Remove Jekyll Liquid guards and tags
+#     text = re.sub(r"{%\s*raw\s*%}", "", text)
+#     text = re.sub(r"{%\s*endraw\s*%}", "", text)
+#     text = re.sub(r"{%.*?%}", "", text, flags=re.DOTALL)
+#     text = re.sub(r"{{.*?}}", "", text, flags=re.DOTALL)
+
+#     # 2) Optional: simplify glossary macros \gls{term} -> term
+#     text = re.sub(r"\\gls\{([^}]+)\}", r"\1", text)
+
+#     # 3) Un-escape LaTeX math if present
+#     text = text.replace(r"\$", "$")
+#     text = re.sub(r"\\([{}])", r"\1", text)  # remove backslashes before { }
+
+#     # 4) Make image paths absolute for Substack
+#     #    e.g., ../images/foo.png  -> https://.../images/foo.png
+#     text = text.replace("../images/", image_base_url)
+
+#     # 5) Tidy spacing
+#     text = re.sub(r"\n{3,}", "\n\n", text)
+
+#     Path(md_out_path).write_text(text, encoding="utf-8")
         
 ########## MAIN 
 
@@ -529,7 +579,7 @@ except Exception as e:
 
 # Paths for canonical Jekyll MD and Substack-ready MD
 output_path = Path(output_folder) / f"{heute}-{slug}.md"
-substack_path = Path(output_folder) / f"{heute}-{slug}_substack.md"
+substack_path =  f"{heute}-{slug}_substack.md"
 
 # Keep your original cleaning for Jekyll
 fix_latex_in_file(mdfilename)                 # protects LaTeX from Jekyll/Liquid

@@ -8,8 +8,8 @@ markdown: kramdown
 ---
 
 In the context of machine learning (ML), a sample is a finite sequence
-(of length $m$) of data points, ${\bf z}^{(1)}, \ldots, {\bf z}^{(m)}$.
-The number $m$ is called the sample size. Empirical risk minimization
+(of length ) of data points, .
+The number  is called the sample size. Empirical risk minimization
 (ERM)-based methods use a sample to train a model (or learn a
 hypothesis) by minimizing the average loss (the empirical risk) over
 that sample. Since a sample is defined as a sequence, the same data
@@ -17,16 +17,15 @@ point may appear more than once. By contrast, some authors in statistics
 define a sample as a set of data points, in which case duplicates are
 not allowed (Everitt and Skrondal 2010; Upton and Cook 2014). These two
 views can be reconciled by regarding a sample as a sequence of
-feature--label pairs, $\left( {\bf x}^{(1)},y^{(1)} \right), \ldots,
- \left( {\bf x}^{(m)},y^{(m)} \right)$. The $r$-th pair consists of the
-features ${\bf x}^{(r)}$ and the label $y^{(r)}$ of an unique underlying
-data point $\widetilde^{(r)}$. While the underlying data points
-$\widetilde^{(1)},\ldots,\widetilde^{(m)}$ are unique,
+feature--label pairs, . The -th pair consists of the
+features  and the label  of an unique underlying
+data point . While the underlying data points
+ are unique,
 some of them can have identical features and labels.
 
 <figure id="fig:sample-sequence_dict">
 <div class="center">
-<img src="https://AaltoDictionaryofML.github.io/images/sample_tikz.png" style="width:80.0%" />
+<img src="../images/sample_tikz.png" style="width:80.0%" />
 </div>
 <figcaption>A sample viewed as a finite sequence. Each element of this
 sample consists of the feature vector and the label of a data point from
@@ -37,10 +36,10 @@ data-label="fig:sample-sequence_dict"></span></figcaption>
 
 For the analysis of machine learning (ML) methods, it is common to
 interpret (the generation of) a sample as the realization of a
-stochastic process indexed by ${1,\ldots,m}$. A widely used assumption
+stochastic process indexed by . A widely used assumption
 is the independent and identically distributed assumption
 (i.i.d. assumption), where sample elements
-$\left( {\bf x}^{(r)},y^{(r)} \right)$, for $r=1,\ldots,m$, are
+, for , are
 independent and identically distributed (i.i.d.) random variables (RVs)
 with a common probability distribution.\
 See also: dataset, sequence, independent and identically distributed
