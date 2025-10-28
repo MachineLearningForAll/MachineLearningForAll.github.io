@@ -55,6 +55,7 @@ def compile_tikz_to_png(tikz_code, filename="tikz_figure", output_dir="../images
     latex_code = f"""
 \\documentclass[tikz]{{standalone}}
 \\usepackage{{tikz}}
+\\usetikzlibrary{{fit}}
 \\usepackage[dvipsnames]{{xcolor}}
 \\usetikzlibrary{{positioning, arrows.meta, calc, decorations.pathreplacing}}
 \\definecolor{{lightblue}}{{RGB}}{{173, 216, 230}}
@@ -224,7 +225,7 @@ markdown: kramdown
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(front_matter+markdown_body)
     os.remove(temp_md_path)
-    os.remove(tex_file)
+  #  os.remove(tex_file)
     print(f"✅ Blog post written to: {output_path}")
     return output_path
 
@@ -405,7 +406,7 @@ accessible and precise communication in ML.
 
 
 blog_sample_term= "sample"
-slug="sample"
+slug="Sample"
 output_folder = "../_posts"
 heute = date.today().isoformat()
 entry_text = glossary[blog_sample_term]
