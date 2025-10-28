@@ -33,6 +33,8 @@ INLINE_MATH_RE = re.compile(
     flags=re.DOTALL
 )
 
+BASE_IMAGE_URL = "https://AaltoDictionaryofML.github.io/images/"
+
 def _wrap_math_segment(segment: str) -> str:
     """
     Wrap only math tokens ($...$ or $$...$$) that contain {{ or }} using {% raw %}...{% endraw %}.
@@ -469,6 +471,33 @@ accessible and precise communication in ML.
         print(f"⚠️ Footer already present in: {md_path}")
         
         
+def make_substack_ready(md_in_path: str | Path,
+                        md_out_path: str | Path,
+                        image_base_url: str = BASE_IMAGE_URL) -> None:
+    text = Path(md_in_path).read_text(encoding="utf-8")
+
+    # 1) Remove Jekyll Liquid guards and tags
+    text = re.sub(r"{%\s*raw\s*%}", "", text)
+    text = re.sub(r"{%\s*endraw\s*%}", "", text)
+    text = re.sub(r"{%.*?%}", "", text, flags=re.DOTALL)
+    text = re.sub(r"{{.*?}}", "", text, flags=re.DOTALL)
+
+    # 2) Optional: simplify glossary macros \gls{term} -> term
+    text = re.sub(r"\\gls\{([^}]+)\}", r"\1", text)
+
+    # 3) Un-escape LaTeX math if present
+    text = text.replace(r"\$", "$")
+    text = re.sub(r"\\([{}])", r"\1", text)  # remove backslashes before { }
+
+    # 4) Make image paths absolute for Substack
+    #    e.g., ../images/foo.png  -> https://.../images/foo.png
+    text = text.replace("../images/", image_base_url)
+
+    # 5) Tidy spacing
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    Path(md_out_path).write_text(text, encoding="utf-8")
+        
 ########## MAIN 
 
 
@@ -498,9 +527,24 @@ except Exception as e:
     print("Error:", e)
     
 
-    
-output_path = Path(output_folder+"/"+f"{heute}-{slug}.md")
-fix_latex_in_file(mdfilename)
-clean_markdown_file(mdfilename,output_path)
+# Paths for canonical Jekyll MD and Substack-ready MD
+output_path = Path(output_folder) / f"{heute}-{slug}.md"
+substack_path = Path(output_folder) / f"{heute}-{slug}_substack.md"
+
+# Keep your original cleaning for Jekyll
+fix_latex_in_file(mdfilename)                 # protects LaTeX from Jekyll/Liquid
+clean_markdown_file(mdfilename, output_path)  # your existing Jekyll MD cleaner
 append_footer_to_markdown(output_path)
 os.remove(mdfilename)
+
+# Produce Substack-ready twin
+make_substack_ready(output_path, substack_path)
+
+print(f"✅ Jekyll post:     {output_path}")
+print(f"✅ Substack-ready:  {substack_path}")
+    
+# output_path = Path(output_folder+"/"+f"{heute}-{slug}.md")
+# fix_latex_in_file(mdfilename)
+# clean_markdown_file(mdfilename,output_path)
+# append_footer_to_markdown(output_path)
+# os.remove(mdfilename)
