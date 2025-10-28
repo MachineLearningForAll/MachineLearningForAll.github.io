@@ -10,6 +10,66 @@ from datetime import date
 import subprocess
 from pdf2image import convert_from_path
 
+
+# --- LaTeX + Markdown safety wrappers (add near imports) ---
+RAW_OPEN  = "{% raw %}"
+RAW_CLOSE = "{% endraw %}"
+
+# Match fenced code blocks ```...``` (any language) and existing raw blocks.
+FENCE_OR_RAW_RE = re.compile(
+    r"(```.*?```|{% raw %}.*?{% endraw %})",
+    flags=re.DOTALL
+)
+
+# Display math: $$...$$ (can be multiline)
+DISPLAY_MATH_RE = re.compile(
+    r"\$\$(.+?)\$\$",
+    flags=re.DOTALL
+)
+
+# Inline math: $...$ (but not $$...$$)
+INLINE_MATH_RE = re.compile(
+    r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)",
+    flags=re.DOTALL
+)
+
+def _wrap_math_segment(segment: str) -> str:
+    """
+    Wrap only math tokens ($...$ or $$...$$) that contain {{ or }} using {% raw %}...{% endraw %}.
+    No extra whitespace/newlines are inserted; we wrap ONLY the math token itself.
+    """
+
+    def wrap_if_liquid(match: re.Match) -> str:
+        full  = match.group(0)  # the full $...$ or $$...$$ token
+        inner = match.group(1)  # the inside of math delimiters
+        if "{{" in inner or "}}" in inner:
+            return f"{RAW_OPEN}{full}{RAW_CLOSE}"
+        return full
+
+    # Order matters: handle display math first (can span multiple lines), then inline math
+    segment = DISPLAY_MATH_RE.sub(wrap_if_liquid, segment)
+    segment = INLINE_MATH_RE.sub(wrap_if_liquid, segment)
+    return segment
+
+def fix_latex_in_text(md_text: str) -> str:
+    """
+    Process a Markdown string so that ONLY LaTeX math tokens containing '{{' or '}}'
+    are wrapped with {% raw %}...{% endraw %}.
+    - Idempotent for code fences and existing raw blocks.
+    - No extra line breaks introduced.
+    """
+    parts = FENCE_OR_RAW_RE.split(md_text)  # keep delimiters as separate parts
+    fixed_parts = []
+    for part in parts:
+        if FENCE_OR_RAW_RE.fullmatch(part or ""):
+            # Leave code fences & existing raw blocks untouched
+            fixed_parts.append(part)
+        else:
+            fixed_parts.append(_wrap_math_segment(part))
+    return "".join(fixed_parts)
+
+
+
 def extract_tikz_from_entry(entry_text):
     match = re.search(r'\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}', entry_text, re.DOTALL)
     if match:
@@ -282,35 +342,42 @@ for key, body in entries:
     print(desc_text+"\n")
     glossary[key.strip()] = desc_text
     
-def fix_latex_in_file(md_path):
-    with open(md_path, "r", encoding="utf-8") as f:
-        lines = f.readlines()
+def fix_latex_in_file(md_path: str | Path):
+    p = Path(md_path)
+    content = p.read_text(encoding="utf-8")
+    fixed = fix_latex_in_text(content)
+    p.write_text(fixed, encoding="utf-8")
+    print(f"✔ Fixed LaTeX math in: {md_path}")
+    
+# def fix_latex_in_file(md_path):
+#     with open(md_path, "r", encoding="utf-8") as f:
+#         lines = f.readlines()
 
-    new_lines = []
-    in_raw_block = False
+#     new_lines = []
+#     in_raw_block = False
 
-    for line in lines:
-        modified = line
-        if not in_raw_block:
-            # Detect LaTeX expressions with {{ or }}
-            if re.search(r"\$\$?.*{{.*}}.*\$\$?", line):
-                new_lines.append("{% raw %}\n")
-                new_lines.append(modified)
-                new_lines.append("{% endraw %}\n")
-                in_raw_block = False  # Stay out; single-line wrap
-            elif "{{" in line or "}}" in line:
-                new_lines.append("{% raw %}\n")
-                new_lines.append(modified)
-                new_lines.append("{% endraw %}\n")
-            else:
-                new_lines.append(modified)
-        else:
-            new_lines.append(modified)
+#     for line in lines:
+#         modified = line
+#         if not in_raw_block:
+#             # Detect LaTeX expressions with {{ or }}
+#             if re.search(r"\$\$?.*{{.*}}.*\$\$?", line):
+#                 new_lines.append("{% raw %}\n")
+#                 new_lines.append(modified)
+#                 new_lines.append("{% endraw %}\n")
+#                 in_raw_block = False  # Stay out; single-line wrap
+#             elif "{{" in line or "}}" in line:
+#                 new_lines.append("{% raw %}\n")
+#                 new_lines.append(modified)
+#                 new_lines.append("{% endraw %}\n")
+#             else:
+#                 new_lines.append(modified)
+#         else:
+#             new_lines.append(modified)
 
-    with open(md_path, "w", encoding="utf-8") as f:
-        f.writelines(new_lines)
+#     with open(md_path, "w", encoding="utf-8") as f:
+#         f.writelines(new_lines)
 
-    print(f"✔ Fixed: {md_path}")
+#     print(f"✔ Fixed: {md_path}")
     
 def remove_reference_blocks_and_headers(content: str) -> str:
     lines = content.splitlines()
