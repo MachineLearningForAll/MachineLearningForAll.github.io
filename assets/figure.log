@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.13)  28 OCT 2025 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.13)  7 NOV 2025 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,13 +460,53 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 23.
+(Font)              <7> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <5> on input line 13.
+
+! Undefined control sequence.
+<recently read> \pdf 
+                     
+l.14 ...Latex}] (0,0) -- (0,3.1) node[left] {$\pdf
+                                                  {x}{x'}$};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prob 
+                      
+l.23  \node[above] at (1*\a,3) {$\prob
+                                      {x \geq a} \leq \frac{\expect \{ x\}}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \expect 
+                   \{ x\}
+l.23 ...ob{x \geq a} \leq \frac{\expect \{ x\}}{a}
+                                                  $};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \indicatorfunc 
+                               
+l.28 ...s=0.9, above, yshift=2pt] {$\indicatorfunc
+                                                  {\{x \ge a\}}$};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [1
 
@@ -478,24 +518,22 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13547 strings out of 474116
- 291056 string characters out of 5743681
- 1936187 words of memory out of 5000000
- 35678 multiletter control sequences out of 15000+600000
- 561131 words of font info for 46 fonts, out of 8000000 for 9000
+ 14257 strings out of 474116
+ 307003 string characters out of 5743681
+ 1946187 words of memory out of 5000000
+ 36398 multiletter control sequences out of 15000+600000
+ 558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,7n,121p,408b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on figure.pdf (1 page, 64863 bytes).
+ 117i,7n,121p,408b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on figure.pdf (1 page, 56531 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
