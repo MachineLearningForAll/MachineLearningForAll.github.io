@@ -18,30 +18,16 @@ $x$ exceeds a given positive threshold $a>0$. In particular,
 noting that $\mathbb{P}\left(x \geq a\right)$ is the expectation
 $\mathbb{E} {g(x)}$ with the function
 {% raw %}$$g: \mathbb{R} \rightarrow \mathbb{R}: x' \mapsto \mathbb{I}_{\{x \geq a\}}(x').$${% endraw %}
-As illustrated in Figure
-[1](#fig:markovsinequality_dict){reference-type="ref"
-reference="fig:markovsinequality_dict"}, for any positive $a>0$,
-$$g(x') \leq x'/a \mbox{ for all } x' \in \mathbb{R}.$$ This implies
-[\[eq:markovsinequality_dict\]](#eq:markovsinequality_dict){reference-type="eqref"
-reference="eq:markovsinequality_dict"} via the monotonicity of the
-Lebesgue integral (Folland 1999, 50).
+
+As illustrated in the Figure below, for any positive $a>0$,
+$$g(x') \leq x'/a \mbox{ for all } x' \in \mathbb{R}.$$ This obvious inequality 
+implies Markov's inequality via the monotonicity of the Lebesgue integral (Folland 1999, 50).
 
 <figure id="fig">
-  <img src="../images/markovsinequality_tikz.png" alt="The expectation $\mathbb{E} \{x\}$ and the probability
-$\mathbb{P}\left(x \geq a\right)$ of a non-negative random variable (RV)
-with probability distribution $P^{(x)}$ can be obtained via Lebesgue
-integral of $f(x') = x'/a$ and {% raw %}$g(x') = \mathbb{I}_{\{x \geq a\}}(x')${% endraw %},
-respectively." width="80%">
-  <figcaption>
-    The expectation $\mathbb{E} \{x\}$ and the probability
-$\mathbb{P}\left(x \geq a\right)$ of a non-negative random variable (RV)
-with probability distribution $P^{(x)}$ can be obtained via Lebesgue
-integral of $f(x') = x'/a$ and {% raw %}$g(x') = \mathbb{I}_{\{x \geq a\}}(x')${% endraw %},
-respectively.
-  </figcaption>
+  <img src="../images/markovsinequality_tikz.png" alt="Illustration of Markov's inequality" width="80%">
 </figure>
 
-\
+
 See also: expectation, probability, concentration inequality.
 
 Folland, Gerald B. 1999. *Real Analysis: Modern Techniques and Their
