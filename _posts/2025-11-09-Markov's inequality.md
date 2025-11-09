@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aalto Dictionary of ML – Markov's inequality"
-date: 2025-11-07
+date: 2025-11-09
 seo_title: "Generalization – How Machine Learning Models Handle Unseen Data"
 seo_description: "Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data."
 markdown: kramdown
@@ -10,33 +10,33 @@ markdown: kramdown
 
 
 Consider a real-valued non-negative random variable (RV) $x$ for which
-the expectation $\expect\{ x\}$ exists. Markov's inequality provides an
-upper bound on the probability $\prob{x\geq a}$ that $x$ exceeds a given
-positive threshold $a>0$. In particular,
-{% raw %}$$\prob{x \geq a} \leq \frac{\expect \{ x\}}{a} \qquad \mbox{ holds for any } a > 0.
+the expectation $\mathbb{E} \{ x\}$ exists. Markov's inequality provides
+an upper bound on the probability $\mathbb{P}\left(x\geq a\right)$ that
+$x$ exceeds a given positive threshold $a>0$. In particular,
+{% raw %}$$\mathbb{P}\left(x \geq a\right) \leq \frac{\mathbb{E} \{ x\}}{a} \qquad \mbox{ holds for any } a > 0.
  \label{eq:markovsinequality_dict}$${% endraw %} This inequality can be verified by
-noting that $\prob{x \geq a}$ is the expectation $\expect{g(x)}$ with
-the function
-{% raw %}$$g: \mathbb{R} \rightarrow \mathbb{R}: x' \mapsto \indicatorfunc{\{x \geq a\}}(x').$${% endraw %}
+noting that $\mathbb{P}\left(x \geq a\right)$ is the expectation
+$\mathbb{E} {g(x)}$ with the function
+{% raw %}$$g: \mathbb{R} \rightarrow \mathbb{R}: x' \mapsto \mathbb{I}_{\{x \geq a\}}(x').$${% endraw %}
 As illustrated in Figure
 [1](#fig:markovsinequality_dict){reference-type="ref"
 reference="fig:markovsinequality_dict"}, for any positive $a>0$,
 $$g(x') \leq x'/a \mbox{ for all } x' \in \mathbb{R}.$$ This implies
 [\[eq:markovsinequality_dict\]](#eq:markovsinequality_dict){reference-type="eqref"
-reference="eq:markovsinequality_dict"} via the monoticity of the
+reference="eq:markovsinequality_dict"} via the monotonicity of the
 Lebesgue integral (Folland 1999, 50).
 
 <figure id="fig">
-  <img src="../images/markovsinequality_tikz.png" alt="The expectation $\expect\{x\}$ and the probability $\prob{x \geq a}$
-of a non-negative random variable (RV) with probability distribution
-$\probdist^{(x)}$ can be obtained via Lebesgue integral of $f(x') = x'$
-and {% raw %}$g(x') = \indicatorfunc{\{x \geq a\}}(x')${% endraw %},
+  <img src="../images/markovsinequality_tikz.png" alt="The expectation $\mathbb{E} \{x\}$ and the probability
+$\mathbb{P}\left(x \geq a\right)$ of a non-negative random variable (RV)
+with probability distribution $P^{(x)}$ can be obtained via Lebesgue
+integral of $f(x') = x'/a$ and {% raw %}$g(x') = \mathbb{I}_{\{x \geq a\}}(x')${% endraw %},
 respectively." width="80%">
   <figcaption>
-    The expectation $\expect\{x\}$ and the probability $\prob{x \geq a}$
-of a non-negative random variable (RV) with probability distribution
-$\probdist^{(x)}$ can be obtained via Lebesgue integral of $f(x') = x'$
-and {% raw %}$g(x') = \indicatorfunc{\{x \geq a\}}(x')${% endraw %},
+    The expectation $\mathbb{E} \{x\}$ and the probability
+$\mathbb{P}\left(x \geq a\right)$ of a non-negative random variable (RV)
+with probability distribution $P^{(x)}$ can be obtained via Lebesgue
+integral of $f(x') = x'/a$ and {% raw %}$g(x') = \mathbb{I}_{\{x \geq a\}}(x')${% endraw %},
 respectively.
   </figcaption>
 </figure>
