@@ -75,6 +75,12 @@ def fix_latex_in_text(md_text: str) -> str:
 
 
 def extract_tikz_from_entry(entry_text):
+    """
+    Try to extract a TikZ picture from the entry text.
+
+    Returns:
+        str | None: TikZ code if found, otherwise None.
+    """
     match = re.search(r'\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}', entry_text, re.DOTALL)
     if match:
         return match.group(0)
@@ -84,7 +90,9 @@ def extract_tikz_from_entry(entry_text):
         if match:
             tikz_inner = match.group(0)[13:-13].strip()  # remove {tikzpicture} ... {tikzpicture}
             return f"\\begin{{tikzpicture}}\n{tikz_inner}\n\\end{{tikzpicture}}"
-    raise ValueError("No tikzpicture found")
+    # No TikZ found
+    return None
+
     
 def replace_tikz_with_includegraphics(description, image_path):
     """
@@ -146,19 +154,25 @@ def compile_tikz_to_png(tikz_code, filename="tikz_figure", output_dir="../images
     print(f"✅ Saved PNG to: {output_png_path}")
     
     
-def generate_texfile_with_image(term, description, image_path, output_dir="../"):
+def generate_texfile_with_image(term, description, image_path=None, output_dir="../"):
     """
-    Generate a LaTeX file containing the full glossary description with the TikZ replaced by image.
+    Generate a LaTeX file containing the full glossary description.
+
+    If image_path is not None, replace the TikZ block by an \\includegraphics.
+    Otherwise, keep the description as-is (no figure).
     """
     from pathlib import Path
 
     tex_output_path = Path(output_dir) / f"{term}.tex"
     os.makedirs(tex_output_path.parent, exist_ok=True)
 
-    # Replace TikZ block with includegraphics
-    description_with_image = replace_tikz_with_includegraphics(description, image_path)
+    if image_path:
+        # Replace TikZ block with includegraphics (no-op if pattern not found)
+        description_processed = replace_tikz_with_includegraphics(description, image_path)
+    else:
+        # No image: keep original description
+        description_processed = description
 
-    # Generate LaTeX document
     tex_code = f"""\\documentclass{{article}}
 \\usepackage{{graphicx}}
 \\usepackage{{caption}}
@@ -169,7 +183,7 @@ def generate_texfile_with_image(term, description, image_path, output_dir="../")
 
 \\section*{{{term.capitalize()}}}
 
-{description_with_image}
+{description_processed}
 
 \\end{{document}}
 """
@@ -177,8 +191,8 @@ def generate_texfile_with_image(term, description, image_path, output_dir="../")
     with open(tex_output_path, "w", encoding="utf-8") as f:
         f.write(tex_code)
         print(f"✅ LaTeX file written to: {tex_output_path}")
+    
 
-        
 
 def convert_pandoc_figures_to_html(md_text):
     """
@@ -521,65 +535,49 @@ def make_substack_ready(md_in_path: PathLike, md_out_path: PathLike) -> None:
 
         
         
-# def make_substack_ready(md_in_path: str | Path,
-#                         md_out_path: str | Path,
-#                         image_base_url: str = BASE_IMAGE_URL) -> None:
-#     text = Path(md_in_path).read_text(encoding="utf-8")
-
-#     # 1) Remove Jekyll Liquid guards and tags
-#     text = re.sub(r"{%\s*raw\s*%}", "", text)
-#     text = re.sub(r"{%\s*endraw\s*%}", "", text)
-#     text = re.sub(r"{%.*?%}", "", text, flags=re.DOTALL)
-#     text = re.sub(r"{{.*?}}", "", text, flags=re.DOTALL)
-
-#     # 2) Optional: simplify glossary macros \gls{term} -> term
-#     text = re.sub(r"\\gls\{([^}]+)\}", r"\1", text)
-
-#     # 3) Un-escape LaTeX math if present
-#     text = text.replace(r"\$", "$")
-#     text = re.sub(r"\\([{}])", r"\1", text)  # remove backslashes before { }
-
-#     # 4) Make image paths absolute for Substack
-#     #    e.g., ../images/foo.png  -> https://.../images/foo.png
-#     text = text.replace("../images/", image_base_url)
-
-#     # 5) Tidy spacing
-#     text = re.sub(r"\n{3,}", "\n\n", text)
-
-#     Path(md_out_path).write_text(text, encoding="utf-8")
-        
 ########## MAIN 
 
-
-blog_sample_term= "crossentropy"
-slug="cross-entropy"
+blog_sample_term = "crossentropy"
+slug = "cross-entropy"
 output_folder = "../_posts"
 heute = date.today().isoformat()
+
 entry_text = glossary[blog_sample_term]
-try:
-    tikz_code = extract_tikz_from_entry(entry_text)
-    compile_tikz_to_png(tikz_code, blog_sample_term+"_tikz")
+
+# --- TikZ handling (optional) ---
+tikz_code = extract_tikz_from_entry(entry_text)
+if tikz_code:
+    print("🔍 TikZ figure found – compiling to PNG.")
+    compile_tikz_to_png(tikz_code, blog_sample_term + "_tikz")
+    image_rel_path = "../images/" + blog_sample_term + "_tikz.png"
     generate_texfile_with_image(
         term=blog_sample_term,
         description=entry_text,
-        image_path="../images/"+blog_sample_term+"_tikz.png"
+        image_path=image_rel_path
     )
-    mdfilename = generate_blog_post(
-       tex_file="../"+blog_sample_term+".tex" ,
-       bib_file="/Users/junga1/AaltoDictionaryofML.github.io/assets/Literature.bib",
-       post_slug=slug,post_date=heute,
-       title="Aalto Dictionary of ML – "+slug,
-       seo_title="Generalization – How Machine Learning Models Handle Unseen Data",
-       seo_description="Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data.",
-       output_dir=output_folder
-   )
-except Exception as e:
-    print("Error:", e)
-    
+else:
+    print("ℹ️ No TikZ figure found – generating TeX without image.")
+    generate_texfile_with_image(
+        term=blog_sample_term,
+        description=entry_text,
+        image_path=None
+    )
+
+# --- Convert TeX to Markdown blog post ---
+mdfilename = generate_blog_post(
+    tex_file="../" + blog_sample_term + ".tex",
+    bib_file="/Users/junga1/AaltoDictionaryofML.github.io/assets/Literature.bib",
+    post_slug=slug,
+    post_date=heute,
+    title="Aalto Dictionary of ML – " + slug,
+    seo_title="Generalization – How Machine Learning Models Handle Unseen Data",
+    seo_description="Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data.",
+    output_dir=output_folder
+)
 
 # Paths for canonical Jekyll MD and Substack-ready MD
 output_path = Path(output_folder) / f"{heute}-{slug}.md"
-substack_path =  f"{heute}-{slug}_substack.md"
+substack_path = f"{heute}-{slug}_substack.md"
 
 # Keep your original cleaning for Jekyll
 fix_latex_in_file(mdfilename)                 # protects LaTeX from Jekyll/Liquid
@@ -592,9 +590,3 @@ make_substack_ready(output_path, substack_path)
 
 print(f"✅ Jekyll post:     {output_path}")
 print(f"✅ Substack-ready:  {substack_path}")
-    
-# output_path = Path(output_folder+"/"+f"{heute}-{slug}.md")
-# fix_latex_in_file(mdfilename)
-# clean_markdown_file(mdfilename,output_path)
-# append_footer_to_markdown(output_path)
-# os.remove(mdfilename)
