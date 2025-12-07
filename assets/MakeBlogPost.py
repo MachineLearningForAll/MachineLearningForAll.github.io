@@ -551,8 +551,8 @@ def make_substack_ready(md_in_path: PathLike, md_out_path: PathLike) -> None:
 ########## MAIN 
 
 
-blog_sample_term= "markovsinequality"
-slug="Markov's inequality"
+blog_sample_term= "crossentropy"
+slug="cross-entropy"
 output_folder = "../_posts"
 heute = date.today().isoformat()
 entry_text = glossary[blog_sample_term]
