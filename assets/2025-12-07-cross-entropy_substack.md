@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Aalto Dictionary of ML – cross-entropy"
+title: "Aalto Dictionary of ML – Cross-Entropy"
 date: 2025-12-07
-seo_title: "Generalization – How Machine Learning Models Handle Unseen Data"
-seo_description: "Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data."
+seo_title: "Cross-Entropy"
+seo_description: "Cross-Entropy"
 markdown: kramdown
 ---
 

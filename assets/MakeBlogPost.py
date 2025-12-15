@@ -537,8 +537,8 @@ def make_substack_ready(md_in_path: PathLike, md_out_path: PathLike) -> None:
         
 ########## MAIN 
 
-blog_sample_term = "crossentropy"
-slug = "cross-entropy"
+blog_sample_term = "pmf"
+slug = "Probability Mass Function"
 output_folder = "../_posts"
 heute = date.today().isoformat()
 
@@ -570,8 +570,8 @@ mdfilename = generate_blog_post(
     post_slug=slug,
     post_date=heute,
     title="Aalto Dictionary of ML – " + slug,
-    seo_title="Generalization – How Machine Learning Models Handle Unseen Data",
-    seo_description="Explore the concept of generalization in machine learning: how models trained on a dataset perform on new, unseen data.",
+    seo_title=slug,
+    seo_description=slug,
     output_dir=output_folder
 )
 
