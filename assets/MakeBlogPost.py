@@ -1,41 +1,37 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import re
+import os
+import subprocess
+from pathlib import Path
+from datetime import date
+from typing import Union, Dict, Tuple, Iterator
+
+# Optional imports (keep if you use them elsewhere)
 import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.algorithms.community import greedy_modularity_communities
 import tempfile
-import os
-from pathlib import Path
-from datetime import date
-import subprocess
-from typing import Union
 from pdf2image import convert_from_path
 
 PathLike = Union[str, Path]
 
-# --- LaTeX + Markdown safety wrappers (add near imports) ---
+# --- LaTeX + Markdown safety wrappers ---
 RAW_OPEN  = "{% raw %}"
 RAW_CLOSE = "{% endraw %}"
 
 # Match fenced code blocks ```...``` (any language) and existing raw blocks.
-FENCE_OR_RAW_RE = re.compile(
-    r"(```.*?```|{% raw %}.*?{% endraw %})",
-    flags=re.DOTALL
-)
+FENCE_OR_RAW_RE = re.compile(r"(```.*?```|{% raw %}.*?{% endraw %})", flags=re.DOTALL)
 
 # Display math: $$...$$ (can be multiline)
-DISPLAY_MATH_RE = re.compile(
-    r"\$\$(.+?)\$\$",
-    flags=re.DOTALL
-)
+DISPLAY_MATH_RE = re.compile(r"\$\$(.+?)\$\$", flags=re.DOTALL)
 
 # Inline math: $...$ (but not $$...$$)
-INLINE_MATH_RE = re.compile(
-    r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)",
-    flags=re.DOTALL
-)
+INLINE_MATH_RE = re.compile(r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)", flags=re.DOTALL)
 
 BASE_IMAGE_URL = "https://AaltoDictionaryofML.github.io/images/"
+
 
 def _wrap_math_segment(segment: str) -> str:
     """
@@ -44,16 +40,16 @@ def _wrap_math_segment(segment: str) -> str:
     """
 
     def wrap_if_liquid(match: re.Match) -> str:
-        full  = match.group(0)  # the full $...$ or $$...$$ token
-        inner = match.group(1)  # the inside of math delimiters
+        full  = match.group(0)  # full $...$ or $$...$$ token
+        inner = match.group(1)  # inside delimiters
         if "{{" in inner or "}}" in inner:
             return f"{RAW_OPEN}{full}{RAW_CLOSE}"
         return full
 
-    # Order matters: handle display math first (can span multiple lines), then inline math
     segment = DISPLAY_MATH_RE.sub(wrap_if_liquid, segment)
     segment = INLINE_MATH_RE.sub(wrap_if_liquid, segment)
     return segment
+
 
 def fix_latex_in_text(md_text: str) -> str:
     """
@@ -66,47 +62,35 @@ def fix_latex_in_text(md_text: str) -> str:
     fixed_parts = []
     for part in parts:
         if FENCE_OR_RAW_RE.fullmatch(part or ""):
-            # Leave code fences & existing raw blocks untouched
-            fixed_parts.append(part)
+            fixed_parts.append(part)  # leave fences/raw unchanged
         else:
             fixed_parts.append(_wrap_math_segment(part))
     return "".join(fixed_parts)
 
 
-
-def extract_tikz_from_entry(entry_text):
+def extract_tikz_from_entry(entry_text: str) -> str | None:
     """
     Try to extract a TikZ picture from the entry text.
-
-    Returns:
-        str | None: TikZ code if found, otherwise None.
+    Returns TikZ code if found, otherwise None.
     """
     match = re.search(r'\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}', entry_text, re.DOTALL)
     if match:
         return match.group(0)
-    else:
-        # Try fallback for your custom {tikzpicture} ... {tikzpicture} style
-        match = re.search(r'\{tikzpicture\}.*?\{tikzpicture\}', entry_text, re.DOTALL)
-        if match:
-            tikz_inner = match.group(0)[13:-13].strip()  # remove {tikzpicture} ... {tikzpicture}
-            return f"\\begin{{tikzpicture}}\n{tikz_inner}\n\\end{{tikzpicture}}"
-    # No TikZ found
+
+    # Fallback for custom {tikzpicture} ... {tikzpicture} style
+    match = re.search(r'\{tikzpicture\}.*?\{tikzpicture\}', entry_text, re.DOTALL)
+    if match:
+        tikz_inner = match.group(0)[13:-13].strip()
+        return f"\\begin{{tikzpicture}}\n{tikz_inner}\n\\end{{tikzpicture}}"
+
     return None
 
-    
-def replace_tikz_with_includegraphics(description, image_path):
+
+def replace_tikz_with_includegraphics(description: str, image_path: str) -> str:
     """
     Replace the TikZ block in the description with a single \includegraphics command.
     """
     include_cmd = fr"\\includegraphics[width=0.8\\linewidth]{{{image_path}}}"
-    print(include_cmd)
-    print(re.sub(
-        r'\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',
-        include_cmd,
-        description,
-        count=1,
-        flags=re.DOTALL
-    ))
     return re.sub(
         r'\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',
         include_cmd,
@@ -116,14 +100,13 @@ def replace_tikz_with_includegraphics(description, image_path):
     )
 
 
-def compile_tikz_to_png(tikz_code, filename="tikz_figure", output_dir="../images"):
-    # Ensure the output directory exists
+def compile_tikz_to_png(tikz_code: str, filename: str = "tikz_figure", output_dir: str = "../images") -> None:
+    """
+    Compile TikZ -> PDF via pdflatex, then convert PDF -> PNG via ImageMagick 'convert'.
+    """
     os.makedirs(output_dir, exist_ok=True)
-
-    # Output path (e.g., blog_posts/images/generalization.png)
     output_png_path = os.path.join(output_dir, f"{filename}.png")
 
-    # LaTeX document wrapper
     latex_code = f"""
 \\documentclass[tikz]{{standalone}}
 \\usepackage{{tikz}}
@@ -134,44 +117,32 @@ def compile_tikz_to_png(tikz_code, filename="tikz_figure", output_dir="../images
 \\begin{{document}}
 {tikz_code}
 \\end{{document}}
-"""
-    tex_path ="figure.tex"
-    with open(tex_path, "w") as f:
-        f.write(latex_code)
-        print(latex_code)
+""".strip() + "\n"
 
-        # Compile LaTeX to PDF
-    subprocess.run(["pdflatex", "-interaction=nonstopmode", tex_path])
-    print(tex_path)
-
+    tex_path = "figure.tex"
     pdf_path = "figure.pdf"
 
-        # Convert PDF to PNG using ImageMagick
-    subprocess.run([
-            "convert", "-density", "300", pdf_path, "-quality", "90", output_png_path
-        ])
+    Path(tex_path).write_text(latex_code, encoding="utf-8")
+
+    subprocess.run(["pdflatex", "-interaction=nonstopmode", tex_path], check=False)
+
+    subprocess.run(
+        ["convert", "-density", "300", pdf_path, "-quality", "90", output_png_path],
+        check=False
+    )
 
     print(f"✅ Saved PNG to: {output_png_path}")
-    
-    
-def generate_texfile_with_image(term, description, image_path=None, output_dir="../"):
+
+
+def generate_texfile_with_image(term: str, description: str, image_path: str | None = None, output_dir: str = "../") -> None:
     """
     Generate a LaTeX file containing the full glossary description.
-
-    If image_path is not None, replace the TikZ block by an \\includegraphics.
-    Otherwise, keep the description as-is (no figure).
+    If image_path is provided, replace the TikZ block with \\includegraphics.
     """
-    from pathlib import Path
-
     tex_output_path = Path(output_dir) / f"{term}.tex"
     os.makedirs(tex_output_path.parent, exist_ok=True)
 
-    if image_path:
-        # Replace TikZ block with includegraphics (no-op if pattern not found)
-        description_processed = replace_tikz_with_includegraphics(description, image_path)
-    else:
-        # No image: keep original description
-        description_processed = description
+    description_processed = replace_tikz_with_includegraphics(description, image_path) if image_path else description
 
     tex_code = f"""\\documentclass{{article}}
 \\usepackage{{graphicx}}
@@ -188,32 +159,25 @@ def generate_texfile_with_image(term, description, image_path=None, output_dir="
 \\end{{document}}
 """
 
-    with open(tex_output_path, "w", encoding="utf-8") as f:
-        f.write(tex_code)
-        print(f"✅ LaTeX file written to: {tex_output_path}")
-    
+    tex_output_path.write_text(tex_code, encoding="utf-8")
+    print(f"✅ LaTeX file written to: {tex_output_path}")
 
 
-def convert_pandoc_figures_to_html(md_text):
+def convert_pandoc_figures_to_html(md_text: str) -> str:
     """
     Converts Pandoc-style image+caption blocks to HTML <figure> with <figcaption>,
     preserving inline LaTeX and width attributes.
     """
-    figure_pattern = re.compile(
-        r'!\[([^\]]+)\]\(([^)]+)\)\{([^}]*)\}',
-        flags=re.DOTALL
-    )
+    figure_pattern = re.compile(r'!\[([^\]]+)\]\(([^)]+)\)\{([^}]*)\}', flags=re.DOTALL)
 
-    def repl(match):
+    def repl(match: re.Match) -> str:
         caption = match.group(1).strip()
         img_path = match.group(2).strip()
         attr_string = match.group(3).strip()
 
-        # Extract width="..." if present
         width_match = re.search(r'width\s*=\s*["\']?([\d.]+%)["\']?', attr_string)
         width_attr = f' width="{width_match.group(1)}"' if width_match else ''
 
-        # Optionally extract id from #fig:xyz
         id_match = re.search(r'#([a-zA-Z0-9\-_]+)', attr_string)
         id_attr = f' id="{id_match.group(1)}"' if id_match else ''
 
@@ -232,41 +196,29 @@ def convert_pandoc_figures_to_html(md_text):
 
 
 def generate_blog_post(
-    tex_file,
-    bib_file,
-    output_dir="../",
-    title="Dictionary of ML – Geometric Median",
-    seo_title="Geometric Median – A Robust Alternative to the Mean in Machine Learning",
-    seo_description="Understand the geometric median, a key concept in robust statistics and machine learning, minimizing total distance to data points and outperforming the mean under outliers.",
-    post_slug="geometric-median",
-    post_date=None
-):
+    tex_file: PathLike,
+    bib_file: PathLike,
+    output_dir: PathLike = "../",
+    title: str = "Dictionary of ML – Geometric Median",
+    seo_title: str = "Geometric Median – A Robust Alternative to the Mean in Machine Learning",
+    seo_description: str = "Understand the geometric median, a key concept in robust statistics and machine learning.",
+    post_slug: str = "geometric-median",
+    post_date: str | None = None
+) -> Path | None:
     """
     Converts a LaTeX file to Markdown using Pandoc and adds Jekyll front matter.
-
-    Args:
-        tex_file (str): Path to LaTeX file.
-        bib_file (str): Path to BibTeX file.
-        output_dir (str): Directory to save generated .md post.
-        title (str): Title for the blog post.
-        seo_title (str): SEO title for the blog post.
-        seo_description (str): SEO description.
-        post_slug (str): Filename slug.
-        post_date (str): Publication date (YYYY-MM-DD), defaults to today.
+    Writes *raw* md file (suffix _raw.md) and returns that Path.
     """
     post_date = post_date or date.today().isoformat()
     filename = f"{post_date}-{post_slug}_raw.md"
     output_path = Path(output_dir) / filename
-
     os.makedirs(output_path.parent, exist_ok=True)
 
-    # Temporary file for Pandoc output (without front matter)
     temp_md_path = Path("temp_pandoc_output.md")
 
-    # Build and run Pandoc command
     command = [
         "pandoc",
-        tex_file,
+        str(tex_file),
         "-o", str(temp_md_path),
         "--from=latex",
         "--to=markdown",
@@ -279,14 +231,9 @@ def generate_blog_post(
         subprocess.run(command, check=True)
     except subprocess.CalledProcessError as e:
         print("❌ Pandoc conversion failed:", e)
-        return
+        return None
 
-
-    # Read and post-process the generated Markdown
-    with open(temp_md_path, "r", encoding="utf-8") as f:
-        markdown_body = f.read()
-
-    # Convert Pandoc-style figures to HTML
+    markdown_body = temp_md_path.read_text(encoding="utf-8")
     markdown_body = convert_pandoc_figures_to_html(markdown_body)
 
     front_matter = f"""---
@@ -300,103 +247,120 @@ markdown: kramdown
 
 """
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(front_matter+markdown_body)
-    os.remove(temp_md_path)
-  #  os.remove(tex_file)
+    output_path.write_text(front_matter + markdown_body, encoding="utf-8")
+    temp_md_path.unlink(missing_ok=True)
+
     print(f"✅ Blog post written to: {output_path}")
     return output_path
 
 
+# ---------- NEW: robust parsing from ADictML*expanded.tex files ----------
 
+NEW_ENTRY_RE = re.compile(r"\\newglossaryentry\{([^}]+)\}\s*\{", re.DOTALL)
 
+def extract_balanced_braces(s: str, start_brace_idx: int) -> Tuple[str, int]:
+    """
+    Given s[start_brace_idx] == '{', return (content_inside, index_after_closing_brace).
+    Handles nested braces.
+    """
+    if start_brace_idx < 0 or start_brace_idx >= len(s) or s[start_brace_idx] != "{":
+        raise ValueError("extract_balanced_braces: start index must point to '{'.")
 
-# --- Step 1: Load LaTeX glossary content ---
-with open("/Users/junga1/AaltoDictionaryofML.github.io/assets/ADictML_Glossary_Expanded.tex", "r", encoding="utf-8") as f:
-    content = f.read()
-
-# --- Step 2: Match glossary entries ---
-entry_pattern = re.compile(r"\\newglossaryentry\{([^}]+)\}\s*\{(.*?)\n\}", re.DOTALL)
-entries = entry_pattern.findall(content)
-
-# --- Step 3: Extract content inside balanced braces ---
-def extract_balanced_braces(s, start):
-    assert s[start] == '{'
     depth = 0
-    for i in range(start, len(s)):
-        if s[i] == '{':
+    for i in range(start_brace_idx, len(s)):
+        ch = s[i]
+        if ch == "{":
             depth += 1
-        elif s[i] == '}':
+        elif ch == "}":
             depth -= 1
             if depth == 0:
-                return s[start + 1:i], i + 1
-    raise ValueError("Unbalanced braces in LaTeX description.")
+                return s[start_brace_idx + 1 : i], i + 1
+    raise ValueError("Unbalanced braces while parsing.")
 
-# --- Step 4: Parse glossary entries ---
-glossary = {}
-for key, body in entries:
-    body_cleaned = re.sub(r"%.*", "", body)          # remove comments
-    body_cleaned = re.sub(r"[ \t]+", " ", body)      # collapse horizontal whitespace only
-    body_cleaned = re.sub(r"\s+\n", "\n", body_cleaned)  # optional: clean trailing space before linebreak
+def iter_newglossaryentry_blocks(tex: str) -> Iterator[Tuple[str, str]]:
+    """
+    Yield (key, body_text) for each \\newglossaryentry{key}{body}.
+    """
+    pos = 0
+    while True:
+        m = NEW_ENTRY_RE.search(tex, pos)
+        if not m:
+            break
+        key = m.group(1).strip()
+        body_open_brace_idx = m.end() - 1  # points to '{' starting the body
+        body, next_pos = extract_balanced_braces(tex, body_open_brace_idx)
+        yield key, body
+        pos = next_pos
 
-    
-    # --- Extract name ---
-    name_start = body_cleaned.find("name=") 
-    try:
-        name_text, _ = extract_balanced_braces(body_cleaned, name_start + len("name="))
-    except:
-        name_text = key  # fallback
+def parse_glossary(tex: str) -> Dict[str, str]:
+    """
+    Return dict: key -> description text (value of description={...})
+    """
+    glossary: Dict[str, str] = {}
 
-    # --- Extract description ---
-    desc_start = body_cleaned.find("description={")
-    if desc_start == -1:
-        continue
+    for key, body in iter_newglossaryentry_blocks(tex):
+        body_cleaned = re.sub(r"(?m)^%.*$", "", body)  # remove full-line comments
 
-    try:
-        desc_text, _ = extract_balanced_braces(body_cleaned, desc_start + len("description="))
-    except ValueError:
-        continue
+        desc_idx = body_cleaned.find("description=")
+        if desc_idx == -1:
+            continue
 
-    print(desc_text+"\n")
-    glossary[key.strip()] = desc_text
-    
-def fix_latex_in_file(md_path: str | Path):
+        brace_idx = body_cleaned.find("{", desc_idx)
+        if brace_idx == -1:
+            continue
+
+        try:
+            desc_text, _ = extract_balanced_braces(body_cleaned, brace_idx)
+        except ValueError:
+            continue
+
+        glossary[key] = desc_text.strip()
+
+    return glossary
+
+def load_expanded_glossary_sources(source: PathLike) -> str:
+    """
+    Load and concatenate LaTeX content from:
+      - a directory containing ADictML*expanded.tex files, OR
+      - a single .tex file (backwards compatible).
+
+    New naming convention: ADictML******expanded.tex
+    """
+    p = Path(source).expanduser()
+
+    if p.is_file():
+        return p.read_text(encoding="utf-8")
+
+    if not p.is_dir():
+        raise FileNotFoundError(f"Glossary source not found: {p}")
+
+    files = sorted(p.glob("ADictML*expanded.tex"))
+    if not files:
+        files = sorted(p.glob("ADictML*Expanded.tex"))
+
+    if not files:
+        raise FileNotFoundError(
+            f"No expanded glossary files found in {p} matching ADictML*expanded.tex (or ADictML*Expanded.tex)."
+        )
+
+    print(f"📚 Loading {len(files)} expanded glossary file(s) from: {p}")
+    combined = []
+    for f in files:
+        txt = f.read_text(encoding="utf-8")
+        combined.append(f"% --- BEGIN FILE: {f.name} ---\n{txt}\n% --- END FILE: {f.name} ---\n")
+    return "\n".join(combined)
+
+
+# ---------- Your existing post-processing helpers ----------
+
+def fix_latex_in_file(md_path: PathLike) -> None:
     p = Path(md_path)
     content = p.read_text(encoding="utf-8")
     fixed = fix_latex_in_text(content)
     p.write_text(fixed, encoding="utf-8")
     print(f"✔ Fixed LaTeX math in: {md_path}")
-    
-# def fix_latex_in_file(md_path):
-#     with open(md_path, "r", encoding="utf-8") as f:
-#         lines = f.readlines()
 
-#     new_lines = []
-#     in_raw_block = False
 
-#     for line in lines:
-#         modified = line
-#         if not in_raw_block:
-#             # Detect LaTeX expressions with {{ or }}
-#             if re.search(r"\$\$?.*{{.*}}.*\$\$?", line):
-#                 new_lines.append("{% raw %}\n")
-#                 new_lines.append(modified)
-#                 new_lines.append("{% endraw %}\n")
-#                 in_raw_block = False  # Stay out; single-line wrap
-#             elif "{{" in line or "}}" in line:
-#                 new_lines.append("{% raw %}\n")
-#                 new_lines.append(modified)
-#                 new_lines.append("{% endraw %}\n")
-#             else:
-#                 new_lines.append(modified)
-#         else:
-#             new_lines.append(modified)
-
-#     with open(md_path, "w", encoding="utf-8") as f:
-#         f.writelines(new_lines)
-
-#     print(f"✔ Fixed: {md_path}")
-    
 def remove_reference_blocks_and_headers(content: str) -> str:
     lines = content.splitlines()
     cleaned_lines = []
@@ -405,7 +369,7 @@ def remove_reference_blocks_and_headers(content: str) -> str:
     yaml_lines = []
     i = 0
 
-    # Step 1: Preserve front-matter block (layout, title, etc.)
+    # Preserve front-matter block
     if lines and lines[0].strip() == "---":
         in_yaml_header = True
         yaml_lines.append(lines[0])
@@ -419,10 +383,9 @@ def remove_reference_blocks_and_headers(content: str) -> str:
 
     cleaned_lines.extend(yaml_lines)
 
-    # Step 2: Skip bibliography block and handle references
+    # Skip bibliography block and handle references
     skip_bib_block = False
     for line in lines[i:]:
-        # Remove bibliography YAML block
         if line.strip() == "---" and not skip_bib_block:
             skip_bib_block = True
             continue
@@ -433,19 +396,16 @@ def remove_reference_blocks_and_headers(content: str) -> str:
                 skip_bib_block = False
                 continue
             else:
-                continue  # still inside bibliography block
+                continue
 
-        # Remove H1 headings like "# Title {#...}"
         if re.match(r'^#\s+.+\{#.+\}', line):
             continue
 
-        # Replace CSL reference block marker
         if line.strip() == ':::::: {#refs .references .csl-bib-body .hanging-indent entry-spacing="0"}':
             cleaned_lines.append('**References**')
             cleaned_lines.append('')
             continue
 
-        # Remove other citation lines
         if line.strip().startswith(":::"):
             continue
 
@@ -454,139 +414,144 @@ def remove_reference_blocks_and_headers(content: str) -> str:
     return "\n".join(cleaned_lines)
 
 
-def clean_markdown_file(input_path: Path, output_path: Path):
-    with open(input_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
+def clean_markdown_file(input_path: Path, output_path: Path) -> None:
+    content = Path(input_path).read_text(encoding="utf-8")
     content = remove_reference_blocks_and_headers(content)
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(content)
-
+    Path(output_path).write_text(content, encoding="utf-8")
     print(f"✅ Cleaned: {output_path.name}")
-    
-    
-    
-def append_footer_to_markdown(md_path):
+
+
+def append_footer_to_markdown(md_path: PathLike) -> None:
     footer = """
 ---
 
 📚 This explanation is part of the [Aalto Dictionary of Machine Learning](https://AaltoDictionaryofML.github.io) — 
 an open-access multi-lingual glossary developed at Aalto University to support 
 accessible and precise communication in ML.
-"""
+""".strip()
 
     path = Path(md_path)
     content = path.read_text(encoding="utf-8")
 
     if "Aalto Dictionary of Machine Learning" not in content:
-        content = content.rstrip() + "\n\n" + footer.strip() + "\n"
+        content = content.rstrip() + "\n\n" + footer + "\n"
         path.write_text(content, encoding="utf-8")
         print(f"✅ Footer added to: {md_path}")
     else:
         print(f"⚠️ Footer already present in: {md_path}")
-        
-        
+
+
 def remove_math_and_raw(text: str) -> str:
     """
     Remove LaTeX math and Jekyll raw tags from Markdown text.
     Keeps all other Markdown content intact.
     """
-
-    # --- 1) Remove Jekyll raw / Liquid tags ---
     text = re.sub(r"{%\s*raw\s*%}", "", text)
     text = re.sub(r"{%\s*endraw\s*%}", "", text)
     text = re.sub(r"{%.*?%}", "", text, flags=re.DOTALL)
     text = re.sub(r"{{.*?}}", "", text, flags=re.DOTALL)
 
-    # --- 2) Remove LaTeX display math ---
-    text = re.sub(r"\$\$(.*?)\$\$", "", text, flags=re.DOTALL)   # $$...$$
-    text = re.sub(r"\\\[(.*?)\\\]", "", text, flags=re.DOTALL)   # \[...\]
+    text = re.sub(r"\$\$(.*?)\$\$", "", text, flags=re.DOTALL)
+    text = re.sub(r"\\\[(.*?)\\\]", "", text, flags=re.DOTALL)
 
-    # --- 3) Remove math environments ---
     envs = r"(equation\*?|align\*?|gather\*?|multline\*?|eqnarray\*?)"
-    text = re.sub(
-        rf"\\begin\{{{envs}\}}.*?\\end\{{\1\}}",
-        "",
-        text,
-        flags=re.DOTALL
-    )
+    text = re.sub(rf"\\begin\{{{envs}\}}.*?\\end\{{\1\}}", "", text, flags=re.DOTALL)
 
-    # --- 4) Remove inline math ---
-    text = re.sub(r"\\\((.*?)\\\)", "", text, flags=re.DOTALL)   # \( ... \)
+    text = re.sub(r"\\\((.*?)\\\)", "", text, flags=re.DOTALL)
     text = re.sub(r"(?<!\$)\$(?!\$)([^$]*?)(?<!\$)\$(?!\$)", "", text, flags=re.DOTALL)
 
-    # --- 5) Remove \ensuremath{...} ---
     text = re.sub(r"\\ensuremath\{.*?\}", "", text, flags=re.DOTALL)
 
-    # --- 6) Tidy up spacing ---
     text = re.sub(r"\n{3,}", "\n\n", text).strip()
-
     return text
 
 
 def make_substack_ready(md_in_path: PathLike, md_out_path: PathLike) -> None:
-    """
-    Make a Markdown post 'Substack-ready' by removing LaTeX math and raw tags.
-    """
     raw = Path(md_in_path).read_text(encoding="utf-8")
     cleaned = remove_math_and_raw(raw)
     Path(md_out_path).write_text(cleaned, encoding="utf-8")
 
-        
-        
-########## MAIN 
 
-blog_sample_term = "pmf"
-slug = "Probability Mass Function"
-output_folder = "../_posts"
-heute = date.today().isoformat()
+# ---------------- MAIN ----------------
 
-entry_text = glossary[blog_sample_term]
+if __name__ == "__main__":
+    # --- CONFIG: update these paths ---
+    EXPANDED_SOURCES = "/Users/junga1/AaltoDictionaryofML.github.io/assets"   # directory containing ADictML*expanded.tex
+    BIB_FILE = "/Users/junga1/AaltoDictionaryofML.github.io/assets/Literature.bib"
 
-# --- TikZ handling (optional) ---
-tikz_code = extract_tikz_from_entry(entry_text)
-if tikz_code:
-    print("🔍 TikZ figure found – compiling to PNG.")
-    compile_tikz_to_png(tikz_code, blog_sample_term + "_tikz")
-    image_rel_path = "../images/" + blog_sample_term + "_tikz.png"
-    generate_texfile_with_image(
-        term=blog_sample_term,
-        description=entry_text,
-        image_path=image_rel_path
+    OUTPUT_FOLDER = "../_posts"
+    IMAGE_OUTPUT_DIR = "../images"
+    TEX_OUTPUT_DIR = "../"
+
+    # Choose a glossary key to post
+    blog_sample_term = "spectraldecomp"     # e.g., "pmf", "spectraldecomp"
+    slug = "spectral-decomposition"         # filename slug (avoid spaces)
+
+    heute = date.today().isoformat()
+
+    # --- Load + parse expanded glossary files ---
+    content = load_expanded_glossary_sources(EXPANDED_SOURCES)
+    glossary = parse_glossary(content)
+
+    if blog_sample_term not in glossary:
+        raise KeyError(
+            f"Term '{blog_sample_term}' not found. "
+            f"Parsed {len(glossary)} entries. Check key spelling / expanded sources."
+        )
+
+    entry_text = glossary[blog_sample_term]
+
+    # --- TikZ handling (optional) ---
+    tikz_code = extract_tikz_from_entry(entry_text)
+    if tikz_code:
+        print("🔍 TikZ figure found – compiling to PNG.")
+        compile_tikz_to_png(tikz_code, blog_sample_term + "_tikz", output_dir=IMAGE_OUTPUT_DIR)
+        image_rel_path = f"../images/{blog_sample_term}_tikz.png"
+        generate_texfile_with_image(
+            term=blog_sample_term,
+            description=entry_text,
+            image_path=image_rel_path,
+            output_dir=TEX_OUTPUT_DIR
+        )
+    else:
+        print("ℹ️ No TikZ figure found – generating TeX without image.")
+        generate_texfile_with_image(
+            term=blog_sample_term,
+            description=entry_text,
+            image_path=None,
+            output_dir=TEX_OUTPUT_DIR
+        )
+
+    # --- Convert TeX to Markdown blog post (raw) ---
+    tex_file = Path(TEX_OUTPUT_DIR) / f"{blog_sample_term}.tex"
+    mdfilename = generate_blog_post(
+        tex_file=tex_file,
+        bib_file=BIB_FILE,
+        post_slug=slug,
+        post_date=heute,
+        title=f"Aalto Dictionary of ML – {blog_sample_term}",
+        seo_title=blog_sample_term,
+        seo_description=blog_sample_term,
+        output_dir=OUTPUT_FOLDER
     )
-else:
-    print("ℹ️ No TikZ figure found – generating TeX without image.")
-    generate_texfile_with_image(
-        term=blog_sample_term,
-        description=entry_text,
-        image_path=None
-    )
 
-# --- Convert TeX to Markdown blog post ---
-mdfilename = generate_blog_post(
-    tex_file="../" + blog_sample_term + ".tex",
-    bib_file="/Users/junga1/AaltoDictionaryofML.github.io/assets/Literature.bib",
-    post_slug=slug,
-    post_date=heute,
-    title="Aalto Dictionary of ML – " + slug,
-    seo_title=slug,
-    seo_description=slug,
-    output_dir=output_folder
-)
+    if mdfilename is None:
+        raise RuntimeError("Pandoc conversion failed; no markdown produced.")
 
-# Paths for canonical Jekyll MD and Substack-ready MD
-output_path = Path(output_folder) / f"{heute}-{slug}.md"
-substack_path = f"{heute}-{slug}_substack.md"
+    # Paths for canonical Jekyll MD and Substack-ready MD
+    output_path = Path(OUTPUT_FOLDER) / f"{heute}-{slug}.md"
+    substack_path = Path(OUTPUT_FOLDER) / f"{heute}-{slug}_substack.md"
 
-# Keep your original cleaning for Jekyll
-fix_latex_in_file(mdfilename)                 # protects LaTeX from Jekyll/Liquid
-clean_markdown_file(mdfilename, output_path)  # your existing Jekyll MD cleaner
-append_footer_to_markdown(output_path)
-os.remove(mdfilename)
+    # Protect LaTeX from Jekyll/Liquid, then clean for Jekyll
+    fix_latex_in_file(mdfilename)
+    clean_markdown_file(Path(mdfilename), output_path)
+    append_footer_to_markdown(output_path)
 
-# Produce Substack-ready twin
-make_substack_ready(output_path, substack_path)
+    # Remove raw temp file
+    Path(mdfilename).unlink(missing_ok=True)
 
-print(f"✅ Jekyll post:     {output_path}")
-print(f"✅ Substack-ready:  {substack_path}")
+    # Produce Substack-ready twin
+    make_substack_ready(output_path, substack_path)
+
+    print(f"✅ Jekyll post:     {output_path}")
+    print(f"✅ Substack-ready:  {substack_path}")

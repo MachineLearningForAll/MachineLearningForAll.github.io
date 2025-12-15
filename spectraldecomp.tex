@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath, amssymb}
+\usepackage[margin=2.5cm]{geometry}
+
+\begin{document}
+
+\section*{Spectraldecomp}
+
+Every normal matrix ${\bf A}\in \mathbb{C}^{d\times d}$ 
+                 admits\index{spectral decomposition} a spectral decomposition of the form \cite{HornMatAnalysis,Axler2025}
+       \begin{align}
+        \nonumber
+            {\bf A}% & = 
+            % \big[ \vu^{(1)}\ \cdots\ \vu^{(\nrfeatures)}\big]
+            % \pmatrix{
+            % \eigval{1} &        &        & 0\\
+            %         & \eigval{2} &     &  \\
+            %         &        & \ddots &  \\
+            % 0         &        &        & \eigval{\nrfeatures}
+            % }
+            % \pmatrix{
+            % \big(\vu^{(1)}\big)^{H}\\
+            % \vdots\\
+            % \big(\vu^{(\nrfeatures)}\big)^{H}
+            % } \nonumber \\
+                & = \sum_{j=1}^{d} \lambda_{j} {\bf u}^{(j)} \big({\bf u}^{(j)})^{H} \nonumber \\ 
+       \end{align}
+      with an orthonormal basis ${\bf u}^{(1)},\ldots,{\bf u}^{(d)}$. 
+       \begin{figure}[t]
+            \centering
+            \includegraphics[width=0.8\linewidth]{../images/spectraldecomp_tikz.png}
+            \caption{The spectral decomposition of a normal matrix ${\bf A}$ provides 
+                     an orthonormal basis ${\bf u}^{(1)}, {\bf u}^{(2)}$. Applying ${\bf A}$ 
+                     amounts to a scaling of the basis vectors by the 
+                     eigenvalues $\lambda_{1},\lambda_{2}$.\label{fig:eigenvectors-length_dict}}
+            \end{figure}
+       Each basis element ${\bf u}^{(j)}$ 
+       is an eigenvector of ${\bf A}$ with corresponding eigenvalue $\lambda_{j}$, 
+       for $j=1,\ldots,d$.
+
+\end{document}

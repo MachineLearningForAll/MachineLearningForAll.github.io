@@ -1,4 +1,3 @@
-
 \documentclass[tikz]{standalone}
 \usepackage{tikz}
 \usetikzlibrary{fit}
@@ -6,22 +5,9 @@
 \usetikzlibrary{positioning, arrows.meta, calc, decorations.pathreplacing}
 \definecolor{lightblue}{RGB}{173, 216, 230}
 \begin{document}
-\begin{tikzpicture}[>=stealth, thick,y=2cm]
- \foreach \x/\p in {1/0.3, 4/0.7}{
- \draw[gray] (\x,0) -- (\x,\p);
- \fill[blue] (\x,\p) circle (2pt);
- }
- \node[anchor=south,align=center] at (1,0.3) {\small $p^{(x)}\left(\star\right)=\frac{3}{10}$};
- \node[anchor=north] at (1,0) {\small $\star$};
- \node[anchor=north] at (4,0) {\small $\otimes$};
- \node[anchor=west,text width=11cm] at (-1.2,-0.80) {
- $\mathcal{D}= (\star,\,\star,\,\star,\,\otimes,\,\otimes,\,\otimes,\,\otimes,\,\otimes,\,\otimes,\,\otimes)$
- };
- \node[anchor=west,text width=11cm] at (-5.2,1.18) {\small
- $\mathcal{D}' = (\otimes,\,\star,\,\otimes,\,\star,\,\otimes,\,\otimes,\,\star,\,\otimes,\,\otimes,\,\otimes)$
- };
- \node[anchor=west,text width=11cm] at (3.2,1.56) {
- $\mathcal{D}'' = (\otimes,\,\otimes,\,\otimes,\,\star,\,\otimes,\,\star,\,\otimes,\,\otimes,\,\star,\,\otimes)$
- };
- \end{tikzpicture}
+\begin{tikzpicture}[scale=2.1, line cap=round, line join=round]
+            % two eigenvectors with different lengths
+            \draw[->, thick] (0,0) -- (-0.5,1) node[above right] {$\lambda_{1} {\bf u}^{(1)}$};
+            \draw[->, thick] (0,0) -- (2.0,1) node[above left]  {$\lambda_{2} {\bf u}^{(2)}$};
+            \end{tikzpicture}
 \end{document}
