@@ -2,17 +2,16 @@
 <html>
   <head>
    <script>
- 	 window.MathJax = {
-	    tex: {
-	      inlineMath: [['$', '$'], ['\\(', '\\)']],
-  	    displayMath: [['$$', '$$'], ['\\[', '\\]']]
- 	   },
-  	  svg: {
-  	    fontCache: 'global'
- 	   }
-	  };
-    </script>
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  	window.MathJax = {
+    	tex: {
+      		inlineMath: [['$', '$'], ['\\(', '\\)']],
+      		displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      		packages: {'[+]': ['ams']}
+    	     }
+  	};
+   </script>
+   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 

@@ -10,23 +10,22 @@
 
 Every normal matrix ${\bf A}\in \mathbb{C}^{d\times d}$ 
                  admits\index{spectral decomposition} a spectral decomposition of the form \cite{HornMatAnalysis,Axler2025}
-       \begin{align}
-        \nonumber
-            {\bf A}% & = 
-            % \big[ \vu^{(1)}\ \cdots\ \vu^{(\nrfeatures)}\big]
-            % \pmatrix{
-            % \eigval{1} &        &        & 0\\
-            %         & \eigval{2} &     &  \\
-            %         &        & \ddots &  \\
-            % 0         &        &        & \eigval{\nrfeatures}
-            % }
-            % \pmatrix{
-            % \big(\vu^{(1)}\big)^{H}\\
-            % \vdots\\
-            % \big(\vu^{(\nrfeatures)}\big)^{H}
-            % } \nonumber \\
-                & = \sum_{j=1}^{d} \lambda_{j} {\bf u}^{(j)} \big({\bf u}^{(j)})^{H} \nonumber \\ 
-       \end{align}
+       \begin{equation}
+             {\bf A}= 
+              \big( {\bf u}^{(1)}, \cdots, {\bf u}^{(d)}\big)
+              \begin{pmatrix}
+              \lambda_{1} &        &        & 0\\
+                      & \lambda_{2} &     &  \\
+                      &        & \ddots &  \\
+              0         &        &        & \lambda_{d}
+		 	 \end{pmatrix}
+              \begin{pmatrix}
+              \big({\bf u}^{(1)}\big)^{H}\\
+              \vdots\\
+              \big({\bf u}^{(d)}\big)^{H}
+		 	 \end{pmatrix}
+             = \sum_{j=1}^{d} \lambda_{j} {\bf u}^{(j)} \big({\bf u}^{(j)})^{H} \nonumber \\ 
+       \end{equation}
       with an orthonormal basis ${\bf u}^{(1)},\ldots,{\bf u}^{(d)}$. 
        \begin{figure}[t]
             \centering

@@ -485,7 +485,7 @@ if __name__ == "__main__":
 
     # Choose a glossary key to post
     blog_sample_term = "spectraldecomp"     # e.g., "pmf", "spectraldecomp"
-    slug = "spectral-decomposition"         # filename slug (avoid spaces)
+    slug = "Spectral-Decomposition"         # filename slug (avoid spaces)
 
     heute = date.today().isoformat()
 
