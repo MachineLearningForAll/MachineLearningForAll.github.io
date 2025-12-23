@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aalto Dictionary of ML – spectraldecomp"
+title: "Aalto Dictionary of ML – Spectral Decomposition"
 date: 2025-12-16
 seo_title: "spectraldecomp"
 seo_description: "spectraldecomp"
