@@ -18,7 +18,7 @@ core ideas of machine learning, bridging the gap between theory and application.
 [![Federated Learning: From Theory to Practice](https://media.springernature.com/w200/springer-static/cover/book/9789819510092.jpg)](https://link.springer.com/book/10.1007/978-981-95-1009-2)
 
 **Language**: English  
-**Publisher**: Springer, 2026
+**Publisher**: Springer, 2026 
 **ISBN**: 978-981-95-1008-5 (Hardcover), 978-981-95-1011-5 (Softcover), 978-981-95-1009-2 (eBook)  
 
 The textbook *Federated Learning: From Theory to Practice* revolves around a flexible design principle for federated learning systems. 
