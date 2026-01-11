@@ -13,6 +13,23 @@ core ideas of machine learning, bridging the gap between theory and application.
 
 ## **Published Books**
 
+### **Federated Learning: From Theory to Practice**
+
+[![Federated Learning: From Theory to Practice](https://media.springernature.com/w200/springer-static/cover/book/9789819510092.jpg)](https://link.springer.com/book/10.1007/978-981-95-1009-2)
+
+**Language**: English  
+**Publisher**: Springer, 2026
+**ISBN**: 978-981-95-1008-5 (Hardcover), 978-981-95-1011-5 (Softcover), 978-981-95-1009-2 (eBook)  
+
+The textbook *Federated Learning: From Theory to Practice* revolves around a flexible design principle for federated learning systems. 
+This principle is referred to as generalized total variation minimization (GTVMin) serves as a natural analogue of empirical risk minimization (ERM), 
+which underpins classical machine learning systems. The book develops federated learning methods systematically from this perspective and connects 
+seamlessly to my earlier textbook, Machine Learning: The Basics.
+
+[📖 Learn More or Purchase](https://link.springer.com/book/10.1007/978-981-95-1009-2)
+
+---
+
 ### **Machine Learning: The Basics**
 
 [![Machine Learning: The Basics](https://media.springernature.com/w200/springer-static/cover/book/9789811681936.jpg)](https://link.springer.com/book/10.1007/978-981-16-8193-6)
@@ -46,21 +63,6 @@ and professionals in machine learning.
 ---
 
 ## **Current Working Drafts**
-
-### **Federated Learning - From Theory to Algorithms**
-
-![Federated Learning Book](images/FLBookSnapshot.png)
-
-**Language**: English  
-**Format**: PDF  
-
-This textbook provides an in-depth introduction to federated learning, an emerging area in 
-machine learning focused on decentralized data processing. Ideal for students and researchers 
-looking to understand federated learning's theoretical foundations and practical applications.
-
-[📄 Download the current draft (PDF)](https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf)
-
----
 
 ### **The Aalto Dictionary for Machine Learning**
 
