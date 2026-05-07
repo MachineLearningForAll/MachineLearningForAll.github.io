@@ -13,6 +13,17 @@ core ideas of machine learning, bridging the gap between theory and application.
 
 ## **Published Books**
 
+### **Dictionary of Applied Machine Learning** *(forthcoming)*
+
+**Language**: English
+**Publisher**: Springer
+
+A forthcoming reference work that distills the vocabulary of applied machine learning — concepts, methods, and notation — into a single coherent dictionary for students, researchers, and practitioners. It builds on the open-source *Aalto Dictionary of Machine Learning* and extends it with entries tailored to applied and industrial ML practice.
+
+[📖 Listing on Google Books](https://books.google.fi/books/about/Dictionary_of_Applied_Machine_Learning.html?id=JLGT0QEACAAJ)
+
+---
+
 ### **Federated Learning: From Theory to Practice**
 
 [![Federated Learning: From Theory to Practice](https://media.springernature.com/w200/springer-static/cover/book/9789819510092.jpg)](https://link.springer.com/book/10.1007/978-981-95-1009-2)
@@ -43,6 +54,18 @@ concepts of machine learning, covering key algorithms and techniques in an acces
 is ideal for newcomers and those seeking to strengthen their understanding of core principles.
 
 [📖 Learn More or Purchase](https://link.springer.com/book/10.1007/978-981-16-8193-6)
+
+---
+
+### **Aalto Dictionary of Machine Learning — Special Course Edition**
+
+**Language**: English
+**Publisher**: Aalto University Library
+**Format**: Open access
+
+A curated edition of the *Aalto Dictionary of Machine Learning* tailored for use in special courses on machine learning. It distills the essential terminology and notation needed to follow ML lectures and read research papers, and is designed to be cited and reused — including its underlying LaTeX entries — for teaching, slides, and scientific publications.
+
+[📖 Read on Aaltodoc](https://aaltodoc.aalto.fi/)
 
 ---
 
