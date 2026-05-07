@@ -46,7 +46,7 @@ disqus:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://alexjungaalto.github.io/
+url: https://alexjung.at
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -103,5 +103,5 @@ plugins:
 
 feed:
   path: feed.xml
-  title: "Aalto Dictionary of Machine Learning"
-  description: "Multilingual glossary of core ML concepts"
+  title: "Alexander Jung — Blog"
+  description: "Notes on machine learning, teaching, and research by Alexander Jung"
