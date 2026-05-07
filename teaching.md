@@ -1,59 +1,85 @@
 ---
 layout: page
-title: "A Three-Component Perspective on Machine Learning"
+title: "Teaching"
 permalink: /teaching/
 ---
 
-Most of us have witnessed the accelerating impact of artificial 
-intelligence (AI) on our lives. Few of us are not consuming AI 
-in one form or another. Based on AI systems' recommendations, 
-we chose our jobs, partners, and the following video. The core 
-technology behind most current AI systems is machine learning (ML). 
+## Courses Taught at Aalto University
 
-A consequence of the recent AI hype is an increasing demand for 
-accessible introductions to ML concepts. One challenge in providing 
-high-quality introductions to ML is the audience's diversity and needs. 
+A complete list of course implementations I have lectured or co-taught at Aalto, in reverse-chronological order. Codes follow the Aalto course catalogue.
 
-Right from my start on the tenure track at Aalto University, I was 
-faced with serving rapidly growing student cohorts in my ML courses. 
-To this end, I have developed a simple three-component picture of ML. 
-This picture simplifies and structures the learning process for students 
-from diverse fields.
+### Upcoming
 
-The three fundamental components of ML are 
+- **CS-E4740 Federated Learning D** — contact teaching, 1.3.2027 – 12.6.2027.
 
-1. **Data Representation**  
-2. **Model Design**  
-3. **Loss Functions**
+### Ongoing
 
-We can decompose any ML method into these three components. Linear regression 
-is obtained for one specific design choice for data, model and loss. Using 
-a different design choice for the model results in deep learning methods. 
-Reinforcement learning methods are characterized by using reward signals 
-to construect loss functions. 
+- **CS-E4740 Federated Learning D** — lecture, 23.2.2026 – 27.5.2026.
 
-![Three-Component Framework for Machine Learning](images/MLLandscape.png)
+### Past implementations
 
-The principles of this framework are extensively discussed in my textbook:  
-**[Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6)**  
-*A. Jung, Springer, 2022.*
+#### 2025
+- **CS-A1155 Databases for Data Science** — lecture, 15.4.2025 – 30.5.2025.
+- **CS-E4740 Federated Learning D** — lecture, 24.2.2025 – 28.5.2025.
 
-## Evidence-Based Approach
-- Strong emphasis on **interactive learning** using online quizzes, coding assignments, and project-based assessments.
-- Focus on **conceptual clarity** with practical exercises, such as Python notebooks hosted on [JupyterHub](https://jupyter.cs.aalto.fi/).
+#### 2024
+- **CS-E4740 Federated Learning D** — lectures, 28.2.2024 – 29.5.2024.
 
-## Key Principles
-1. Keep lectures concise and targeted to specific learning goals.
-2. Provide curated resources, including textbooks ([Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6)), YouTube playlists, and GitHub repositories.
-3. Foster a feedback-adaptive teaching cycle while maintaining a consistent course schedule.
+#### 2023
+- **CS-EJ3311 Deep Learning with Python D** — lecture, 23.10.2023 – 10.12.2023.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 29.5.2023 – 17.7.2023.
+- **CS-E4740 Federated Learning D** — lecture, 27.2.2023 – 31.5.2023.
 
----
+#### 2022
+- **CS-EJ3311 Deep Learning with Python D** — lectures, 24.10.2022 – 11.12.2022.
+- **CS-E407507 Special Course in Machine Learning and Data Science: Human-Centered Machine Learning**.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 4.4.2022 – 4.7.2022.
+- **CS-E407508 Special Course in Machine Learning and Data Science: Networked Federated Learning**.
+- **CS-C3240 Machine Learning D** — lecture, 10.1.2022 – 8.4.2022.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 10.1.2022 – 8.4.2022.
 
-## **Student and Peer Recognition**
+#### 2021
+- **CS-EJ3311 Deep Learning with Python D** — lectures, 13.9.2021 – 17.12.2021.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 29.3.2021 – 4.6.2021.
+- **CS-C3240 Machine Learning D** — lectures, 11.1.2021 – 26.3.2021.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 11.1.2021 – 26.3.2021.
 
-- **Teacher of the Year 2018**, Department of Computer Science, Aalto University.
-- Consistently high student ratings in teaching evaluations.
-- Invited speaker and lecturer at multiple international institutions and conferences.
+#### 2020
+- **CS-EJ3311 Deep Learning with Python D** — lectures, 9.9.2020 – 18.12.2020.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 7.9.2020 – 11.12.2020.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 4.5.2020 – 31.7.2020.
+- **CS-E4070 Special Course in Machine Learning and Data Science D** — lectures, 15.4.2020 – 27.5.2020.
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 7.1.2020 – 3.4.2020.
+
+#### 2019
+- **CS-EJ3211 Machine Learning with Python D** — lectures, 9.9.2019 – 4.12.2019.
+- **CS-EV Course with Varying Content** — lectures, 15.4.2019 – 15.6.2019.
+
+#### 2018
+- **CS-E3210 Machine Learning: Basic Principles D** — lectures, 11.9.2018 – 29.10.2018.
+- **CS-E4800 Artificial Intelligence D** — lectures, 4.1.2018 – 5.4.2018.
+
+#### 2017
+- **CS-E3210 Machine Learning: Basic Principles D** — lectures, 13.9.2017 – 8.12.2017.
+- **CS-E4020 Special Course in Machine Learning and Data Science II D** — lectures, 22.2.2017 – 17.5.2017.
+
+#### 2016
+- **CS-E3210 Machine Learning: Basic Principles D** — lectures, 13.9.2016 – 21.10.2016.
+- **T-61.6020 Special Course in Computer and Information Science II D** — lectures, 11.4.2016 – 18.5.2016.
+
+#### 2015
+- **T-61.3050 Machine Learning: Basic Principles** — lectures, 7.9.2015 – 4.12.2015.
+
+## Courses Taught at IMC Krems
+
+Lectures within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA* (Bachelor in *Unternehmensführung* — Business Administration) programmes at IMC Krems University of Applied Sciences.
+
+### SS26
+- **FML2ILV — Federated Machine Learning** (RAI MA, 2nd semester).
+- **CAI2VO — Corporate AI** (UF BA, 2nd semester).
+
+### WS25/26
+- **MLR1ILV — Machine Learning** (RAI MA, 1st semester).
 
 ---
 
