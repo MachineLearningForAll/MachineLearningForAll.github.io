@@ -11,8 +11,6 @@ core ideas of machine learning, bridging the gap between theory and application.
 
 ---
 
-## **Published Books**
-
 ### **Dictionary of Applied Machine Learning** *(forthcoming)*
 
 **Language**: English
