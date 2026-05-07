@@ -89,8 +89,3 @@ reduction in **conditional entropy**, this method ensures that explanations alig
   *A. Jung and P. H. J. Nardelli, IEEE Signal Processing Letters, 2020.*  
   [Read More](https://ieeexplore.ieee.org/document/9089200) (DOI: 10.1109/LSP.2020.2993176)
 
----
-
-### Keywords
-
-**Federated Learning**, **Explainable AI**, **Big Data Over Networks**, **Networked Exponential Families**, **Personalized Predictions**, **Total Variation Minimization**, **Machine Learning Explainability**, **Trustworthy AI**
