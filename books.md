@@ -59,13 +59,15 @@ is ideal for newcomers and those seeking to strengthen their understanding of co
 
 ### **Aalto Dictionary of Machine Learning — Special Course Edition**
 
+[![Aalto Dictionary of Machine Learning — Special Course Edition](images/AaltoDictML.png)](https://aaltodoc.aalto.fi/items/1959f11b-bb98-488b-862d-f7d1ed44d976)
+
 **Language**: English
 **Publisher**: Aalto University Library
 **Format**: Open access
 
 A curated edition of the *Aalto Dictionary of Machine Learning* tailored for use in special courses on machine learning. It distills the essential terminology and notation needed to follow ML lectures and read research papers, and is designed to be cited and reused — including its underlying LaTeX entries — for teaching, slides, and scientific publications.
 
-[📖 Read on Aaltodoc](https://aaltodoc.aalto.fi/)
+[📖 Read on Aaltodoc](https://aaltodoc.aalto.fi/items/1959f11b-bb98-488b-862d-f7d1ed44d976)
 
 ---
 
