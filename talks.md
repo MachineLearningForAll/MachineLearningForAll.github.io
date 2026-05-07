@@ -10,18 +10,16 @@ For academic talks, please see the [Research](/research/) page.
 
 ## Upcoming
 
-<!-- Add upcoming talks here -->
+### Katholisches Bildungswerk
+- **2026-05-05** — *"Künstliche Intelligenz — Was sie kann, was sie nicht kann, und was das für uns bedeutet."* Kath. Bildungswerk Oberösterreich, Kirchheim im Innkreis (DE).
 
 ## Past
 
-### Arbeiterkammer (AK)
-- *YYYY-MM-DD* — **Talk title**, AK [Vienna/…], [DE/EN]. <!-- [slides](#) · [recording](#) -->
-
 ### Volkshochschule (VHS)
-- *YYYY-MM-DD* — **Talk title**, VHS [Vienna/…], [DE/EN].
+- **2025-11-18** — *"Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle."* VHS Hainfeld (DE).
 
-### Katholisches Bildungswerk
-- *YYYY-MM-DD* — **Talk title**, Kath. Bildungswerk [Diocese/Region], [DE/EN].
+### Arbeiterkammer (AK)
+- **2025-11-24/25** — *"Künstliche Intelligenz in der Arbeitswelt."* Arbeiterkammer Steiermark, Graz (DE).
 
 ---
 
