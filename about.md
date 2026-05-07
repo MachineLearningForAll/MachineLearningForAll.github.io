@@ -46,6 +46,3 @@ On this site, you can find:
 
 Have questions or want to collaborate?  [Send me an email](mailto:alexjung235@gmail.com), and let's connect!
 
----
-
-*Discover more about machine learning on my [blog](https://machinelearningforall.github.io).*  

@@ -77,6 +77,3 @@ Lectures within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA*
 ### WS25/26
 - **MLR1ILV — Machine Learning** (RAI MA, 1st semester)
 
----
-
-### Keywords: machine learning teaching, data representation, model design, loss functions, machine learning textbook, A. Jung
