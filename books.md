@@ -59,7 +59,9 @@ is ideal for newcomers and those seeking to strengthen their understanding of co
 
 ### **Aalto Dictionary of Machine Learning — Special Course Edition**
 
-[![Aalto Dictionary of Machine Learning — Special Course Edition](images/AaltoDictML.png)](https://aaltodoc.aalto.fi/items/1959f11b-bb98-488b-862d-f7d1ed44d976)
+<a href="https://aaltodoc.aalto.fi/items/1959f11b-bb98-488b-862d-f7d1ed44d976">
+  <img src="images/AaltoDictML.png" alt="Aalto Dictionary of Machine Learning — Special Course Edition" width="200" />
+</a>
 
 **Language**: English
 **Publisher**: Aalto University Library
