@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seminar-Baukasten — Alexander Jung</title>
+<style>
+  :root { color-scheme: light dark; --accent:#0066cc; --line:#ddd; --muted:#888; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; line-height: 1.6; }
+  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+  .sub { color: var(--muted); margin-top: 0; }
+  p.lead { margin: 1.2rem 0 2rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  fieldset { border: 1px solid var(--line); border-radius: 8px; margin: 0 0 1.2rem; padding: 1rem 1.2rem; }
+  legend { font-weight: 600; padding: 0 .4rem; }
+  legend small { font-weight: 400; color: var(--muted); }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .35rem .8rem; margin-top: .4rem; }
+  label.term { display: flex; align-items: baseline; gap: .5rem; cursor: pointer; }
+  label.term input { margin-top: .2rem; }
+  label.term .ref { margin-left: auto; font-size: .8rem; opacity: .5; }
+  label.term .ref:hover { opacity: 1; }
+  .bar { position: sticky; bottom: 0; background: Canvas; border-top: 1px solid var(--line);
+         padding: .9rem 0; margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .count { color: var(--muted); }
+  button { font: inherit; background: var(--accent); color: #fff; border: 0; border-radius: 6px;
+           padding: .6rem 1.1rem; cursor: pointer; }
+  button[disabled] { opacity: .45; cursor: not-allowed; }
+  footer { margin-top: 3rem; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem; }
+  .hint { font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+  <h1>Seminar-Baukasten</h1>
+  <p class="sub">Stellen Sie Ihr maßgeschneidertes KI-Seminar aus dem <em>Dictionary of Applied Machine Learning</em> zusammen.</p>
+
+  <p class="lead">Wählen Sie die Begriffe, die für Ihre Organisation zählen — Ihre Auswahl wird zum Inhaltsgerüst
+     für ein Seminar von <strong>Prof. Alexander Jung</strong>, Autor dieses Wörterbuchs. Jeder Begriff ist
+     öffentlich definiert und mit einer <strong>lauffähigen Python-Demo</strong> belegt
+     (<a href="https://dictionaryofml.org/">↗ im Wörterbuch</a>).</p>
+
+  <form id="cfg">
+
+    <fieldset data-section="Wie funktioniert ChatGPT? (LLMs)">
+      <legend>Wie funktioniert ChatGPT? <small>— LLMs · für alle, Öffentlichkeit &amp; Firmen</small></legend>
+      <div class="terms">
+        <label class="term"><input type="checkbox" value="large language model"> large language model <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/llm.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="transformer"> transformer <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/transformer.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="attention"> attention <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/attention.html" title="im Wörterbuch ansehen">↗</a></label>
+      </div>
+    </fieldset>
+
+    <fieldset data-section="KI-Grundlagen">
+      <legend>KI-Grundlagen <small>— ML Core · für Bildungswerke, AK, Einsteiger</small></legend>
+      <div class="terms">
+        <label class="term"><input type="checkbox" value="data"> data <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/data.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="data point"> data point <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/datapoint.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="dataset"> dataset <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/dataset.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="feature"> feature <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/feature.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="label"> label <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/label.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="model"> model <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/model.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="loss"> loss <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/loss.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="empirical risk minimization"> empirical risk minimization <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/erm.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="hypothesis"> hypothesis <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/hypothesis.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="hypothesis space"> hypothesis space <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/hypospace.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="generalization"> generalization <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/generalization.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="overfitting"> overfitting <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/overfitting.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="regularization"> regularization <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/regularization.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="linear regression"> linear regression <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/linreg.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="support vector machine"> support vector machine <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/svm.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="gradient"> gradient <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/gradient.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="gradient descent"> gradient descent <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/gd.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="stochastic gradient descent"> stochastic gradient descent <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/stochGD.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="kernel method"> kernel method <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/kernelmethod.html" title="im Wörterbuch ansehen">↗</a></label>
+      </div>
+    </fieldset>
+
+    <fieldset data-section="Erklärbare &amp; vertrauenswürdige KI">
+      <legend>Erklärbare &amp; vertrauenswürdige KI <small>— XAI · für Management, Compliance, Betriebsräte</small></legend>
+      <div class="terms">
+        <label class="term"><input type="checkbox" value="explainability"> explainability <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/explainability.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="explainable AI (XAI)"> explainable AI (XAI) <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/xaiterm.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="interpretability"> interpretability <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/interpretability.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="interpretable machine learning"> interpretable ML <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/interpretableml.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="transparency"> transparency <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/transparency.html" title="im Wörterbuch ansehen">↗</a></label>
+      </div>
+    </fieldset>
+
+    <fieldset data-section="Mathematik der KI">
+      <legend>Mathematik der KI <small>— für Technik-Teams, Aktuar:innen, Fortgeschrittene</small></legend>
+      <div class="terms">
+        <label class="term"><input type="checkbox" value="matrix"> matrix <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/matrix.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="eigenvalue"> eigenvalue <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/eigenvalue.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="eigenvalue decomposition"> eigenvalue decomposition <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/evd.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="singular value decomposition"> singular value decomposition <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/svd.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="norm"> norm <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/norm.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="inner product"> inner product <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/innerproduct.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="projection"> projection <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/projection.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="Hilbert space"> Hilbert space <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/hilbertspace.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="Sobolev space"> Sobolev space <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/sobolevspace.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="convex"> convex <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/convex.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="mean"> mean <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/mean.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="variance"> variance <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/variance.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="probability distribution"> probability distribution <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/probdist.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="random variable"> random variable <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/rv.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="Gaussian random variable"> Gaussian random variable <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/gaussrv.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="covariance matrix"> covariance matrix <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/covmtx.html" title="im Wörterbuch ansehen">↗</a></label>
+      </div>
+    </fieldset>
+
+    <div class="bar">
+      <span class="count" id="count">0 Begriffe gewählt</span>
+      <button type="button" id="send" disabled>Als Seminar anfragen →</button>
+      <span class="hint">öffnet eine vorausgefüllte E-Mail</span>
+    </div>
+  </form>
+
+  <footer>
+    Zurück zu <a href="https://dictionaryofml.org/">dictionaryofml.org</a> ·
+    Alle Formate &amp; Preise: <a href="https://alexjung.at/seminare">alexjung.at/seminare</a> ·
+    Prof. Alexander Jung, Aalto University
+  </footer>
+
+<script>
+(function () {
+  var form = document.getElementById('cfg');
+  var countEl = document.getElementById('count');
+  var sendBtn = document.getElementById('send');
+  var EMAIL = 'alexjung235@gmail.com';
+
+  function selection() {
+    var out = [];
+    form.querySelectorAll('fieldset').forEach(function (fs) {
+      var picks = [];
+      fs.querySelectorAll('input:checked').forEach(function (cb) { picks.push(cb.value); });
+      if (picks.length) out.push({ section: fs.getAttribute('data-section').replace(/&amp;/g, '&'), picks: picks });
+    });
+    return out;
+  }
+
+  function update() {
+    var sel = selection();
+    var n = sel.reduce(function (a, s) { return a + s.picks.length; }, 0);
+    countEl.textContent = n + (n === 1 ? ' Begriff gewählt' : ' Begriffe gewählt');
+    sendBtn.disabled = n === 0;
+  }
+
+  form.addEventListener('change', update);
+
+  sendBtn.addEventListener('click', function () {
+    var sel = selection();
+    var lines = ['Anfrage für ein maßgeschneidertes KI-Seminar.', '', 'Ausgewählte Themen aus dem Dictionary of Applied ML:', ''];
+    sel.forEach(function (s) { lines.push('— ' + s.section + ': ' + s.picks.join(', ')); });
+    lines.push('', 'Bitte noch ergänzen:', 'Format (Impuls / Kompakt / Inhouse):', 'Organisation:',
+               'Zielgruppe & Teilnehmerzahl:', 'Wunschtermin:', 'Ort:');
+    var body = encodeURIComponent(lines.join('\n'));
+    var subj = encodeURIComponent('Seminar-Anfrage (Dictionary-Baukasten)');
+    window.location.href = 'mailto:' + EMAIL + '?subject=' + subj + '&body=' + body;
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>

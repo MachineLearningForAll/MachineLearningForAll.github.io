@@ -31,7 +31,7 @@ Was KI wirklich ist (Entzauberung) · LLMs & generative KI · **KI am Arbeitspla
 
 Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applied Machine Learning* (von mir verfasst) wählen Sie die Begriffe, die für Ihre Organisation zählen — Ihre Auswahl wird zum Inhaltsgerüst.
 
-👉 **[Seminar-Baukasten öffnen](https://dictionaryofml.org/seminar.html)** — Themen anklicken, Seminar anfragen.
+👉 **[Seminar-Baukasten öffnen](/baukasten/)** — Themen anklicken, Seminar anfragen.
 
 | Themenfeld | Zielgruppe |
 |---|---|
