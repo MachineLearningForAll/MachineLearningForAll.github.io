@@ -356,6 +356,56 @@ footer {
 }
 
 
+/* ---- Content tables (e.g. the Formate matrix) ---- */
+.entry table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+}
+
+.entry table th,
+.entry table td {
+  padding: 0.6em 0.9em;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid $lightGray;
+}
+
+.entry table thead th {
+  background: $lightGray;
+  color: $darkerGray;
+  font-weight: bold;
+  border-bottom: 2px solid $blue;
+  white-space: nowrap;
+}
+
+.entry table tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.entry table tbody tr:hover td {
+  background: #f0f6fc;
+}
+
+/* keep the Format name on one line; right-align the Honorar column */
+.entry table td:first-child {
+  white-space: nowrap;
+}
+
+.entry table th:last-child,
+.entry table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+@include mobile {
+  .entry table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

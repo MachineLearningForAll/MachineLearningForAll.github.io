@@ -36,6 +36,19 @@ and a strong focus on **learning outcomes**.
       <a href="{{ site.baseurl }}/personal-ml-coach/" class="campaign-btn">Details</a>
     </div>
   </div>
+
+  <div class="campaign-card">
+    <div class="campaign-card-content">
+      <h2 class="campaign-title">Vorträge &amp; Seminare</h2>
+      <p class="campaign-details">
+        <strong>Deutsch · Österreich</strong> <br>
+      </p>
+      <p class="campaign-features">
+        🚀 <strong>KI-Kompetenz, AI-Act-konform &amp; förderbar</strong>
+      </p>
+      <a href="{{ site.baseurl }}/seminare/" class="campaign-btn">Details</a>
+    </div>
+  </div>
 </div>
 
 ---
