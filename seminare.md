@@ -27,6 +27,21 @@ Ich bin **Prof. Dr. techn. Alexander Jung**, Machine-Learning-Forscher an der Aa
 
 Was KI wirklich ist (Entzauberung) · LLMs & generative KI · **KI am Arbeitsplatz** · **AI Act, Rechte & Mitbestimmung** · Risiken: Bias, Fehler, Überwachung · Live-Demo · Ihre Branchen-Fallstudie.
 
+## Seminar-Baukasten — aus dem *Dictionary of Applied ML*
+
+Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applied Machine Learning* (von mir verfasst) wählen Sie die Begriffe, die für Ihre Organisation zählen — Ihre Auswahl wird zum Inhaltsgerüst.
+
+👉 **[Seminar-Baukasten öffnen](https://dictionaryofml.org/seminar.html)** — Themen anklicken, Seminar anfragen.
+
+| Themenfeld | Zielgruppe |
+|---|---|
+| KI, Recht & AI Act | AK, Betriebsräte |
+| Erklärbare & vertrauenswürdige KI | Management, Compliance |
+| Datenschutz & Federated Learning | datensensible Betriebe, öffentl. Hand |
+| KI in der Praxis (ML-Systeme) | Unternehmen, Technik-Teams |
+| KI in der Medizin | Kliniken, MedUni |
+| KI-Grundlagen | Bildungswerke, Einsteiger |
+
 ## Förderungen
 
 - **Inhouse / mehrtägig (ab 16 h):** förderfähig über **FFG Skills Scheck** (bis 50 %, max € 5.000/Person) und **AMS-Qualifizierungsförderung** (50 %, bis € 10.000/Person) — je nach Bundesland ergänzt durch Landesförderungen (waff Wien, OÖ, KWF Kärnten, Wirtschaftsagentur Burgenland).
