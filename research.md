@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Towards Trustworthy AI via Federated and Explainable Machine Learning"
+title: "Towards Trustworthy AI"
 permalink: /research/
 ---
 
@@ -21,11 +21,9 @@ machine learning. Several prestigious grants support these efforts:
 
 ---
 
-## Federated Learning: Computational and Statistical Innovations
+## Federated Learning
 
 ![Federated Learning in Pandemic Management](images/Pandemics.jpg)
-
-### Federated Learning for Network-Structured Data
 
 The era of **big data over networks** demands solutions for handling interconnected, 
 heterogeneous datasets. A prime example is pandemic management, where wearables 
@@ -63,11 +61,10 @@ My research introduces **networked exponential families**, a cutting-edge probab
 
 ---
 
-## Explainable AI (XAI): Personalized and Transparent Models
+## Explainable AI (XAI)
 
 ![Explainable Machine Learning](images/ProbModelXML.png)
 
-### Building Trust Through Personalized Explainability
 
 For AI systems to gain widespread acceptance, their predictions must be explainable. My research 
 focuses on developing **personalized explanations** tailored to individual users. By measuring the 
