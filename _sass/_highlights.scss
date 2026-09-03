@@ -10,6 +10,17 @@
   overflow: scroll;
 }
 
+/* Rouge nests pre.highlight inside div.highlight; box the outer one only */
+.highlight .highlight,
+.highlight pre {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
 }
