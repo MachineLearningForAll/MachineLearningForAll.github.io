@@ -6,7 +6,7 @@ permalink: /mlbook/
 
 [![Machine Learning: The Basics](https://media.springernature.com/w200/springer-static/cover/book/9789811681936.jpg)](https://link.springer.com/book/10.1007/978-981-16-8193-6)
 
-**Alexander Jung — Springer, 2022**
+**Alexander Jung — Springer, 2022**<br>
 **ISBN**: 978-981-16-8192-9 (Print), 978-981-16-8193-6 (eBook)
 
 *Machine Learning: The Basics* offers a compact introduction to the fundamental
