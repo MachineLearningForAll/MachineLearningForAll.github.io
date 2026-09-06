@@ -13,8 +13,8 @@ core ideas of machine learning, bridging the gap between theory and application.
 
 ### **Dictionary of Applied Machine Learning** *(forthcoming)*
 
-**Language**: English
-**Publisher**: Springer
+**Language**: English  
+**Publisher**: Springer  
 
 A forthcoming reference work that distills the vocabulary of applied machine learning — concepts, methods, and notation — into a single coherent dictionary for students, researchers, and practitioners. It builds on the open-source *Aalto Dictionary of Machine Learning* and extends it with entries tailored to applied and industrial ML practice.
 
@@ -27,11 +27,11 @@ A forthcoming reference work that distills the vocabulary of applied machine lea
 [![Federated Learning: From Theory to Practice](https://media.springernature.com/w200/springer-static/cover/book/9789819510092.jpg)](https://link.springer.com/book/10.1007/978-981-95-1009-2)
 
 **Language**: English  
-**Publisher**: Springer, 2026 
+**Publisher**: Springer, 2026  
 **ISBN**: 978-981-95-1008-5 (Hardcover), 978-981-95-1011-5 (Softcover), 978-981-95-1009-2 (eBook)  
 
 The textbook *Federated Learning: From Theory to Practice* revolves around a flexible design principle for federated learning systems. 
-This principle is referred to as generalized total variation minimization (GTVMin) serves as a natural analogue of empirical risk minimization (ERM), 
+This principle, referred to as generalized total variation minimization (GTVMin), serves as a natural analogue of empirical risk minimization (ERM), 
 which underpins classical machine learning systems. The book develops federated learning methods systematically from this perspective and connects 
 seamlessly to my earlier textbook, Machine Learning: The Basics.
 
@@ -61,9 +61,9 @@ is ideal for newcomers and those seeking to strengthen their understanding of co
   <img src="{{ site.baseurl }}/images/AaltoDictML.png" alt="Aalto Dictionary of Machine Learning — Special Course Edition" width="200" />
 </a>
 
-**Language**: English
-**Publisher**: Aalto University Library
-**Format**: Open access
+**Language**: English  
+**Publisher**: Aalto University Library  
+**Format**: Open access  
 
 A curated edition of the *Aalto Dictionary of Machine Learning* tailored for use in special courses on machine learning. It distills the essential terminology and notation needed to follow ML lectures and read research papers, and is designed to be cited and reused — including its underlying LaTeX entries — for teaching, slides, and scientific publications.
 
@@ -91,7 +91,7 @@ and professionals in machine learning.
 
 ### **The Aalto Dictionary for Machine Learning**
 
-![The Aalto Dictionary for Machine Learning](images/ADictMLSnapshot.png) 
+![The Aalto Dictionary for Machine Learning](/images/ADictMLSnapshot.png)
 
 **Language**: English  
 **Format**: PDF 
@@ -99,7 +99,7 @@ and professionals in machine learning.
 **The Aalto Dictionary of Machine Learning** is a curated, open-source glossary of essential terms and 
 concepts in machine learning.  Beyond serving as a concise reference for students and practitioners, 
 the dictionary is published as a publicly available **LaTeX codebase**. You are explicitly encouraged 
-to reuse its \TeX\ entries—with proper citation—for preparing **lecture material, slides, and even 
+to reuse its LaTeX entries — with proper citation — for preparing **lecture material, slides, and even 
 scientific publications**. This makes the dictionary not only a learning resource, but also a practical 
 building block for teaching and communicating machine learning concepts with consistent notation and terminology.
 

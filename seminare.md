@@ -48,6 +48,14 @@ Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applie
 - **Offene Kurse:** über **AK-Bildungsgutschein/Digi-Bonus** bzw. **Landes-Bildungsscheck** förderbar.
 - **Betriebsrat:** Teilnahme über **Bildungsfreistellung § 118 ArbVG** (bei AK/ÖGB-Anerkennung).
 
+## Referenzen (Auswahl)
+
+- **Arbeiterkammer Steiermark, Graz** — zweitägiges Seminar *„Künstliche Intelligenz in der Arbeitswelt"* für Betriebsrät:innen (Nov. 2025): KI/ML-Grundlagen, DSGVO, AI Act, ISO-Normung, Mitbestimmung.
+- **VHS Hainfeld (NÖ)** — Abendvortrag *„Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle"* (Nov. 2025).
+- **Katholisches Bildungswerk OÖ, Kirchheim im Innkreis** — eingeladener Publikumsvortrag *„Künstliche Intelligenz — was sie kann, was sie nicht kann, und was das für uns bedeutet"* (Mai 2026).
+
+Alle Termine im Überblick: [Public Talks](/talks/).
+
 ## Stimmen
 
 > *„Besonders hervorzuheben war das hohe didaktische Niveau der Vorträge — vielen Dank dafür!"*

@@ -23,7 +23,7 @@ machine learning. Several prestigious grants support these efforts:
 
 ## Federated Learning
 
-![Federated Learning in Pandemic Management](images/Pandemics.jpg)
+![Federated Learning in Pandemic Management](/images/Pandemics.jpg)
 
 The era of **big data over networks** demands solutions for handling interconnected, 
 heterogeneous datasets. A prime example is pandemic management, where wearables 
@@ -63,7 +63,7 @@ My research introduces **networked exponential families**, a cutting-edge probab
 
 ## Explainable AI (XAI)
 
-![Explainable Machine Learning](images/ProbModelXML.png)
+![Explainable Machine Learning](/images/ProbModelXML.png)
 
 
 For AI systems to gain widespread acceptance, their predictions must be explainable. My research 

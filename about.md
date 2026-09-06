@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Alexander Jung | Machine Learning Expert
+title: About Me
 permalink: /about/
 ---
 
 Welcome! My name is **Alexander Jung**, and I am a tenured **Associate Professor in Machine Learning**
- at Aalto University, Finland. With over **15 years of experience in research and education**, I am passionate 
+ at Aalto University, Finland. With **nearly two decades of experience in research and education**, I am passionate 
  about advancing the field of machine learning and mentoring the next generation of AI and data science experts.
 
 ## My Background
@@ -27,10 +27,10 @@ Explore machine learning concepts in action! On my **YouTube channel** [@alexjun
 - **Explainer videos** breaking down complex topics  
 - **Tips for students and researchers** in AI and data science  
 
-🎯 Watch this video on three main components of ML :
+🎯 Watch this video on the three main components of ML:
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/2q5jpvD-638" 
+  <iframe width="560" height="315" style="max-width:100%;" src="https://www.youtube.com/embed/2q5jpvD-638" 
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

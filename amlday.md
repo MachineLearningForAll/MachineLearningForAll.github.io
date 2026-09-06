@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "A ML Day: Tailored Machine Learning Solutions for Industry"
+title: "ML Day: Tailored Machine Learning Training for Industry"
 permalink: /aml-day/
 ---
 
-Do you want to upskill your team in machine learning? **A ML Day** offers 
+Do you want to upskill your team in machine learning? **ML Day** offers 
 customizable machine learning (ML) training programs designed to meet the 
 unique needs of your organization. From inspiring keynote talks to hands-on 
 workshops, I provide transformative learning experiences for professionals 
@@ -22,13 +22,13 @@ I have successfully delivered ML training for a range of organizations, includin
 - [City of Helsinki](https://www.hel.fi/en) — Custom workshops for municipal employees.  
 - [The Actuarial Society of Finland](https://www.actuary.fi/in-english) — Specialized training for actuaries and financial experts.  
 
-Join the growing list of organizations that have transformed their ML capabilities with **A ML Day**.  
+Join the growing list of organizations that have transformed their ML capabilities with **ML Day**.  
 
 ---
 
 ## 🎓 **Training Formats Offered**
 
-Every organization has unique needs, and **A ML Day** is designed to be flexible. Choose from 
+Every organization has unique needs, and **ML Day** is designed to be flexible. Choose from 
 a range of formats to match your goals and schedule:
 
 ### ✨ **Engaging Plenary Talks**  
@@ -84,13 +84,13 @@ over time, building deep understanding and applied skills.
 - **Custom Solutions:** I design every training session to meet the specific goals of your organization. No cookie-cutter content.  
 - **Real-World Application:** Participants walk away with skills they can apply immediately.  
 
-Want to bring **A ML Day** to your organization? Let’s discuss how we can tailor the right solution for you.  
+Want to bring **ML Day** to your organization? Let’s discuss how we can tailor the right solution for you.  
 
 ---
 
 ## 📅 **Get in Touch**
 
 **Ready to upskill your team?**  
-📧 Contact me by email or via social media to discuss your needs. 
+📧 Contact me at [alexjung235@gmail.com](mailto:alexjung235@gmail.com) or via [LinkedIn](https://www.linkedin.com/in/aljung/) to discuss your needs. 
 
 ---

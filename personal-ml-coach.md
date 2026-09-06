@@ -8,7 +8,7 @@ Do you want to level up your machine learning skills or tackle advanced ML chall
 I offer **personalized coaching** for students, researchers, and professionals looking 
 to master machine learning concepts or apply them in real-world projects.
 
-As a seasoned mentor with over [100 Master’s theses supervised](/assets/MasterThesisSupervisedNov24.pdf), 
+As a seasoned mentor with over [100 Master’s theses supervised](/supervision/), 
 I provide one-on-one coaching sessions that focus on your unique learning needs. From 
 foundational skills to cutting-edge topics, I guide you every step of the way.
 
@@ -48,7 +48,7 @@ If you’re working on an advanced ML project or a Master’s thesis, I can offe
 
 Choosing the right coach can make or break your learning experience. Here’s why learners trust me as their ML coach:  
 
-- **📘 Proven Track Record**: I have supervised over [100 Master’s theses](/assets/MasterThesisSupervisedNov24.pdf) on applied ML topics, guiding students to academic and professional success.  
+- **📘 Proven Track Record**: I have supervised over [100 Master’s theses](/supervision/) on applied ML topics, guiding students to academic and professional success.  
 - **🔬 Deep Research Expertise**: My background includes pioneering research on **Federated Learning**, **Intrusion Detection**, and **Explainable AI**.  
 - **🎯 Tailored Guidance**: Every coaching session is customized to your goals, whether it’s academic success, industry applications, or advancing research.  
 

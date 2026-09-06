@@ -10,13 +10,12 @@ A list of courses I have lectured or co-taught at Aalto. Codes follow the Aalto 
 
 ### Upcoming
 
-- **CS-E4740 Federated Learning D**
-
-### Ongoing
-
-- **CS-E4740 Federated Learning D**
+- **CS-E4740 Federated Learning D** (spring 2027)
 
 ### Past implementations
+
+#### 2026
+- **CS-E4740 Federated Learning D**
 
 #### 2025
 - **CS-A1155 Databases for Data Science**
@@ -69,6 +68,10 @@ A list of courses I have lectured or co-taught at Aalto. Codes follow the Aalto 
 ## Courses Taught at IMC Krems
 
 Lectures within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA* (Bachelor in *Unternehmensführung* — Business Administration) programmes at IMC Krems University of Applied Sciences.
+
+### WS26/27
+- **MLR1ILV — Machine Learning** (RAI MA, 1st semester)
+- **ETP1ILV — Emerging Technologies und Programmierung** (UF BA, 1st semester)
 
 ### SS26
 - **FML2ILV — Federated Machine Learning** (RAI MA, 2nd semester)
