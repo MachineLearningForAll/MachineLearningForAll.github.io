@@ -7,15 +7,15 @@ permalink: /about/
 I am Alexander Jung, tenured Associate Professor of Machine Learning at Aalto University, Finland,
 where I lead the *Machine Learning for Big Data* group at the Department of Computer Science.
 With nearly two decades of experience in research and education, I care about advancing machine
-learning — and just as much about teaching it clearly to students, researchers, and professionals.
+learning, and just as much about teaching it clearly to students, researchers, and professionals.
 
 ## Background
 
 I earned my Dipl.-Ing. (MSc, 2008) and Dr.techn. (PhD, 2012) degrees in electrical engineering and
-signal processing from TU Vienna. My doctorate was awarded *sub auspiciis Praesidentis rei publicae* —
-Austria's highest distinction for a doctorate, conferred by the Federal President in person. It requires
-top grades in every examination from upper secondary school through the doctoral defense; fewer than
-1% of Austrian doctoral graduates — [around 20 out of some 2,500 per year](https://en.wikipedia.org/wiki/Sub_auspiciis_Praesidentis) — earn it.
+signal processing from TU Vienna. My doctorate was awarded *sub auspiciis Praesidentis rei publicae*, Austria's highest distinction for a
+doctorate, conferred by the Federal President in person. It requires top grades in every
+examination from upper secondary school through the doctoral defense. Fewer than 1% of
+Austrian doctoral graduates earn it, [around 20 out of some 2,500 per year](https://en.wikipedia.org/wiki/Sub_auspiciis_Praesidentis).
 
 <figure style="margin:1.2em 0;">
   <img src="/assets/AlexHiFi.jpg" alt="Alexander Jung receiving the ring of honour from Austrian Federal President Heinz Fischer" style="max-width:100%;width:480px;border-radius:6px;" />
@@ -23,7 +23,7 @@ top grades in every examination from upper secondary school through the doctoral
 </figure>
 
 My research focuses on federated learning, trustworthy AI, and machine learning for
-large-scale applications — see the [Research](/research/) page for current projects and
+large-scale applications. See the [Research](/research/) page for current projects and
 publications, and the [Books](/books/) page for my textbooks.
 
 ## Follow me on YouTube 🎥

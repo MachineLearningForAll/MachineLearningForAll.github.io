@@ -7,7 +7,7 @@ permalink: /aml-day/
 Do you want to upskill your team in machine learning? **ML Day** offers 
 customizable machine learning (ML) training programs designed to meet the 
 unique needs of your organization. From inspiring keynote talks to hands-on 
-workshops, I provide transformative learning experiences for professionals 
+workshops, I provide practical, engaging training for professionals 
 at all levels.
 
 ---
@@ -15,12 +15,12 @@ at all levels.
 ## 💼 **Who We've Worked With**
 
 I have successfully delivered ML training for a range of organizations, including:  
-- [Aalto Executive Education](https://www.aaltoee.fi/en) — Executive training for leaders and decision-makers.  
-- [Integrify Ry](https://www.integrify.io/) — Upskilling professionals in technical roles.  
-- [Swedish National Audit Office](https://www.riksrevisionen.se/en.html) — Tailored workshops for auditors and analysts.  
-- [Salo IoT Campus](https://www.saloiotcampus.fi/en) — Practical sessions for IoT-focused professionals.  
-- [City of Helsinki](https://www.hel.fi/en) — Custom workshops for municipal employees.  
-- [The Actuarial Society of Finland](https://www.actuary.fi/in-english) — Specialized training for actuaries and financial experts.  
+- [Aalto Executive Education](https://www.aaltoee.fi/en): executive training for leaders and decision-makers.  
+- [Integrify Ry](https://www.integrify.io/): upskilling professionals in technical roles.  
+- [Swedish National Audit Office](https://www.riksrevisionen.se/en.html): tailored workshops for auditors and analysts.  
+- [Salo IoT Campus](https://www.saloiotcampus.fi/en): practical sessions for IoT-focused professionals.  
+- [City of Helsinki](https://www.hel.fi/en): custom workshops for municipal employees.  
+- [The Actuarial Society of Finland](https://www.actuary.fi/in-english): specialized training for actuaries and financial experts.  
 
 Join the growing list of organizations that have transformed their ML capabilities with **ML Day**.  
 

@@ -6,12 +6,12 @@ permalink: /mlbook/
 
 [![Machine Learning: The Basics](https://media.springernature.com/w200/springer-static/cover/book/9789811681936.jpg)](https://link.springer.com/book/10.1007/978-981-16-8193-6)
 
-**Alexander Jung — Springer, 2022**<br>
+**Alexander Jung · Springer, 2022**<br>
 **ISBN**: 978-981-16-8192-9 (Print), 978-981-16-8193-6 (eBook)
 
 *Machine Learning: The Basics* offers a compact introduction to the fundamental
 concepts of machine learning: it explains every ML method as a combination of
-three components — data, model, and loss — and develops regularization,
+three components (data, model, and loss) and develops regularization,
 validation, and explainability from this single design principle.
 
 ### Get the book
@@ -22,13 +22,13 @@ validation, and explainability from this single design principle.
 
 ### Translations
 
-- 🇩🇪 [**Maschinelles Lernen: Die Grundlagen**](https://link.springer.com/book/10.1007/978-981-99-7972-1) — Springer, 2024. ISBN 978-981-99-7971-4 (Print), 978-981-99-7972-1 (eBook)
-- 🇬🇷 **Μηχανική Μάθηση** — Εκδόσεις Φούντας (Fountas Books), Athens, 2024. ISBN 978-960-330-837-9
+- 🇩🇪 [**Maschinelles Lernen: Die Grundlagen**](https://link.springer.com/book/10.1007/978-981-99-7972-1), Springer, 2024. ISBN 978-981-99-7971-4 (Print), 978-981-99-7972-1 (eBook)
+- 🇬🇷 **Μηχανική Μάθηση**, Εκδόσεις Φούντας (Fountas Books), Athens, 2024. ISBN 978-960-330-837-9
 
 ### Related
 
-- 📚 [Dictionary of Applied Machine Learning](https://dictionaryofml.org/) — the vocabulary of the book, entry by entry
-- 📕 [Federated Learning: From Theory to Practice](/flbook/) — the follow-up textbook
+- 📚 [Dictionary of Applied Machine Learning](https://dictionaryofml.org/): the vocabulary of the book, entry by entry
+- 📕 [Federated Learning: From Theory to Practice](/flbook/): the follow-up textbook
 
 ### Cite
 

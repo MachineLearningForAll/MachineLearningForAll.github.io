@@ -23,22 +23,22 @@ or industry-focused application.
 
 ### 🧠 **Machine Learning Applications**
 Apply ML techniques to solve real-world problems like:  
-- **Federated Learning** — Privacy-preserving AI that enables decentralized training.  
-- **Network Intrusion Detection** — Using ML to enhance cybersecurity.  
+- **Federated Learning**: privacy-preserving AI that enables decentralized training.  
+- **Network Intrusion Detection**: using ML to enhance cybersecurity.  
 
 ---
 
 ### ⚙️ **AI in Industry Contexts**
 Learn how to apply AI for business innovation, with a focus on:  
-- **Art Fraud Detection** — Using AI to detect counterfeit artworks.  
-- **Predictive Maintenance** — Building models to predict equipment failures before they happen.  
+- **Art Fraud Detection**: using AI to detect counterfeit artworks.  
+- **Predictive Maintenance**: building models to predict equipment failures before they happen.  
 
 ---
 
 ### 📈 **Advanced Topics & Research**
 Want to dive into state-of-the-art ML research? I provide guidance on advanced topics like:  
-- **Explainable AI (XAI)** — Techniques to make AI decisions more transparent.  
-- **Reinforcement Learning** — Master decision-making algorithms for dynamic environments.  
+- **Explainable AI (XAI)**: techniques to make AI decisions more transparent.  
+- **Reinforcement Learning**: decision-making algorithms for dynamic environments.  
 
 If you’re working on an advanced ML project or a Master’s thesis, I can offer direct support to help you achieve your goals.  
 

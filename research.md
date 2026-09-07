@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 The overarching motivation of my research is to advance the frontiers of trustworthy artificial intelligence (AI). 
-My current research focus is on  the fundamental limits and practical methods for federated and explainable 
+My current research focus is on the fundamental limits and practical methods for federated and explainable 
 machine learning. Several prestigious grants support these efforts:
 
 - **A Mathematical Theory of Trustworthy Federated Learning (MATHFUL)**  
@@ -31,7 +31,7 @@ and smartphones generate local datasets tied by physical, social, or biological 
 structures. These datasets often vary in statistical properties but exhibit 
 intrinsic relationships.
 
-My research introduces **networked exponential families**, a cutting-edge probabilistic model that addresses these challenges. The model enables:
+My research introduces **networked exponential families**, a probabilistic model that addresses these challenges. The model enables:
 
 - **Adaptive Data Pooling**: Groups similar datasets to build personalized predictions.
 - **Privacy-Preserving Techniques**: Ensures data confidentiality in federated settings.
@@ -74,7 +74,7 @@ reduction in **conditional entropy**, this method ensures that explanations alig
 
 - **User-Centric Explanations**: Accounts for user background and preferences.
 - **Model-Agnostic Framework**: Compatible with any machine learning model.
-- **Efficient Implementation**: Requires minimal training data—just data points, predictions, and user-provided summaries.
+- **Efficient Implementation**: Requires minimal training data: just data points, predictions, and user-provided summaries.
 
 #### Featured Publications
 

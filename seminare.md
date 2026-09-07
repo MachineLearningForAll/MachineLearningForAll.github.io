@@ -4,11 +4,11 @@ title: "Vorträge & Seminare"
 permalink: /seminare/
 ---
 
-## KI-Kompetenz für Ihr Team — verständlich, fundiert, AI-Act-konform
+## KI-Kompetenz für Ihr Team: verständlich, fundiert, AI-Act-konform
 
-Ich bin **Prof. Dr. techn. Alexander Jung**, Machine-Learning-Forscher an der Aalto University, *Teacher of the Year 2018* (Informatik, Aalto) und Autor von *Machine Learning: The Basics* (Springer). Ich übersetze künstliche Intelligenz aus der Forschung in klare Sprache — für Betriebsräte, Belegschaften, Führungskräfte und die interessierte Öffentlichkeit.
+Ich bin **Prof. Dr. techn. Alexander Jung**, Machine-Learning-Forscher an der Aalto University, *Teacher of the Year 2018* (Informatik, Aalto) und Autor von *Machine Learning: The Basics* (Springer). Ich übersetze künstliche Intelligenz aus der Forschung in klare Sprache für Betriebsräte, Belegschaften, Führungskräfte und die interessierte Öffentlichkeit.
 
-> **Neu — gesetzliche Pflicht.** Artikel 4 des EU AI Act verpflichtet Anbieter *und* Betreiber von KI, für ausreichende **KI-Kompetenz** ihrer Beschäftigten zu sorgen (gültig seit 02.02.2025). Meine Formate erfüllen genau diese Anforderung — praxisnah und rechtssicher eingeordnet.
+> **Neu: gesetzliche Pflicht.** Artikel 4 des EU AI Act verpflichtet Anbieter *und* Betreiber von KI, für ausreichende **KI-Kompetenz** ihrer Beschäftigten zu sorgen (gültig seit 02.02.2025). Meine Formate erfüllen genau diese Anforderung, praxisnah und rechtssicher eingeordnet.
 
 ---
 
@@ -27,11 +27,11 @@ Ich bin **Prof. Dr. techn. Alexander Jung**, Machine-Learning-Forscher an der Aa
 
 Was KI wirklich ist (Entzauberung) · LLMs & generative KI · **KI am Arbeitsplatz** · **AI Act, Rechte & Mitbestimmung** · Risiken: Bias, Fehler, Überwachung · Live-Demo · Ihre Branchen-Fallstudie.
 
-## Seminar-Baukasten — aus dem *Dictionary of Applied ML*
+## Seminar-Baukasten aus dem *Dictionary of Applied ML*
 
-Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applied Machine Learning* (von mir verfasst) wählen Sie die Begriffe, die für Ihre Organisation zählen — Ihre Auswahl wird zum Inhaltsgerüst.
+Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applied Machine Learning* (von mir verfasst) wählen Sie die Begriffe, die für Ihre Organisation zählen. Ihre Auswahl wird zum Inhaltsgerüst.
 
-👉 **[Seminar-Baukasten öffnen](/baukasten/)** — Themen anklicken, Seminar anfragen.
+👉 **[Seminar-Baukasten öffnen](/baukasten/)**: Themen anklicken, Seminar anfragen.
 
 | Themenfeld | Zielgruppe |
 |---|---|
@@ -44,15 +44,15 @@ Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applie
 
 ## Förderungen
 
-- **Inhouse / mehrtägig (ab 16 h):** förderfähig über **FFG Skills Scheck** (bis 50 %, max € 5.000/Person) und **AMS-Qualifizierungsförderung** (50 %, bis € 10.000/Person) — je nach Bundesland ergänzt durch Landesförderungen (waff Wien, OÖ, KWF Kärnten, Wirtschaftsagentur Burgenland).
+- **Inhouse / mehrtägig (ab 16 h):** förderfähig über **FFG Skills Scheck** (bis 50 %, max € 5.000/Person) und **AMS-Qualifizierungsförderung** (50 %, bis € 10.000/Person), je nach Bundesland ergänzt durch Landesförderungen (waff Wien, OÖ, KWF Kärnten, Wirtschaftsagentur Burgenland).
 - **Offene Kurse:** über **AK-Bildungsgutschein/Digi-Bonus** bzw. **Landes-Bildungsscheck** förderbar.
 - **Betriebsrat:** Teilnahme über **Bildungsfreistellung § 118 ArbVG** (bei AK/ÖGB-Anerkennung).
 
 ## Referenzen (Auswahl)
 
-- **Arbeiterkammer Steiermark, Graz** — zweitägiges Seminar *„Künstliche Intelligenz in der Arbeitswelt"* für Betriebsrät:innen (Nov. 2025): KI/ML-Grundlagen, DSGVO, AI Act, ISO-Normung, Mitbestimmung.
-- **VHS Hainfeld (NÖ)** — Abendvortrag *„Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle"* (Nov. 2025).
-- **Katholisches Bildungswerk OÖ, Kirchheim im Innkreis** — eingeladener Publikumsvortrag *„Künstliche Intelligenz — was sie kann, was sie nicht kann, und was das für uns bedeutet"* (Mai 2026).
+- **Arbeiterkammer Steiermark, Graz:** zweitägiges Seminar *„Künstliche Intelligenz in der Arbeitswelt"* für Betriebsrät:innen (Nov. 2025) zu KI/ML-Grundlagen, DSGVO, AI Act, ISO-Normung und Mitbestimmung.
+- **VHS Hainfeld (NÖ):** Abendvortrag *„Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle"* (Nov. 2025).
+- **Katholisches Bildungswerk OÖ, Kirchheim im Innkreis:** eingeladener Publikumsvortrag *„Künstliche Intelligenz: was sie kann, was sie nicht kann, und was das für uns bedeutet"* (Mai 2026).
 
 Alle Termine im Überblick: [Public Talks](/talks/).
 
