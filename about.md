@@ -4,30 +4,33 @@ title: About Me
 permalink: /about/
 ---
 
-Welcome! My name is **Alexander Jung**, and I am a tenured **Associate Professor in Machine Learning**
- at Aalto University, Finland. With **nearly two decades of experience in research and education**, I am passionate 
- about advancing the field of machine learning and mentoring the next generation of AI and data science experts.
+I am Alexander Jung, tenured Associate Professor of Machine Learning at Aalto University, Finland,
+where I lead the *Machine Learning for Big Data* group at the Department of Computer Science.
+With nearly two decades of experience in research and education, I care about advancing machine
+learning — and just as much about teaching it clearly to students, researchers, and professionals.
 
-## My Background
+## Background
 
-I earned my **Dipl.-Ing. (MSc)** and [**Dr.techn. (PhD)**](/assets/AlexHiFi.jpg) degrees in **electrical engineering and signal processing** 
-from **TU Vienna** in 2008 and 2012, respectively. Currently, I lead the **Machine Learning for Big Data** group at 
-the Department of Computer Science at Aalto University. My research focuses on:  
-- **Federated Learning**  
-- **Trustworthy AI**  
-- **Machine Learning for Big Data Applications**
+I earned my Dipl.-Ing. (MSc, 2008) and Dr.techn. (PhD, 2012) degrees in electrical engineering and
+signal processing from TU Vienna. My doctorate was awarded *sub auspiciis Praesidentis rei publicae* —
+Austria's highest distinction for a doctorate, conferred by the Federal President in person. It requires
+top grades in every examination from upper secondary school through the doctoral defense; fewer than
+1% of Austrian doctoral graduates — around 20 out of some 2,500 per year — earn it.
 
-I am deeply committed to making **machine learning concepts accessible** and practical for students, 
-researchers, and professionals worldwide.
+<figure style="margin:1.2em 0;">
+  <img src="/assets/AlexHiFi.jpg" alt="Alexander Jung receiving the ring of honour from Austrian Federal President Heinz Fischer" style="max-width:100%;width:480px;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Receiving the ring of honour from Austrian Federal President Heinz Fischer at the <em>promotio sub auspiciis</em> ceremony, TU Vienna.</figcaption>
+</figure>
 
-## Follow Me on YouTube 🎥
+My research focuses on federated learning, trustworthy AI, and machine learning for
+large-scale applications — see the [Research](/research/) page for current projects and
+publications, and the [Books](/books/) page for my textbooks.
 
-Explore machine learning concepts in action! On my **YouTube channel** [@alexjung111](https://www.youtube.com/@alexjung111), I share:  
-- **Engaging video tutorials** on machine learning and AI  
-- **Explainer videos** breaking down complex topics  
-- **Tips for students and researchers** in AI and data science  
+## Follow me on YouTube 🎥
 
-🎯 Watch this video on the three main components of ML:
+On my YouTube channel [@alexjung111](https://www.youtube.com/@alexjung111) I share video
+tutorials and explainer videos on machine learning and AI, along with tips for students
+and researchers. Here is one on the three main components of ML:
 
 <div style="text-align: center;">
   <iframe width="560" height="315" style="max-width:100%;" src="https://www.youtube.com/embed/2q5jpvD-638" 
@@ -35,14 +38,6 @@ Explore machine learning concepts in action! On my **YouTube channel** [@alexjun
   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## What I Offer
+## Contact
 
-On this site, you can find:  
-- **Insights on cutting-edge machine learning trends**  
-- **Educational resources** for enthusiasts and professionals  
-- **Research breakthroughs** in AI and data science  
-
-## Contact Me
-
-Have questions or want to collaborate?  [Send me an email](mailto:alexjung235@gmail.com), and let's connect!
-
+Have questions or want to collaborate? [Send me an email](mailto:alexjung235@gmail.com), and let's connect!

@@ -4,6 +4,11 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
+<figure style="margin:0 0 1.4em;">
+  <img src="/images/MLBPClassroom.jpg" alt="Alexander Jung lecturing to a packed lecture hall at Aalto University" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Lecturing <em>Machine Learning: Basic Principles</em> at Aalto University.</figcaption>
+</figure>
+
 ## Courses Taught at Aalto University
 
 A list of courses I have lectured or co-taught at Aalto. Codes follow the Aalto course catalogue.
