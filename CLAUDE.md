@@ -20,6 +20,7 @@ Other content:
 
 ## Conventions when editing
 
+- The thesis list on [supervision.md](supervision.md) (everything between the `theses:begin`/`theses:end` markers) is **generated** from `theses.csv` in the `~/masterthesis` repo via `compile_theses.py --supervision` (run by that repo's `build_site.sh`). Never edit that section by hand — fix the CSV and re-sync. The intro above the markers is hand-written and safe to edit.
 - Keep page front-matter minimal: `layout: page`, `title:`, `permalink:`.
 - Permalinks are title-based globally (`permalink: /:title/`), but explicit `permalink:` in front-matter overrides.
 - **Image/link paths in pages must be absolute** (`/images/foo.png`), never relative — pages live under `/<permalink>/`, so relative paths 404.
