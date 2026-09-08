@@ -4,7 +4,7 @@ title: "Public Talks"
 permalink: /talks/
 ---
 
-Selected public talks and outreach activities for general audiences: adult education centres, civic organisations, and community groups across Austria.
+Selected public talks and outreach activities for general audiences: schools, adult education centres, civic organisations, business events, and community groups in Finland and Austria.
 
 For academic talks, please see the [Research](/research/) page.
 
@@ -18,6 +18,13 @@ For academic talks, please see the [Research](/research/) page.
 - **2026-05-05** · *"Künstliche Intelligenz: Was sie kann, was sie nicht kann, und was das für uns bedeutet."* Invited public lecture, Katholisches Bildungswerk Oberösterreich, Kirchheim im Innkreis (AT).
 - **2025-11-24/25** · *"Künstliche Intelligenz in der Arbeitswelt."* Two-day seminar for works councillors (Betriebsrät:innen) covering ML basics, GDPR, the EU AI Act, ISO standards, and co-determination. Arbeiterkammer Steiermark, Graz (AT).
 - **2025-11-18** · *"Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle."* Public evening lecture, Volkshochschule (VHS) Hainfeld (AT).
+- **2025-11-07** · Hosted a visit of the International School of Helsinki (36 pupils and 3 teachers) at Aalto University: presentation on artificial intelligence and student Q&A by my research group, Espoo (FI).
+- **2025-10-08** · Guest lesson on artificial intelligence for an active-citizenship and media-literacy course ([Scientists in Schools](https://www.aalto.fi/en/aalto-university-junior/scientists-in-schools) visit, Aalto University Junior), Tammerkosken lukio (upper secondary school), Tampere (FI).
+- **2024-03-07** · Guest lesson on artificial intelligence, including a discussion of AI ethics ([Scientists in Schools](https://www.aalto.fi/en/aalto-university-junior/scientists-in-schools) visit), Haukilahden lukio (upper secondary school), Espoo (FI).
+- **2023-11-02** · Hosted a campus visit of two grade-5 classes from the International School of Helsinki: presentation on artificial intelligence and a tour of Aalto University premises, Espoo (FI).
+- **2021-11-05** · Guest lesson on machine learning and artificial intelligence ([Scientists in Schools](https://www.aalto.fi/en/aalto-university-junior/scientists-in-schools) visit), Sibelius-lukio (upper secondary school), Helsinki (FI).
+- **2018-09-07** · *"Summer Coding School."* Continuation day of the Salo workshop, organized by Yrityssalo Oy, Turku (FI).
+- **2018-09-03** · *"Summer Coding School."* Full-day hands-on workshop (lectures and afternoon mentoring, up to 35 participants), organized by Yrityssalo Oy, Salo IoT Campus, Salo (FI).
 
 ---
 
