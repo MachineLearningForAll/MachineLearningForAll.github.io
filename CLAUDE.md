@@ -12,7 +12,7 @@ Top-nav pages (nav is hardcoded in [_layouts/default.html](_layouts/default.html
 Home (`/`, [index.html](index.html) landing page — there is no blog / `_posts/`) · [about.md](about.md) · [research.md](research.md) · [teaching.md](teaching.md) · [supervision.md](supervision.md) · [books.md](books.md) · [talks.md](talks.md) · [offerings.md](offerings.md)
 
 Other content:
-- [offerings.md](offerings.md) is a hub linking to [amlday.md](amlday.md) (`/aml-day/`), [personal-ml-coach.md](personal-ml-coach.md) and [seminare.md](seminare.md) (`/seminare/`, German).
+- [offerings.md](offerings.md) links to [amlday.md](amlday.md) (`/aml-day/`) and [personal-ml-coach.md](personal-ml-coach.md), and contains the German seminar offer under the `#seminare` anchor. [seminare.md](seminare.md) (`/seminare/`) is only a redirect stub pointing there.
 - [mlbook.md](mlbook.md) / [flbook.md](flbook.md) are landing pages for the two Springer textbooks.
 - [baukasten/](baukasten/) is a standalone HTML seminar-configurator fed by dictionary terms (see its own commit history).
 - Static assets in [images/](images/) and [assets/](assets/).

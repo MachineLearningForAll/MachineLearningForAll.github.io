@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Public Talks"
+title: "Talks & Seminars"
 permalink: /talks/
 ---
 
-Selected public talks and outreach activities for general audiences: schools, adult education centres, civic organisations, business events, and community groups in Finland and Austria.
+Selected public talks, seminars, and outreach activities for general audiences: schools, adult education centres, civic organisations, business events, and community groups in Finland and Austria.
 
 For academic talks, please see the [Research](/research/) page.
 
@@ -34,4 +34,4 @@ For academic talks, please see the [Research](/research/) page.
 
 ---
 
-Interested in booking a talk? Get in touch via [email](mailto:alexjung235@gmail.com) or see the [Offerings](/offerings/) page.
+Interested in booking a talk or seminar? Get in touch via [email](mailto:alexjung235@gmail.com) or see the [Offerings](/offerings/) page.
