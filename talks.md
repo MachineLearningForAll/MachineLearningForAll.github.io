@@ -10,8 +10,8 @@ For academic talks, please see the [Research](/research/) page.
 
 ### Upcoming
 
-- **2026-09-24, 19:00** · *"KI: Künstliche Intelligenz im Alltag nutzen."* Volkshochschule (VHS) Hainfeld, Kultursaal der Stadtgemeinde, Hauptstraße 7, 3170 Hainfeld (AT).
-- **2026-11-23, 20:00** · *"Künstliche Intelligenz im Alltag nutzen: interaktiver Abend mit Live-Demonstrationen."* Katholisches Bildungswerk (AT), online.
+- **2026-09-24, 18:00** · *"KI: Künstliche Intelligenz im Alltag nutzen."* Volkshochschule (VHS) Hainfeld, Kultursaal der Stadtgemeinde, Hauptstraße 7, 3170 Hainfeld (AT).
+- **2026-10-13, 19:30** · Public evening lecture on artificial intelligence, Katholisches Bildungswerk (KBW) Frankenburg am Hausruck (AT).
 
 ### Past
 
