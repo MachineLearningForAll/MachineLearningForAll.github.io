@@ -58,6 +58,10 @@ Alle Termine im Überblick: [Public Talks](/talks/).
 
 ## Stimmen
 
+> *„Alexander Jung hat es in seinem Vortrag geschafft, das komplexe Thema Künstliche Intelligenz verständlich, praxisnah und mit einer guten Portion Humor zu vermitteln. Besonders geschätzt habe ich seine ausgewogene Herangehensweise: Seine Begeisterung für die faszinierenden Möglichkeiten, die KI eröffnet, war deutlich spürbar — gleichzeitig hat er offen über Risiken gesprochen. Durch seine offene und lockere Art ist eine angenehme Atmosphäre entstanden, die es leicht machte, Fragen zu stellen. Man merkt schnell, dass er über außergewöhnlich fundiertes Fachwissen aus seiner wissenschaftlichen Arbeit verfügt — und dass es ihm wichtig ist, dieses Wissen verständlich weiterzugeben."*
+>
+> — Petra Köppl, Katholisches Bildungswerk Oberösterreich
+
 > *„Besonders hervorzuheben war das hohe didaktische Niveau der Vorträge — vielen Dank dafür!"*
 >
 > — Teilnehmer:in, Machine-Learning-Kurs, Aalto University
