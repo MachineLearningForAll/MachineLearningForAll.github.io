@@ -32,6 +32,18 @@ For academic talks, please see the [Research](/research/) page.
 - **2018-09-07** · *"Summer Coding School."* Continuation day of the Salo workshop, organized by Yrityssalo Oy, Turku (FI).
 - **2018-09-03** · *"Summer Coding School."* Full-day hands-on workshop (lectures and afternoon mentoring, up to 35 participants), organized by Yrityssalo Oy, Salo IoT Campus, Salo (FI).
 
+### Executive & professional education
+
+Trainer engagements for [Aalto University Executive Education (Aalto EE)](https://www.aaltoee.fi/en):
+
+- **2024–2025** · *Swedish National Audit Office (NAO) Data Science Program 2024.* Lectures and project sparring across four modules (on-site in Stockholm and online), Q2 2024 – Q1 2025.
+- **2023-11-23** · *Swedish NAO Advanced Data Science Program.* Invited lecture (online).
+- **2023-02 – 2023-05** · *Swedish NAO Data Science Program.* Lectures and project coaching (on-site at the Swedish NAO, Stockholm, and online).
+- **2022-05 – 2022-09** · *Swedish NAO Data Science Program.* Design of the overall program, including project work.
+- **2022-01-26/27** · *Diploma in Artificial Intelligence.* Two-day lecture module with pre- and post-assignment feedback.
+- **2021-12-15 & 2022-01-12** · *Data science upskilling program for City of Helsinki employees.* Python machine learning workshop and evaluation of participant projects (online).
+- **2019-02-12/13** · *Diploma in Artificial Intelligence.* Lectures, assignments, and project supervision, Helsinki (FI).
+
 ---
 
 Interested in booking a talk or seminar? Get in touch via [email](mailto:alexjung235@gmail.com) or see the [Offerings](/offerings/) page.
