@@ -42,6 +42,7 @@ Trainer engagements for [Aalto University Executive Education (Aalto EE)](https:
 - **2022-05 – 2022-09** · *Swedish NAO Data Science Program.* Design of the overall program, including project work.
 - **2022-01-26/27** · *Diploma in Artificial Intelligence.* Two-day lecture module with pre- and post-assignment feedback.
 - **2021-12-15 & 2022-01-12** · *Data science upskilling program for City of Helsinki employees.* Python machine learning workshop and evaluation of participant projects (online).
+- **2020-02-13/14** · *Diploma in Artificial Intelligence.* Two-day "AI Methods" lecture module with feedback on pre-assignments and project plans, Helsinki (FI).
 - **2019-02-12/13** · *Diploma in Artificial Intelligence.* Lectures, assignments, and project supervision, Helsinki (FI).
 
 ---
