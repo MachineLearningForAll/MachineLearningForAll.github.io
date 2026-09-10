@@ -23,7 +23,7 @@ validation, and explainability from this single design principle.
 ### Translations
 
 - 🇩🇪 [**Maschinelles Lernen: Die Grundlagen**](https://link.springer.com/book/10.1007/978-981-99-7972-1), Springer, 2024. ISBN 978-981-99-7971-4 (Print), 978-981-99-7972-1 (eBook)
-- 🇬🇷 **Μηχανική Μάθηση**, Εκδόσεις Φούντας (Fountas Books), Athens, 2024. ISBN 978-960-330-837-9
+- 🇬🇷 [**Μηχανική Μάθηση: Τα Βασικά**](https://anikoula.gr/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF/mhchanikh-mathhsh-ta-vasika/), Εκδόσεις Φούντας (Fountas Books), Athens, 2024. ISBN 978-960-330-837-9
 
 ### Related
 
@@ -72,7 +72,7 @@ validation, and explainability from this single design principle.
     },
     {
       "@type": "Book",
-      "name": "Μηχανική Μάθηση",
+      "name": "Μηχανική Μάθηση: Τα Βασικά",
       "inLanguage": "el",
       "isbn": "978-960-330-837-9",
       "publisher": {"@type": "Organization", "name": "Εκδόσεις Φούντας (Fountas Books)"},

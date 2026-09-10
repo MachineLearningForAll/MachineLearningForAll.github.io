@@ -13,8 +13,13 @@ core ideas of machine learning, bridging the gap between theory and application.
 
 ### **Dictionary of Applied Machine Learning** *(forthcoming)*
 
+<a href="https://books.google.fi/books/about/Dictionary_of_Applied_Machine_Learning.html?id=JLGT0QEACAAJ">
+  <img src="/images/DictAppliedMLCover.png" alt="Dictionary of Applied Machine Learning" width="200" />
+</a>
+
 **Language**: English  
-**Publisher**: Springer  
+**Publisher**: Springer (Springer Nature Reference)  
+**ISBN**: 978-981-95-3207-0 (Print)  
 
 A forthcoming reference work that distills the vocabulary of applied machine learning (concepts, methods, and notation) into a single coherent dictionary for students, researchers, and practitioners. It builds on the open-source *Aalto Dictionary of Machine Learning* and extends it with entries tailored to applied and industrial ML practice.
 
@@ -84,6 +89,24 @@ same clarity and foundational insights to German-speaking audiences, making it a
 and professionals in machine learning.
 
 [📖 Learn More or Purchase](https://link.springer.com/book/10.1007/978-981-99-7972-1)
+
+---
+
+### **Μηχανική Μάθηση: Τα Βασικά**
+
+<a href="https://anikoula.gr/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF/mhchanikh-mathhsh-ta-vasika/">
+  <img src="/images/MLBasicsGreek.jpg" alt="Μηχανική Μάθηση: Τα Βασικά" width="200" />
+</a>
+
+**Language**: Greek  
+**Publisher**: Εκδόσεις Φούντας (Fountas Books), Athens, 2024  
+**ISBN**: 978-960-330-837-9  
+
+"Μηχανική Μάθηση: Τα Βασικά" is the Greek translation of "Machine Learning: The Basics." It makes the book's 
+three-component view of machine learning (data, model, and loss) accessible to Greek-speaking students 
+and professionals.
+
+[📖 Order from a Bookstore](https://anikoula.gr/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF/mhchanikh-mathhsh-ta-vasika/)
 
 ---
 
