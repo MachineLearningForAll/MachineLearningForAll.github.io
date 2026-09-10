@@ -110,27 +110,6 @@ and professionals.
 
 ---
 
-## **Current Working Drafts**
-
-### **The Aalto Dictionary for Machine Learning**
-
-![The Aalto Dictionary for Machine Learning](/images/ADictMLSnapshot.png)
-
-**Language**: English  
-**Format**: PDF 
-
-**The Aalto Dictionary of Machine Learning** is a curated, open-source glossary of essential terms and 
-concepts in machine learning.  Beyond serving as a concise reference for students and practitioners, 
-the dictionary is published as a publicly available **LaTeX codebase**. You are explicitly encouraged 
-to reuse its LaTeX entries, with proper citation, for preparing **lecture material, slides, and even 
-scientific publications**. This makes the dictionary not only a learning resource, but also a practical 
-building block for teaching and communicating machine learning concepts with consistent notation and terminology.
-
-
-[📄 Codebase (GitHub)](https://aaltodictionaryofml.github.io/)
-
----
-
 ## Additional Resources
 
 - 🎥 [Watch my YouTube Channel for Video Lectures](https://www.youtube.com/@alexjung111)  
