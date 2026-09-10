@@ -36,7 +36,7 @@ A list of courses I have lectured or co-taught at Aalto. Codes follow the Aalto 
 
 #### 2022
 - **CS-EJ3311 Deep Learning with Python D**
-- **CS-E407507 Special Course in Machine Learning and Data Science: Human-Centered Machine Learning**
+- **CS-E407507 Special Course in Machine Learning and Data Science: Human-Centered Machine Learning** (also delivered as the summer school "Human-Centered Machine Learning" of the European university alliance [Unite!](https://www.unite-university.eu/))
 - **CS-EJ3211 Machine Learning with Python D**
 - **CS-E407508 Special Course in Machine Learning and Data Science: Networked Federated Learning**
 - **CS-C3240 Machine Learning D**
@@ -84,4 +84,9 @@ Lectures within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA*
 
 ### WS25/26
 - **MLR1ILV Machine Learning** (RAI MA, 1st semester)
+
+## Guest Teaching & Short Courses
+
+- **2022-09-19/20** · Two-day course on machine learning — *"Foundations of Machine Learning and Deep Learning"* and *"Advanced Topics"* (regularization, semi-supervised and transfer learning, clustering, PCA), lectures with hands-on Python (JupyterLab) exercises — at the [PLENOPTIMA Training School 2 "Machine and Deep Learning for Plenoptics"](https://plenoptima.eu/ts2/programme/) (19–23 Sep 2022), part of the EU Horizon 2020 MSCA European Joint Doctorate network [PLENOPTIMA](https://plenoptima.eu/), hosted by Mid Sweden University, Sundsvall (SE).
+- **2019–2020** · Main teacher for the *Machine Learning* program of [Integrify](https://www.integrify.io/), a Finnish training provider upskilling immigrants and international talent for careers in tech, Helsinki (FI).
 
