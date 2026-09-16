@@ -87,43 +87,56 @@ Selected verbatim comments from course evaluations, one per course.
 ### Aalto University
 
 **CS-E4740 Federated Learning**
+
 > "Honestly, I think this was one of the best courses I've taken at Aalto."
 
 **CS-A1155 Databases for Data Science**
+
 > "I really appreciate the positiveness and understanding of Alex Jung. He is without a doubt an amazing professor."
 
 **CS-C3240 Machine Learning**
+
 > "Alex Jung is a great teacher of machine learning. I learned machine learning in a very interesting and comprehensive manner."
 
 **CS-EJ3311 Deep Learning with Python**
+
 > "The workbooks are so excellent that you can self-study them."
 
 **CS-EJ3211 Machine Learning with Python**
+
 > "This has really been the best course with coding as a tool for learning so far."
 
 **CS-E4800 Artificial Intelligence**
+
 > "Alex did a good job with his drawings in the lectures — they were easy to follow and enlightening."
 
 **CS-E4020 Special Course in Machine Learning and Data Science II**
+
 > "A very nice and, for me, novel approach to convex optimization using fixed-point iterative algorithms."
 
 **T-61.6020 Special Course in Computer and Information Science II**
+
 > "Alex taught everything in detail, very clear to understand."
 
 **CS-E407507 Human-Centered Machine Learning** *(special course / Unite! summer school)*
+
 > "Supportive and very pedagogical professor. Interesting topics and engaging lectures from guest lecturers too."
 
 **CS-E3210 / T-61.3050 Machine Learning: Basic Principles**
+
 > "Alex Jung was an excellent lecturer, the best lecturer I've heard in a long time."
 
 ### IMC Krems
 
 **MLR1ILV Machine Learning** *(RAI MA)*
+
 > "Very interesting course with a top lecturer. Topics were extremely useful and understandable."
 
 **FML2ILV Federated Machine Learning** *(RAI MA)*
+
 > "A well-structured course with interesting assignments. I like the academic approach with the LaTeX paper assignments and the presentation — useful skills to learn."
 
 **CAI2VO Corporate AI** *(UF BA, taught in German)*
+
 > "Großes Lob an den Dozenten — man merkt, wie er für seine Sache brennt; diese Begeisterung steckt an!"
 
