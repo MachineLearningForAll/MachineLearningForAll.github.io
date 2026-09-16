@@ -12,14 +12,14 @@ learning, and just as much about teaching it clearly to students, researchers, a
 ## Background
 
 I earned my Dipl.-Ing. (MSc, 2008) and Dr.techn. (PhD, 2012) degrees in electrical engineering and
-signal processing from TU Vienna. My doctorate was awarded *sub auspiciis Praesidentis rei publicae*, Austria's highest distinction for a
+signal processing from TU Wien (Vienna University of Technology). My doctorate was awarded *sub auspiciis Praesidentis rei publicae*, Austria's highest distinction for a
 doctorate, conferred by the Federal President in person. It requires top grades in every
 examination from upper secondary school through the doctoral defense. Fewer than 1% of
 Austrian doctoral graduates earn it, [around 20 out of some 2,500 per year](https://en.wikipedia.org/wiki/Sub_auspiciis_Praesidentis).
 
 <figure style="margin:1.2em 0;">
   <img src="/assets/AlexHiFi.jpg" alt="Alexander Jung receiving the ring of honour from Austrian Federal President Heinz Fischer" style="max-width:100%;width:480px;border-radius:6px;" />
-  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Receiving the ring of honour from Austrian Federal President Heinz Fischer at the <em>promotio sub auspiciis</em> ceremony, TU Vienna.</figcaption>
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Receiving the ring of honour from Austrian Federal President Heinz Fischer at the <em>promotio sub auspiciis</em> ceremony, TU Wien.</figcaption>
 </figure>
 
 My research focuses on federated learning, trustworthy AI, and machine learning for
