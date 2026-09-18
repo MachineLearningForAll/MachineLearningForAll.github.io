@@ -11,7 +11,7 @@ For academic talks, please see the [Research](/research/) page.
 ### Upcoming
 
 - **2026-10-13, 19:30** · Public evening lecture on artificial intelligence, [Katholisches Bildungswerk (KBW) Frankenburg am Hausruck](https://www.frankenburg.ooe.gv.at/Katholisches_Bildungswerk) (AT).
-- **2026-11-26, 19:00** · *"KI verstehen."* Free public science evening (admission by voluntary donation), hosted by the [Marktgemeinde Böheimkirchen](https://www.boeheimkirchen.eu/), Veranstaltungssaal im Bürgerzentrum, 3071 Böheimkirchen (AT).
+- **2026-11-26, 19:00** · *"KI verstehen."* Free public science evening (admission by voluntary donation), hosted by the [Marktgemeinde Böheimkirchen](https://www.boeheimkirchen.eu/), Veranstaltungssaal im Bürgerzentrum, 3071 Böheimkirchen (AT). [Register here](https://anmeldung.alexjung.at/).
 
 ### Past
 
