@@ -27,10 +27,9 @@ For academic talks, please see the [Research](/research/) page.
 - **2021-11-05** · Guest lesson on applications of machine learning in everyday services (music recommendation, web search, social media) for the advanced mathematics course MAA12 ([Scientists in Schools](https://www.aalto.fi/en/aalto-university-junior/scientists-in-schools) visit), Sibelius-lukio (upper secondary school), Helsinki (FI).
 - **2020 (autumn)** · Guest lesson on applications of machine learning (music, web search, social media) for the advanced mathematics course MAA12, Sibelius-lukio (upper secondary school), Helsinki (FI).
 - **2019 (autumn)** · Guest lesson on applications of machine learning for the advanced mathematics course MAA12, Sibelius-lukio (upper secondary school), Helsinki (FI).
-- **2019-03-04 & 2019-03-08** · Two-day hands-on machine learning course during Turku ICT/AI Week, organized by [Turku Business Region](https://turkubusinessregion.com/); participants worked on their own datasets and on open data from the City of Turku, Turku (FI).
+- **2019-03-04 & 2019-03-08** · Two-day hands-on machine learning course during Turku ICT/AI Week, organized by [Turku Business Region](https://turkubusinessregion.com/); participants worked on their own datasets and on open data from the City of Turku, Turku (FI). [Materials on GitHub](https://github.com/alexjungaalto/PythonPlayground).
 - **2018-09-07** · *"Semi-Supervised Learning for Network-Structured Data."* Evening talk at the Turku.AI meetup, Turku (FI). [Recording on YouTube](https://www.youtube.com/watch?v=BxFKvYERFgc).
-- **2018-09-07** · *"Summer Coding School."* Continuation day of the Salo workshop, organized by [Yrityssalo Oy](https://yrityssalo.fi/), Turku (FI).
-- **2018-09-03** · *"Summer Coding School."* Full-day hands-on workshop (lectures and afternoon mentoring, up to 35 participants), organized by [Yrityssalo Oy](https://yrityssalo.fi/), Salo IoT Campus, Salo (FI).
+- **2018-09-03** · *"Summer Coding School."* Full-day hands-on workshop (lectures and afternoon mentoring, up to 35 participants), organized by [Yrityssalo Oy](https://yrityssalo.fi/), Salo IoT Campus, Salo (FI). [Slides and notebooks on GitHub](https://github.com/alexjungaalto/SaloMLandAI2018).
 
 ### Executive & professional education
 

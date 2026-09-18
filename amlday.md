@@ -16,11 +16,11 @@ at all levels.
 
 I have successfully delivered ML training for a range of organizations, including:  
 - [Aalto Executive Education](https://www.aaltoee.fi/en): executive training for leaders and decision-makers.  
-- [Integrify Ry](https://www.integrify.io/): upskilling professionals in technical roles.  
+- [Integrify](https://www.integrify.io/): upskilling professionals in technical roles.  
 - [Swedish National Audit Office](https://www.riksrevisionen.se/en.html): tailored workshops for auditors and analysts.  
 - [Salo IoT Campus](https://www.saloiotcampus.fi/en): practical sessions for IoT-focused professionals.  
 - [City of Helsinki](https://www.hel.fi/en): custom workshops for municipal employees.  
-- [The Actuarial Society of Finland](https://www.actuary.fi/in-english): specialized training for actuaries and financial experts.  
+- [The Actuarial Society of Finland](https://www.actuary.fi/in-english): specialized training for actuaries and financial experts. [Materials on GitHub](https://github.com/alexjungaalto/ActSocFin).  
 
 Join the growing list of organizations that have transformed their ML capabilities with **ML Day**.  
 

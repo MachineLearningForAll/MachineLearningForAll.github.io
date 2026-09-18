@@ -17,6 +17,7 @@ core ideas of machine learning, bridging the gap between theory and application.
   <img src="/images/DictAppliedMLCover.png" alt="Dictionary of Applied Machine Learning" width="200" />
 </a>
 
+**Editors**: Alexander Jung, Ekkehard Schnoor, Konstantina Olioumtsevits  
 **Language**: English  
 **Publisher**: Springer (Springer Nature Reference)  
 **ISBN**: 978-981-95-3207-0 (Print)  
