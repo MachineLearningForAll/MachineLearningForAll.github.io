@@ -30,7 +30,7 @@ Public defences and doctoral examinations at other universities:
 
 ### University committees
 
-- Member of the **Teaching Evaluation Committee (SCITEC)** of the Aalto University School of Science, also referred to as the school's Teaching Competence Assessment Committee.
+- Member of the **Teaching Evaluation Committee (SCITEC)** of the Aalto University School of Science since 2023, also referred to as the school's Teaching Competence Assessment Committee.
   SCITEC assesses the teaching competence of candidates in tenure-track recruitment and in the later evaluations leading to tenured and promoted positions.
   It has an independent role: it issues its own statement on each candidate's teaching competence, along with recommendations such as pedagogical training or trying out different teaching methods.
   Members are drawn from across the school's departments and include an educational developer and students trained to evaluate teaching.
