@@ -23,8 +23,8 @@ Public defences and doctoral examinations at other universities:
 - **2026-02** · Opponent for A. Klemetti, *"Practical Approaches to Cost-Efficient Deep Learning: Taxonomy, Experiments, and Industry Insights,"* University of Helsinki (FI).
 - **2026-01-26** · Faculty opponent (*fakultetsopponent*) for C.-H. Hu, *"Wireless Federated Learning: Efficient Communication and Resource Management,"* Linköping University (SE).
 - **2025-08-26** · Jury member and examiner for A. Zhaikhan, *"Reinforcement Learning by Networked Agents,"* EPFL, Lausanne (CH).
-- **2025** · Opponent for A. Mahmoudi Benhangi, *"Toward Efficient Federated Learning over Wireless Networks: Novel Frontiers in Resource Optimization,"* KTH Royal Institute of Technology, Stockholm (SE).
-- **2024-05** · Opponent for N. Fouladgar, *"Affect Detection with Explainable AI for Time Series,"* Department of Computing Science, Umeå University (SE).
+- **2025-02-10** · Opponent for A. Mahmoudi Benhangi, *"Toward Efficient Federated Learning over Wireless Networks: Novel Frontiers in Resource Optimization,"* KTH Royal Institute of Technology, Stockholm (SE).
+- **2024-05-24** · Faculty opponent (*fakultetsopponent*) for N. Fouladgar, *"Affect Detection with Explainable AI for Time Series,"* Department of Computing Science, Umeå University (SE).
 - **2019-09-16** · Member of the grading committee for P. del Aguila Pla, *"Inverse Problems in Signal Processing: Functional Optimization, Parameter Estimation, and Machine Learning,"* KTH Royal Institute of Technology, Stockholm (SE).
 - **2017-12-20** · Examiner (*rapporteur*) on the thesis jury for L. J. Martin, *"Robust and Efficient Data Clustering with Signal Processing on Graphs,"* EPFL, Lausanne (CH).
 
