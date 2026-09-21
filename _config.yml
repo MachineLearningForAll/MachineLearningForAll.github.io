@@ -91,7 +91,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
   - CLAUDE.md
   # Bundler installs the gems into vendor/ on the CI runner -- Jekyll must not
   # try to read them as site content.
