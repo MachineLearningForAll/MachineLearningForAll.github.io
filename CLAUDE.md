@@ -41,6 +41,11 @@ deploying. Nothing on the box is edited by hand; the repo is the single source o
   `command="/usr/bin/rrsync /var/www/alexjung.at/html"`, so it can write only that docroot.
 - nginx vhost: `/etc/nginx/sites-available/alexjung.at` (apex + a `www` → apex redirect).
   TLS via Let's Encrypt, renewed automatically by certbot's nginx authenticator.
+- Because the deploy rsyncs with `--delete`, **anything the box keeps for this site must live
+  outside `html/`**. The daily GoAccess report is therefore written to
+  `/var/www/alexjung.at/stats/` and served through an nginx `alias` at a non-guessable
+  `/stats-df784a5468bdde46/` path (script `/usr/local/bin/goaccess-alexjung-report`, cron
+  `/etc/cron.d/goaccess-alexjung`, own log `/var/log/nginx/alexjung.at.access.log`).
 
 ## Local preview
 
