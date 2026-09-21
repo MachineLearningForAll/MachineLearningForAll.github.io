@@ -93,6 +93,12 @@ exclude:
   - README.md
   - CNAME
   - CLAUDE.md
+  # Bundler installs the gems into vendor/ on the CI runner -- Jekyll must not
+  # try to read them as site content.
+  - vendor
+  - .bundle
+  # Raw student-feedback PDFs are kept local only; never publish them.
+  - TeachingFeedbacks
 
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
