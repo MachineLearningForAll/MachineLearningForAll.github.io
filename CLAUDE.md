@@ -1,9 +1,9 @@
 ## Project
 
-Personal academic website for Alexander Jung (Associate Professor for Machine Learning, Aalto University), served at **alexjung.at** via GitHub Pages.
+Personal academic website for Alexander Jung (Associate Professor for Machine Learning, Aalto University), served at **alexjung.at** from a Hetzner box (nginx), deployed from this repo by GitHub Actions.
 
 - Built with **Jekyll** (Jekyll Now template, v1.2.0), Kramdown + Rouge, MathJax 3 enabled in [_layouts/default.html](_layouts/default.html).
-- Repo name is `MachineLearningForAll.github.io` (User Pages repo); custom domain configured via [CNAME](CNAME) (contains `alexjung.at`; `_config.yml` `url` matches).
+- Repo name is `MachineLearningForAll.github.io` (User Pages repo). GitHub Pages still builds it as a standby mirror at `machinelearningforall.github.io`, but the live site is the Hetzner deploy; `_config.yml` `url` is `https://alexjung.at` and every page carries a canonical link to it.
 - Plugins: `jekyll-sitemap`, `jekyll-feed` (declared under `plugins:` in `_config.yml`).
 
 ## Layout
@@ -28,10 +28,25 @@ Other content:
 - Don't commit `.DS_Store` or build artifacts (`_site/`, `.jekyll-cache/`).
 - `CLAUDE.md` is in `_config.yml` `exclude:` so it is not published to the live site.
 
+## Deployment
+
+Every push to `master` runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml): it builds
+the site with the pinned `github-pages` gem set and rsyncs `_site/` to `/var/www/alexjung.at/html`
+on the Hetzner box (ssh host `dictionaryofml`, 178.105.197.122 — the same box serves
+dictionaryofml.org, ml-theses.org and fightacademicbullies.org). Pull requests build without
+deploying. Nothing on the box is edited by hand; the repo is the single source of truth.
+
+- The workflow authenticates as the box's `deploy` user with the repo secrets `SSH_PRIVATE_KEY`,
+  `SSH_HOST`, `SSH_USER`, `DEPLOY_PATH`. That key is restricted on the box to
+  `command="/usr/bin/rrsync /var/www/alexjung.at/html"`, so it can write only that docroot.
+- nginx vhost: `/etc/nginx/sites-available/alexjung.at` (apex + a `www` → apex redirect).
+  TLS via Let's Encrypt, renewed automatically by certbot's nginx authenticator.
+
 ## Local preview
 
 ```
 bundle exec jekyll serve
 ```
 
-(Requires a `Gemfile` — not currently in repo; GitHub Pages builds remotely on push.)
+The [Gemfile](Gemfile) pins the `github-pages` gem set, which is what the deploy workflow builds
+with — keep it that way so local, CI and the live site agree.

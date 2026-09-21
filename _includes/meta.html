@@ -12,6 +12,11 @@
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
 
+    <!-- alexjung.at is the site's home. GitHub Pages still builds this repo as
+         a standby mirror at machinelearningforall.github.io, so every page
+         names its canonical URL on the real domain. -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
