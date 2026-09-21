@@ -1,12 +1,21 @@
-
 //
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+// Editorial palette: near-black ink on white, one accent for links, hairline
+// rules doing the structural work.
+$ink:        #121212;   // body text
+$inkSoft:    #333;      // secondary text
+$inkMuted:   #6b6b6b;   // captions, meta, kickers
+$rule:       #dcdcdc;   // hairline rules
+$ruleStrong: #121212;   // masthead rule
+$link:       #326891;
+$linkHover:  #1a4665;
+$tint:       #f7f7f5;   // table stripes, quiet blocks
 
-// Grays
+// Kept from the original theme -- the syntax-highlight partial and older
+// page markup still reference these.
+$blue: #4183C4;
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
@@ -14,10 +23,15 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// Font stacks. Both faces are self-hosted under /assets/fonts (SIL OFL), so
+// pages make no third-party font requests.
+$serif: "Source Serif 4", Georgia, "Iowan Old Style", "Times New Roman", serif;
+$sans:  "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Old aliases, still referenced in places
+$helvetica: $sans;
+$helveticaNeue: $sans;
+$georgia: $serif;
 
 // Mobile breakpoints
 @mixin mobile {

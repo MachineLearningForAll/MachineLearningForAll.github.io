@@ -9,105 +9,221 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+/**********/
+/* FONTS  */
+/**********/
+
+// Self-hosted (SIL OFL, licences in /assets/fonts) so no request ever leaves
+// the site for a font. Both files are variable, one per axis range, so the
+// whole weight range costs a single download per family.
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/assets/fonts/libre-franklin-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/assets/fonts/libre-franklin-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/source-serif-4-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/source-serif-4-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/source-serif-4-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/source-serif-4-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
 
 html {
   font-size: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background: $white;
+  color: $ink;
+  font-family: $serif;
+  font-size: 19px;
+  line-height: 1.65;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
+// ~70 characters at the body size: long enough for prose, short enough to
+// keep the eye from losing the line.
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 720px;
+  padding: 0 20px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  font-family: $serif;
+  color: $ink;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  line-height: 1.18;
+  margin: 1.6em 0 0.5em;
   padding: 0;
+  text-wrap: balance;
 
-  @include mobile {
-    line-height: 1.4;
+  &:first-child {
+    margin-top: 0;
   }
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
+  font-size: 40px;
+  line-height: 1.12;
+  margin-bottom: 0.6em;
+
+  a { color: inherit; }
+
+  @include mobile {
+    font-size: 31px;
   }
 }
 
+// Section headings carry a hairline above them -- the rule, not extra
+// whitespace, is what separates one section from the next.
 h2 {
-  font-size: 24px;
+  font-size: 27px;
+  border-top: 1px solid $rule;
+  padding-top: 0.9em;
+
+  @include mobile {
+    font-size: 23px;
+  }
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-family: $sans;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $inkMuted;
 }
 
 p {
-  margin: 15px 0;
+  margin: 0 0 1.1em;
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
+  color: $link;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(50, 104, 145, 0.4);
+  cursor: pointer;
+
   &:hover, &:active {
-    color: $blue;
+    color: $linkHover;
+    text-decoration-color: currentColor;
   }
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 0 0 1.1em;
+  padding-left: 1.4em;
 }
 
-ul {
-  list-style-type: disc;
-}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
 
-ol {
-  list-style-type: decimal;
+li {
+  margin-bottom: 0.35em;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+  margin: 0.35em 0 0;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
-}
+ul ul, ol ul { list-style-type: circle; }
 
-em, i {
+em, i { font-style: italic; }
+strong, b { font-weight: 700; }
+
+blockquote {
+  margin: 1.6em 0;
+  padding: 0.1em 0 0.1em 1.2em;
+  border-left: 3px solid $ink;
+  color: $inkSoft;
   font-style: italic;
 }
 
-strong, b {
-  font-weight: bold;
+hr {
+  border: 0;
+  border-top: 1px solid $rule;
+  margin: 2.2em 0;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -116,19 +232,16 @@ img {
 }
 
 .date {
-  font-style: italic;
-  color: $gray;
+  font-family: $sans;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: $inkMuted;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
+::-moz-selection { color: $black; background: #f0e6c8; }
+::selection { color: $black; background: #f0e6c8; }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -151,12 +264,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 26px 0 0;
 
   @include mobile {
     text-align: center;
@@ -165,18 +277,21 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 62px;
+  height: 62px;
+  margin-right: 18px;
 
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 
   img {
-    border-radius: 5px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
 
@@ -191,48 +306,61 @@ img {
 }
 
 .site-name {
-  margin: 0;
-  color: $darkGray;
+  margin: 4px 0 0;
+  color: $ink;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
+  margin: 4px 0 0;
+  color: $inkMuted;
+  font-family: $sans;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
+// The nav sits on its own band under a heavy rule, the way a paper's section
+// line does.
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+  clear: both;
+  margin-top: 22px;
+  padding: 11px 0;
+  border-top: 2px solid $ruleStrong;
+  border-bottom: 1px solid $rule;
+  font-family: $sans;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    display: inline-block;
+    margin: 3px 13px;
+    color: $ink;
+    text-decoration: none;
+
+    &:hover {
+      color: $link;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
 
     @include mobile {
-      margin: 0 10px;
-      color: $blue;
+      margin: 3px 8px;
+      font-size: 12px;
     }
   }
 }
@@ -241,9 +369,25 @@ nav {
 // .main
 //
 
+.page h1,
+.post h1 {
+  margin-bottom: 0.45em;
+}
+
+// A standfirst: the opening line of a page, set larger and quieter.
+.entry > p:first-child > strong > em,
+.entry > p:first-child > em > strong {
+  display: block;
+  font-size: 1.16em;
+  font-weight: 400;
+  font-style: italic;
+  color: $inkSoft;
+  margin-bottom: 0.2em;
+}
+
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $rule;
 }
 
 .posts > .post:last-child {
@@ -252,116 +396,103 @@ nav {
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
   .comments {
     margin-top: 10px;
   }
 
   .read-more {
+    font-family: $sans;
     text-transform: uppercase;
-    font-size: 15px;
+    letter-spacing: 0.09em;
+    font-size: 13px;
+    font-weight: 600;
   }
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 56px;
+  border-top: 1px solid $rule;
+  background: transparent;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 22px 0 30px;
   text-align: center;
+  font-family: $sans;
+  font-size: 13px;
+  color: $inkMuted;
 }
 
-/* Container for the cards */
+/* ---- Offer cards (offerings page) ---- */
 .campaign-container {
-  display: flex;              /* Flexbox layout */
-  gap: 20px;                  /* Spacing between cards */
-  justify-content: center;    /* Center the cards */
-  flex-wrap: wrap;            /* Wrap on small screens */
-  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
-/* Styling for each campaign card */
 .campaign-card {
-  background-color: #f9f9f9;      /* Light background color */
-  border: 3px solid #007bff;      /* Blue border with 3px width */
-  border-radius: 12px;            /* Slightly more rounded corners */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Enhanced subtle shadow */
-  width: 320px;                   /* Slightly wider for better spacing */
-  padding: 24px;                  /* Increased internal padding */
+  background-color: $white;
+  border: 1px solid $ink;
+  width: 320px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.3s ease;      /* Smooth hover effect */
+  transition: background-color 0.2s ease;
 }
 
 .campaign-card:hover {
-  transform: translateY(-8px);    /* Lift effect on hover */
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.15); /* Shadow intensifies */
-  border-color: #0056b3;          /* Darker blue on hover */
+  background-color: $tint;
 }
 
 .campaign-card-content {
-  text-align: center;             /* Center text in the card */
+  text-align: center;
 }
 
 .campaign-title {
-  font-size: 1.75rem;             /* Slightly larger font size */
-  margin-bottom: 15px;            /* Increased spacing below title */
-  font-weight: bold;
-  color: #333;
+  font-family: $serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: $ink;
 }
 
-.campaign-details, 
+.campaign-details,
 .campaign-features {
-  font-size: 1rem;
-  margin-bottom: 20px;            /* Improved spacing for readability */
-  color: #555;
-  line-height: 1.6;               /* Slightly increased line height */
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  color: $inkSoft;
+  line-height: 1.55;
 }
 
 .campaign-btn {
   display: inline-block;
-  background-color: #007bff;      /* Blue background for button */
-  color: #fff;                    /* White text */
+  background-color: $ink;
+  color: $white;
   text-decoration: none;
-  padding: 12px 24px;             /* Increased button padding */
-  border-radius: 6px;             /* Slightly more rounded */
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  padding: 11px 22px;
+  font-family: $sans;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
 }
 
 .campaign-btn:hover {
-  background-color: #0056b3;      /* Darker blue on hover */
-  transform: scale(1.05);         /* Slight growth effect */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  background-color: $link;
+  color: $white;
 }
-
-/* Added subtle hover effect for cards */
-.campaign-card:hover .campaign-title {
-  color: #007bff;                 /* Title color changes on hover */
-}
-
 
 /* ---- Content tables (e.g. the Formate matrix) ---- */
 .entry table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5em 0;
-  font-size: 0.95em;
+  margin: 1.6em 0;
+  font-size: 0.92em;
 }
 
 .entry table th,
@@ -369,23 +500,27 @@ footer {
   padding: 0.6em 0.9em;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $rule;
 }
 
 .entry table thead th {
-  background: $lightGray;
-  color: $darkerGray;
-  font-weight: bold;
-  border-bottom: 2px solid $blue;
+  background: transparent;
+  color: $ink;
+  font-family: $sans;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid $ink;
   white-space: nowrap;
 }
 
 .entry table tbody tr:nth-child(even) td {
-  background: #fafafa;
+  background: $tint;
 }
 
 .entry table tbody tr:hover td {
-  background: #f0f6fc;
+  background: #efefec;
 }
 
 /* keep the Format name on one line; right-align the Honorar column */
