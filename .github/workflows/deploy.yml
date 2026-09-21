@@ -1,0 +1,60 @@
+name: Build and deploy alexjung.at
+
+# alexjung.at is served from the Hetzner box (nginx, docroot
+# /var/www/alexjung.at/html) alongside dictionaryofml.org and
+# fightacademicbullies.org. This repo stays the single source of truth: every
+# push to master builds the Jekyll site here and rsyncs it over. Pull requests
+# build only, so a broken build is caught before it reaches the live site.
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-alexjung-at
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --destination _site
+
+      - name: Sanity-check the build
+        run: |
+          test -s _site/index.html
+          for page in about research teaching supervision books talks offerings; do
+            test -s "_site/$page/index.html" || { echo "missing _site/$page/index.html" >&2; exit 1; }
+          done
+          test -s _site/baukasten/index.html
+          test -s _site/sitemap.xml
+
+      - name: Deploy to Hetzner via rsync
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=yes" \
+            _site/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH"
