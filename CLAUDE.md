@@ -9,10 +9,11 @@ Personal academic website for Alexander Jung (Associate Professor for Machine Le
 ## Layout
 
 Top-nav pages (nav is hardcoded in [_layouts/default.html](_layouts/default.html) — edit it there when adding pages):
-Home (`/`, [index.html](index.html) landing page — there is no blog / `_posts/`) · [about.md](about.md) · [research.md](research.md) · [teaching.md](teaching.md) · [supervision.md](supervision.md) · [books.md](books.md) · [talks.md](talks.md) · [offerings.md](offerings.md) · [service.md](service.md) · [activism.md](activism.md)
+Home (`/`, [index.html](index.html) landing page — there is no blog / `_posts/`) · [about.md](about.md) · [research.md](research.md) · [teaching.md](teaching.md) · [supervision.md](supervision.md) · [books.md](books.md) · [talks.md](talks.md) · [service.md](service.md) · [activism.md](activism.md)
 
 Other content:
-- [offerings.md](offerings.md) links to [amlday.md](amlday.md) (`/aml-day/`) and [personal-ml-coach.md](personal-ml-coach.md), and contains the German seminar offer under the `#seminare` anchor. [seminare.md](seminare.md) (`/seminare/`) is only a redirect stub pointing there.
+- [seminare.md](seminare.md) (`/seminare/`) holds the German-language talk/seminar offer. It is **not** in the top nav — it is reached from the home page, from [talks.md](talks.md) and from the Baukasten footer. No prices or productised packages on it: every talk/seminar is presented as individually planned.
+- [amlday.md](amlday.md) (`/aml-day/`) and [personal-ml-coach.md](personal-ml-coach.md) are leftover product pages, currently not linked from anywhere.
 - [mlbook.md](mlbook.md) / [flbook.md](flbook.md) are landing pages for the two Springer textbooks.
 - [baukasten/](baukasten/) is a standalone HTML seminar-configurator fed by dictionary terms (see its own commit history).
 - Static assets in [images/](images/) and [assets/](assets/).

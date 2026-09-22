@@ -46,4 +46,4 @@ Trainer engagements for [Aalto University Executive Education (Aalto EE)](https:
 
 ---
 
-Interested in booking a talk or seminar? Get in touch via [email](mailto:alexjung235@gmail.com) or see the [Offerings](/offerings/) page.
+Interested in a talk or seminar? Every one is planned from scratch for its audience — get in touch via [email](mailto:alexjung235@gmail.com), or see [Vorträge & Seminare](/seminare/) for the German-language formats.

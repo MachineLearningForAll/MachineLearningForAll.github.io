@@ -37,7 +37,7 @@ jobs:
       - name: Sanity-check the build
         run: |
           test -s _site/index.html
-          for page in about research teaching supervision books talks offerings; do
+          for page in about research teaching supervision books talks seminare; do
             test -s "_site/$page/index.html" || { echo "missing _site/$page/index.html" >&2; exit 1; }
           done
           test -s _site/baukasten/index.html
