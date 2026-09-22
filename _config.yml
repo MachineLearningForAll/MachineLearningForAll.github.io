@@ -41,9 +41,10 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
-# Cookieless page counter (GoatCounter). Put your site code here -- the
-# subdomain you pick at https://www.goatcounter.com/signup, e.g. "alexjung"
-# for alexjung.goatcounter.com. Leave blank to disable the counter.
+# Cookieless page counter (GoatCounter), self-hosted on the same box that
+# serves this site -- put the hostname of its dashboard here, i.e.
+# "stats.alexjung.at"; the counter then posts to https://<that>/count and
+# loads its script from the same host. Leave blank to disable the counter.
 goatcounter:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking

@@ -1,6 +1,9 @@
 {% if site.goatcounter %}
 <!-- GoatCounter: cookieless page counter. No cookies, no cross-site tracking,
-     no personal data stored — so no consent banner is required. -->
-<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
-        async src="https://gc.zgo.at/count.js"></script>
+     no personal data stored — so no consent banner is required. Both the
+     endpoint and the script come from our own GoatCounter instance on the box
+     that serves this site, so a page view is never reported to a third party
+     and no request goes to a CDN. -->
+<script data-goatcounter="https://{{ site.goatcounter }}/count"
+        async src="https://{{ site.goatcounter }}/count.js"></script>
 {% endif %}
