@@ -5,35 +5,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Seminar-Baukasten — Alexander Jung</title>
 <style>
-  :root { color-scheme: light dark; --accent:#0066cc; --line:#ddd; --muted:#888; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         max-width: 46rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; line-height: 1.6; }
-  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
-  .sub { color: var(--muted); margin-top: 0; }
+  /* Typography matches the main site (see style.scss): Source Serif 4 for
+     prose, Libre Franklin for the interface -- form legends, labels, buttons.
+     Self-hosted, latin subset only; both fall back to system faces. This page
+     is standalone HTML, so it carries its own @font-face rules. */
+  @font-face {
+    font-family: "Source Serif 4"; font-style: normal; font-weight: 400 700;
+    font-display: swap; src: url("/assets/fonts/source-serif-4-latin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Source Serif 4"; font-style: italic; font-weight: 400 700;
+    font-display: swap; src: url("/assets/fonts/source-serif-4-italic-latin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Libre Franklin"; font-style: normal; font-weight: 400 800;
+    font-display: swap; src: url("/assets/fonts/libre-franklin-latin.woff2") format("woff2");
+  }
+
+  :root {
+    color-scheme: light dark;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --bg: #fff; --ink: #121212; --muted: #6b6b6b; --line: #dcdcdc;
+    --accent: #326891; --tint: #f7f7f5;
+  }
+  /* The page kept its dark-mode support from before the restyle. */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212; --ink: #e8e6e3; --muted: #9a9a9a; --line: #333;
+      --accent: #8ab4d8; --tint: #1c1c1c;
+    }
+  }
+
+  body { font-family: var(--serif); background: var(--bg); color: var(--ink);
+         max-width: 46rem; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+         font-size: 1.05rem; line-height: 1.6; font-optical-sizing: auto;
+         -webkit-font-smoothing: antialiased; }
+  h1 { font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.015em;
+       margin: 0 0 .3rem; font-weight: 700; }
+  .sub { font-style: italic; color: var(--muted); margin-top: 0; }
   p.lead { margin: 1.2rem 0 2rem; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  fieldset { border: 1px solid var(--line); border-radius: 8px; margin: 0 0 1.2rem; padding: 1rem 1.2rem; }
-  legend { font-weight: 600; padding: 0 .4rem; }
-  legend small { font-weight: 400; color: var(--muted); }
-  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .35rem .8rem; margin-top: .4rem; }
-  label.term { display: flex; align-items: baseline; gap: .5rem; cursor: pointer; }
-  label.term input { margin-top: .2rem; }
-  label.term .ref { margin-left: auto; font-size: .8rem; opacity: .5; }
+  a { color: var(--accent); text-decoration: underline;
+      text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* Hairline boxes instead of rounded cards, the way the main site's tables
+     and offer cards now read. */
+  fieldset { border: 1px solid var(--line); margin: 0 0 1.4rem; padding: 1rem 1.2rem; }
+  legend { font-family: var(--sans); font-size: .78rem; font-weight: 600;
+           letter-spacing: .09em; text-transform: uppercase; padding: 0 .5rem; }
+  legend small { font-weight: 400; letter-spacing: .05em; color: var(--muted);
+                 text-transform: none; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+           gap: .35rem .8rem; margin-top: .6rem; }
+  label.term { display: flex; align-items: baseline; gap: .5rem; cursor: pointer;
+               font-family: var(--sans); font-size: .88rem; line-height: 1.45; }
+  label.term input { margin-top: .2rem; accent-color: var(--ink); }
+  label.term .ref { margin-left: auto; font-size: .8rem; opacity: .45;
+                    text-decoration: none; }
   label.term .ref:hover { opacity: 1; }
-  .bar { position: sticky; bottom: 0; background: Canvas; border-top: 1px solid var(--line);
-         padding: .9rem 0; margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
-  .count { color: var(--muted); }
-  button { font: inherit; background: var(--accent); color: #fff; border: 0; border-radius: 6px;
-           padding: .6rem 1.1rem; cursor: pointer; }
-  button[disabled] { opacity: .45; cursor: not-allowed; }
-  footer { margin-top: 3rem; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem; }
-  .hint { font-size: .9rem; color: var(--muted); }
-  .lang-toggle { float: right; font-size: .85rem; color: var(--muted); margin-top: .3rem; }
-  .lang-toggle button { background: none; color: var(--accent); border: 0; padding: 0; cursor: pointer;
-                        font: inherit; font-size: inherit; }
-  .lang-toggle button:hover { text-decoration: underline; }
-  .lang-toggle button[aria-pressed="true"] { color: inherit; font-weight: 700; cursor: default; text-decoration: none; }
+
+  .bar { position: sticky; bottom: 0; background: var(--bg);
+         border-top: 2px solid var(--ink); padding: .9rem 0; margin-top: 1.5rem;
+         display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .count { font-family: var(--sans); font-size: .85rem; color: var(--muted); }
+  button { font-family: var(--sans); font-size: .8rem; font-weight: 600;
+           letter-spacing: .09em; text-transform: uppercase;
+           background: var(--ink); color: var(--bg); border: 0; border-radius: 0;
+           padding: .7rem 1.3rem; cursor: pointer; }
+  button:hover { background: var(--accent); }
+  button[disabled] { opacity: .35; cursor: not-allowed; }
+  button[disabled]:hover { background: var(--ink); }
+
+  footer { font-family: var(--sans); margin-top: 3rem; font-size: .8rem;
+           color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem; }
+  .hint { font-family: var(--sans); font-size: .82rem; color: var(--muted); }
+  .lang-toggle { float: right; font-family: var(--sans); font-size: .78rem;
+                 font-weight: 600; letter-spacing: .09em; color: var(--muted);
+                 margin-top: .4rem; }
+  .lang-toggle button { background: none; color: var(--accent); border: 0; padding: 0;
+                        cursor: pointer; font: inherit; letter-spacing: inherit;
+                        text-transform: none; }
+  .lang-toggle button:hover { background: none; text-decoration: underline; }
+  .lang-toggle button[aria-pressed="true"] { color: var(--ink); font-weight: 700;
+                        cursor: default; text-decoration: none; }
 </style>
 </head>
 <body>
@@ -104,6 +159,7 @@
         <label class="term"><input type="checkbox" value="hyperparameter"> hyperparameter <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/hyperparameter.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="independent and identically distributed assumption"> independent and identically distributed assumption <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/iidasspt.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="k-means"> k-means <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/kmeans.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="kernel ridge regression"> kernel ridge regression <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/kernelridgeregression.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="learning rate"> learning rate <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/learnrate.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="logistic regression"> logistic regression <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/logreg.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="online learning"> online learning <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/onlinelearning.html" title="im Wörterbuch ansehen">↗</a></label>
@@ -111,10 +167,12 @@
         <label class="term"><input type="checkbox" value="principal component analysis (PCA)"> principal component analysis (PCA) <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/pca.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="random forest"> random forest <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/randomforest.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="self-supervised learning"> self-supervised learning <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/selfsupervisedlearning.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="supervised learning"> supervised learning <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/supervisedlearning.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="tabular data"> tabular data <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/tabulardata.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="test set"> test set <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/testset.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="training set"> training set <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/trainset.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="transfer learning"> transfer learning <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/transferlearning.html" title="im Wörterbuch ansehen">↗</a></label>
+        <label class="term"><input type="checkbox" value="unsupervised learning"> unsupervised learning <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/unsupervisedlearning.html" title="im Wörterbuch ansehen">↗</a></label>
         <label class="term"><input type="checkbox" value="validation set"> validation set <a class="ref" target="_blank" rel="noopener" href="https://dictionaryofml.org/terms/valset.html" title="im Wörterbuch ansehen">↗</a></label>
       </div>
     </fieldset>
