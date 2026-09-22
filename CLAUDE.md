@@ -9,7 +9,7 @@ Personal academic website for Alexander Jung (Associate Professor for Machine Le
 ## Layout
 
 Top-nav pages (nav is hardcoded in [_layouts/default.html](_layouts/default.html) — edit it there when adding pages):
-Home (`/`, [index.html](index.html) landing page — there is no blog / `_posts/`) · [about.md](about.md) · [research.md](research.md) · [teaching.md](teaching.md) · [supervision.md](supervision.md) · [books.md](books.md) · [talks.md](talks.md) · [offerings.md](offerings.md)
+Home (`/`, [index.html](index.html) landing page — there is no blog / `_posts/`) · [about.md](about.md) · [research.md](research.md) · [teaching.md](teaching.md) · [supervision.md](supervision.md) · [books.md](books.md) · [talks.md](talks.md) · [offerings.md](offerings.md) · [service.md](service.md) · [activism.md](activism.md)
 
 Other content:
 - [offerings.md](offerings.md) links to [amlday.md](amlday.md) (`/aml-day/`) and [personal-ml-coach.md](personal-ml-coach.md), and contains the German seminar offer under the `#seminare` anchor. [seminare.md](seminare.md) (`/seminare/`) is only a redirect stub pointing there.
