@@ -21,18 +21,16 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 ### 2026
 - **CS-E4740 Federated Learning D** — Aalto University · [materials](https://github.com/alexjungaalto/FederatedLearning/tree/main/Edition2026)
 
-  > "Honestly, I think this was one of the best courses I've taken at Aalto."
+  > "I think in general seeing federated learning problems as GTVmin problems really helps give more clarity on how to formulate them. Very good material and very well taught course."
 - **MLR1ILV Machine Learning** — IMC Krems (RAI MA, 1st semester, WS26/27)
-
-  > "Very interesting course with a top lecturer. Topics were extremely useful and understandable."
 - **ETP1ILV Emerging Technologies und Programmierung** — IMC Krems (UF BA, 1st semester, WS26/27)
 
 - **FML2ILV Federated Machine Learning** — IMC Krems (RAI MA, 2nd semester, SS26) · [materials](https://github.com/alexjungaalto/FederatedLearning/tree/main/fml2ilv)
 
-  > "A well-structured course with interesting assignments. I like the academic approach with the LaTeX paper assignments and the presentation — useful skills to learn."
+  > "A well structured course with interesting assignments. I like the academical approach with the LateX paper assignments and the presentation, they are useful skills to learn."
 - **CAI2VO Corporate AI** — IMC Krems (UF BA, 2nd semester, SS26) · [course repo](https://github.com/alexjungaalto/cai2vopublic)
 
-  > "Großes Lob an den Dozenten — man merkt, wie er für seine Sache brennt; diese Begeisterung steckt an!"
+  > "Großes Lob an den Dozenten- man merkt wie er für seine Sache brennt, diese Begeisterung steckt an!"
 
 ### 2025
 - **CS-A1155 Databases for Data Science** — Aalto University
@@ -42,16 +40,15 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 
 - **MLR1ILV Machine Learning** — IMC Krems (RAI MA, 1st semester, WS25/26)
 
+  > "Very intersting course with a top lecturer. Topics were extremely useful and understandable."
+
 ### 2024
 - **CS-E4740 Federated Learning D** — Aalto University · [materials](https://github.com/alexjungaalto/FederatedLearning/tree/main/Edition2024)
 
 ### 2023
 - **CS-EJ3311 Deep Learning with Python D** — Aalto University
 
-  > "The workbooks are so excellent that you can self-study them."
 - **CS-EJ3211 Machine Learning with Python D** — Aalto University
-
-  > "This has really been the best course with coding as a tool for learning so far."
 - **CS-E4740 Federated Learning D** — Aalto University · [course repo](https://github.com/alexjungaalto/FederatedLearning)
 
 ### 2022
@@ -65,14 +62,14 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 
 - **CS-E407507 Special Course in Machine Learning and Data Science: Human-Centered Machine Learning** — Aalto University (also delivered as the summer school "Human-Centered Machine Learning" of the European university alliance [Unite!](https://www.unite-university.eu/)) · [materials](https://github.com/alexjungaalto/TeachingPublic/tree/master/HCML2022)
 
-  > "Supportive and very pedagogical professor. Interesting topics and engaging lectures from guest lecturers too."
+  > "Supportive and very pedagogical professor and also teaching assistant for practical part. Interesting topics and engaging lectures from guest lecturers too."
 - **CS-EJ3211 Machine Learning with Python D** — Aalto University · [notebooks](https://github.com/alexjungaalto/TeachingPublic/tree/master/MLwP)
+
+  > "This has really been the best course with coding as a tool for learning so far."
 
 - **CS-E407508 Special Course in Machine Learning and Data Science: Networked Federated Learning** — Aalto University
 
 - **CS-C3240 Machine Learning D** — Aalto University · [materials](https://github.com/alexjungaalto/cs-c3240spring2022)
-
-  > "Alex Jung is a great teacher of machine learning. I learned machine learning in a very interesting and comprehensive manner."
 - **Foundations of Machine Learning and Deep Learning** & **Advanced Topics** — guest course, Mid Sweden University, Sundsvall (SE): a two-day course (regularization, semi-supervised and transfer learning, clustering, PCA) with hands-on Python (JupyterLab) exercises at the [PLENOPTIMA Training School 2 "Machine and Deep Learning for Plenoptics"](https://plenoptima.eu/ts2/programme/) (19–23 Sep 2022), part of the EU Horizon 2020 MSCA European Joint Doctorate network [PLENOPTIMA](https://plenoptima.eu/) · [slides](https://github.com/alexjungaalto/TeachingPublic/tree/master/Plenoptima22)
 
 ### 2021
@@ -81,6 +78,8 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 - **CS-EJ3211 Machine Learning with Python D** — Aalto University
 
 - **CS-C3240 Machine Learning D** — Aalto University
+
+  > "Alex Jung is a great teacher of machine learning. I learned machine learning in a very interesting and comprehensive manner."
 
 ### 2020
 - **CS-EJ3311 Deep Learning with Python D** — Aalto University
@@ -111,7 +110,7 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
   > "It was perfect course for beginner to get motivated. Thank you so much Alex."
 - **CS-E4800 Artificial Intelligence D** — Aalto University
 
-  > "Alex did a good job with his drawings in the lectures — they were easy to follow and enlightening."
+  > "Alex did a good job with his drawings in the lectures, they were easy to follow and enlightning."
 
 ### 2017
 - **CS-E3210 Machine Learning: Basic Principles D** — Aalto University · [textbook](/mlbook/)
@@ -137,7 +136,7 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 
 - **T-61.6020 Special Course in Computer and Information Science II D** — Aalto University
 
-  > "Alex taught everything in detail, very clear to understand."
+  > "Alex taught everything in detail, very clear to understand"
 
 ### 2015
 - **T-61.3050 Machine Learning: Basic Principles** — Aalto University · [textbook](/mlbook/)
