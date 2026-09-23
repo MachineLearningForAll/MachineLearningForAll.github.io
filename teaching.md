@@ -9,6 +9,54 @@ permalink: /teaching/
   <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Lecturing <em>Machine Learning: Basic Principles</em> at Aalto University.</figcaption>
 </figure>
 
+## In Students' Words
+
+Verbatim comments from the official Aalto University course evaluations, quoted exactly as students wrote them (including their typos).
+
+> "Alex is the best professor I've encountered in Aalto university and one of the best ones in general. Really really good, doing his absolutely best to help student understand."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2016
+
+> "This course was one of the best courses I have taken in Aalto."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2018
+
+> "The exercises are well thought and developed. I like how the lecturer always starts explanations from examples and in general he is an excellent speaker and knows how to transfer his knowledge."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2018
+
+> "Drawing lectures are amazing. Great way to show the lecturers mastery to the subject! A joy to attend."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2018
+
+> "It was perfect course for beginner to get motivated. Thank you so much Alex."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2018
+
+> "The technical quality of the assignments was excellent. Also, I wish other lectures as Aalto were as positive and as motivated as Alex."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2017
+
+> "It was possible to take the course without physical attendace. On the other hand lecturer was so good that I really wanted and did participated almost every lecture."
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2017
+
+> "I really admire the knowledge that Alexander Jung showed us at the lecture, he seems to be a real expert"
+>
+> — *CS-E3210 Machine Learning: Basic Principles*, 2017
+
+> "Especially good on the course was the high pedagogical level of lectures by Alex Jung! Thank you for that!"
+>
+> — *T-61.3050 Machine Learning: Basic Principles*, 2015
+
+> "The notebooks are made so brilliantly simple to understand that pretty much anyone with even a little coding experience can learn the basics of deep learning."
+>
+> — *CS-EJ3311 Deep Learning with Python*, 2022
+
+> "The level of detail and instructions in JupyterHub was amazing. The best I have ever done."
+>
+> — *CS-EJ3311 Deep Learning with Python*, 2022
+
 ## Courses & Teaching
 
 A reverse-chronological list of courses I have lectured, co-taught, or delivered as guest teaching. Each entry is tagged with the host institution. Aalto codes follow the Aalto course catalogue; TU Wien codes (389.xxx) belong to the Institute of Telecommunications; IMC Krems courses run within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA* (Bachelor in *Unternehmensführung und Digitales Management*) programmes.
@@ -55,6 +103,8 @@ A reverse-chronological list of courses I have lectured, co-taught, or delivered
 - **CS-E4740 Federated Learning D** — Aalto University · [course repo](https://github.com/alexjungaalto/FederatedLearning)
 
 ### 2022
+- **Award: 3rd Best Course of the Department of Computer Science, academic year 2021–2022** — Aalto University, for *CS-EJ3211 Machine Learning with Python*, in the category of big courses (feedback given by more than 50 students)
+
 - **CS-EJ3311 Deep Learning with Python D** — Aalto University
 
 - **CS-E407507 Special Course in Machine Learning and Data Science: Human-Centered Machine Learning** — Aalto University (also delivered as the summer school "Human-Centered Machine Learning" of the European university alliance [Unite!](https://www.unite-university.eu/)) · [materials](https://github.com/alexjungaalto/TeachingPublic/tree/master/HCML2022)
@@ -91,6 +141,9 @@ A reverse-chronological list of courses I have lectured, co-taught, or delivered
 - **CS-EV Course with Varying Content** — Aalto University
 
 ### 2018
+- **Award: Teacher of the Year 2018 of the Department of Computer Science** — Aalto University, awarded on the basis of student nominations
+
+  > "The methodology he uses in his course is great. He really cares about his teaching inviting people to give us talks and other special events/seminars. He's a person who is always there to help you."
 - **CS-E3210 Machine Learning: Basic Principles D** — Aalto University · [textbook](/mlbook/)
 
   > "Alex Jung was an excellent lecturer, the best lecturer I've heard in a long time."
