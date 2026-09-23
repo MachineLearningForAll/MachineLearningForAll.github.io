@@ -52,7 +52,7 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 - **CS-E4740 Federated Learning D** — Aalto University · [course repo](https://github.com/alexjungaalto/FederatedLearning)
 
 ### 2022
-- **Award: 3rd Best Course of the Department of Computer Science, academic year 2021–2022** — Aalto University, for *CS-EJ3211 Machine Learning with Python*, in the category of big courses (feedback given by more than 50 students)
+- **Award: [3rd Best Course of the Department of Computer Science, academic year 2021–2022](/images/BestCourseAward2022.png)** — Aalto University, for *CS-EJ3211 Machine Learning with Python*, in the category of big courses (feedback given by more than 50 students)
 
 - **CS-EJ3311 Deep Learning with Python D** — Aalto University
 
@@ -96,7 +96,7 @@ Each entry is tagged with the host institution. Aalto codes follow the Aalto cou
 - **CS-EV Course with Varying Content** — Aalto University
 
 ### 2018
-- **Award: Teacher of the Year 2018 of the Department of Computer Science** — Aalto University, awarded on the basis of student nominations
+- **Award: [Teacher of the Year 2018 of the Department of Computer Science](/images/TeacherAward2018.png)** — Aalto University, awarded on the basis of student nominations
 
   > "The methodology he uses in his course is great. He really cares about his teaching inviting people to give us talks and other special events/seminars. He's a person who is always there to help you."
 - **CS-E3210 Machine Learning: Basic Principles D** — Aalto University · [textbook](/mlbook/)
