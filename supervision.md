@@ -214,29 +214,29 @@ Prospective students: see [Research](/research/) for current group themes and re
 
 [85]&nbsp;&nbsp;R. Hellström, "Aspect based sentiment analysis in Finnish," M.Sc. thesis, Aalto University, Jan. 2022. (with Crowst Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/112857)
 
+[86]&nbsp;&nbsp;P. Pyrrö, "AIR: Aerial inspection RetinaNet for land search and rescue missions," M.Sc. thesis, Aalto University, Jan. 2022. (with Accenture) [link](https://aaltodoc.aalto.fi/handle/123456789/112856)
+
 #### 2021
 
-[86]&nbsp;&nbsp;A. Orre, "Pedestrian movement analysis from drone perspective," M.Sc. thesis, Aalto University, Dec. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/111730)
+[87]&nbsp;&nbsp;A. Orre, "Pedestrian movement analysis from drone perspective," M.Sc. thesis, Aalto University, Dec. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/111730)
 
-[87]&nbsp;&nbsp;P. Vijayakrishnan, "Semi-supervised machine learning techniques for infant motility classification," M.Sc. thesis, Aalto University, Oct. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/110565)
+[88]&nbsp;&nbsp;P. Vijayakrishnan, "Semi-supervised machine learning techniques for infant motility classification," M.Sc. thesis, Aalto University, Oct. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/110565)
 
-[88]&nbsp;&nbsp;K. Ariko, "Increasing the safety in the proximity of the mobile working machines: A study of detecting people," M.Sc. thesis, Aalto University, Oct. 2021. (with Epec Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/110498)
+[89]&nbsp;&nbsp;K. Ariko, "Increasing the safety in the proximity of the mobile working machines: A study of detecting people," M.Sc. thesis, Aalto University, Oct. 2021. (with Epec Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/110498)
 
-[89]&nbsp;&nbsp;M. Uutaniemi, "Extraction of labeled fields from images of structured documents," M.Sc. thesis, Aalto University, Aug. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/109305)
+[90]&nbsp;&nbsp;M. Uutaniemi, "Extraction of labeled fields from images of structured documents," M.Sc. thesis, Aalto University, Aug. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/109305)
 
-[90]&nbsp;&nbsp;K. Kutlu, "Machine learning based chaos engineering for cloud-native microservice architectures," M.Sc. thesis, Aalto University, Aug. 2021. (with Ericsson) [link](https://aaltodoc.aalto.fi/handle/123456789/109355)
+[91]&nbsp;&nbsp;K. Kutlu, "Machine learning based chaos engineering for cloud-native microservice architectures," M.Sc. thesis, Aalto University, Aug. 2021. (with Ericsson) [link](https://aaltodoc.aalto.fi/handle/123456789/109355)
 
-[91]&nbsp;&nbsp;M. Leinonen, "Federated multi-task learning over networked data," M.Sc. thesis, Aalto University, June 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/108261)
+[92]&nbsp;&nbsp;M. Leinonen, "Federated multi-task learning over networked data," M.Sc. thesis, Aalto University, June 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/108261)
 
-[92]&nbsp;&nbsp;J. Seppälä, "Application of machine learning to link click predictions in Facebook Family of Apps advertising," M.Sc. thesis, Aalto University, 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/106829)
+[93]&nbsp;&nbsp;J. Seppälä, "Application of machine learning to link click predictions in Facebook Family of Apps advertising," M.Sc. thesis, Aalto University, 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/106829)
 
-[93]&nbsp;&nbsp;M. Afteniy, "Predicting time series with transformer," M.Sc. thesis, Aalto University, May 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/107662)
+[94]&nbsp;&nbsp;M. Afteniy, "Predicting time series with transformer," M.Sc. thesis, Aalto University, May 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/107662)
 
-[94]&nbsp;&nbsp;Z. Mohammadi, "Better utilization of relational data in machine learning," M.Sc. thesis, Aalto University, May 2021. (with Lamia Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/107604)
+[95]&nbsp;&nbsp;Z. Mohammadi, "Better utilization of relational data in machine learning," M.Sc. thesis, Aalto University, May 2021. (with Lamia Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/107604)
 
-[95]&nbsp;&nbsp;T. Nguyen, "Applying machine learning to develop black-box control model of active double-skin facade," M.Sc. thesis, Aalto University, Jan. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/102547)
-
-[96]&nbsp;&nbsp;P. Pyrrö, "AIR: Aerial inspection RetinaNet for land search and rescue missions," M.Sc. thesis, Aalto University, Jan. 2021. (with Accenture) [link](https://aaltodoc.aalto.fi/handle/123456789/112856)
+[96]&nbsp;&nbsp;T. Nguyen, "Applying machine learning to develop black-box control model of active double-skin facade," M.Sc. thesis, Aalto University, Jan. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/102547)
 
 [97]&nbsp;&nbsp;T. Kokkonen, "Classifying restaurant menu items with supervised learning," M.Sc. thesis, Aalto University, Jan. 2021. [link](https://aaltodoc.aalto.fi/handle/123456789/102433) [video](https://youtu.be/TaYlv6MFoeU)
 
@@ -276,7 +276,7 @@ Prospective students: see [Research](/research/) for current group themes and re
 
 [113]&nbsp;&nbsp;J. Eskonen, "Deep Reinforcement Learning in automated user interface testing," M.Sc. thesis, Aalto University, May 2019. (with Ericsson) [link](https://aaltodoc.aalto.fi/handle/123456789/37895)
 
-[114]&nbsp;&nbsp;A. Moskalev, "Demand forecasting for fast-moving products in grocery retail," M.Sc. thesis, Aalto University, May 2019. (with Relex) [link](https://aaltodoc.aalto.fi/handle/123456789/37915)
+[114]&nbsp;&nbsp;A. Moskalev, "Demand forecasting for fast-moving products in grocery retail," M.Sc. thesis, Aalto University, May 2019. (with Relex Solutions) [link](https://aaltodoc.aalto.fi/handle/123456789/37915)
 
 [115]&nbsp;&nbsp;K. Karapetyan, "Process mining of automation services with long short-term memory neural networks," M.Sc. thesis, Aalto University, Mar. 2019. (with Posti Group Oyj) [link](https://aaltodoc.aalto.fi/handle/123456789/37178)
 
@@ -290,7 +290,7 @@ Prospective students: see [Research](/research/) for current group themes and re
 
 [119]&nbsp;&nbsp;O. Abramenko, "Graph signal sampling via reinforcement learning," M.Sc. thesis, Aalto University, Nov. 2018. [link](https://aaltodoc.aalto.fi/handle/123456789/34750)
 
-[120]&nbsp;&nbsp;M.O. Nasir, "Supervised learning in lighting control systems," M.Sc. thesis, Aalto University, Oct. 2018. [link](https://aaltodoc.aalto.fi/handle/123456789/34394)
+[120]&nbsp;&nbsp;M. Nasir, "Supervised learning in lighting control systems," M.Sc. thesis, Aalto University, Oct. 2018. [link](https://aaltodoc.aalto.fi/handle/123456789/34394)
 
 [121]&nbsp;&nbsp;D. Wu, "Unsupervised learning for lighting control system," M.Sc. thesis, Aalto University, Oct. 2018. (with Helvar Oy) [link](https://aaltodoc.aalto.fi/handle/123456789/34384)
 
@@ -308,5 +308,5 @@ Prospective students: see [Research](/research/) for current group themes and re
 
 ## TU Wien
 
-[127]&nbsp;&nbsp;B. Kausl, "Channel aware inference based on the Fisher information," M.Sc. thesis, TU Wien, 2012. [link](http://hdl.handle.net/20.500.12708/8885)
+[127]&nbsp;&nbsp;B. Kausl, "Channel aware inference based on the Fisher information," M.Sc. thesis, TU Wien, 2012. [link](https://hdl.handle.net/20.500.12708/8885)
 <!-- theses:end -->
