@@ -10,11 +10,11 @@ For academic talks, please see the [Research](/research/) page.
 
 ### Upcoming
 
-- **2026-10-13, 19:30** · Public evening lecture on artificial intelligence, [Katholisches Bildungswerk (KBW) Frankenburg am Hausruck](https://www.frankenburg.ooe.gv.at/Katholisches_Bildungswerk) (AT).
 - **2026-11-26, 19:00** · *"KI verstehen."* Free public science evening (admission by voluntary donation), hosted by the [Marktgemeinde Böheimkirchen](https://www.boeheimkirchen.eu/), Veranstaltungssaal im Bürgerzentrum, 3071 Böheimkirchen (AT). [Register here](https://anmeldung.alexjung.at/).
 
 ### Past
 
+- **2026-10-13** · *"Künstliche Intelligenz – Chance oder Risiko?"* Public evening lecture, [Katholisches Bildungswerk (KBW) Frankenburg am Hausruck](https://www.frankenburg.ooe.gv.at/Katholisches_Bildungswerk) (AT). [Slides on Zenodo](https://doi.org/10.5281/zenodo.23375005) (CC BY 4.0).
 - **2026-05-05** · *"Künstliche Intelligenz: Was sie kann, was sie nicht kann, und was das für uns bedeutet."* Invited public lecture, [Katholisches Bildungswerk Oberösterreich](https://www.dioezese-linz.at/kbw), Kirchheim im Innkreis (AT).
 - **2025-11-24/25** · *"Künstliche Intelligenz in der Arbeitswelt."* Two-day seminar for works councillors (Betriebsrät:innen) covering ML basics, GDPR, the EU AI Act, ISO standards, and co-determination. [Arbeiterkammer Steiermark](https://stmk.arbeiterkammer.at/), Graz (AT).
 - **2025-11-18** · *"Wie schlau ist künstliche Intelligenz wirklich? Ein verständlicher Einblick für alle."* Public evening lecture, [Volkshochschule (VHS) Hainfeld](https://hainfeld.vhs-noe.at/) (AT).
