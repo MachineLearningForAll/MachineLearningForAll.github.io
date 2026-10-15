@@ -8,6 +8,11 @@ Selected public talks, seminars, and outreach activities for general audiences: 
 
 For academic talks, please see the [Research](/research/) page.
 
+<figure style="margin:1.2em 0 1.6em;">
+  <img src="/images/KBWFrankenburg2026Sketch.jpg" alt="Pencil-sketch rendering of Alexander Jung giving a public evening lecture on artificial intelligence in a packed parish hall in Frankenburg am Hausruck" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Public evening lecture <em>"Künstliche Intelligenz – Chance oder Risiko?"</em> at the Katholisches Bildungswerk Frankenburg am Hausruck, October 2026. Photo: KBW Frankenburg.</figcaption>
+</figure>
+
 ### Upcoming
 
 - **2026-11-26, 19:00** · *"KI verstehen."* Free public science evening (admission by voluntary donation), hosted by the [Marktgemeinde Böheimkirchen](https://www.boeheimkirchen.eu/), Veranstaltungssaal im Bürgerzentrum, 3071 Böheimkirchen (AT). [Register here](https://anmeldung.alexjung.at/).

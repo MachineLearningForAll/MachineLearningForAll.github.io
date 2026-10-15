@@ -18,7 +18,7 @@ examination from upper secondary school through the doctoral defense. Fewer than
 Austrian doctoral graduates earn it, [around 20 out of some 2,500 per year](https://en.wikipedia.org/wiki/Sub_auspiciis_Praesidentis).
 
 <figure style="margin:1.2em 0;">
-  <img src="/assets/AlexHiFi.jpg" alt="Alexander Jung receiving the ring of honour from Austrian Federal President Heinz Fischer" style="max-width:100%;width:480px;border-radius:6px;" />
+  <img src="/images/PromotioSubAuspiciisSketch.jpg" alt="Pencil-sketch rendering of Alexander Jung receiving the ring of honour from Austrian Federal President Heinz Fischer" style="max-width:100%;width:480px;border-radius:6px;" />
   <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Receiving the ring of honour from Austrian Federal President Heinz Fischer at the <em>promotio sub auspiciis</em> ceremony, TU Wien.</figcaption>
 </figure>
 
