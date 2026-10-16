@@ -19,6 +19,11 @@ Pre-examiner (preliminary examiner) of doctoral dissertation manuscripts, appoin
 
 Public defences and doctoral examinations at other universities:
 
+<figure style="margin:1.2em 0 1.6em;">
+  <img src="/images/LinkopingDefence2026Sketch.jpg" alt="Pencil-sketch rendering of the group photo after the doctoral defence of Chung-Hsuan Hu at Linköping University: candidate, supervisors, grading committee and opponent Alexander Jung" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">After the public defence of Chung-Hsuan Hu at Linköping University, 26 January 2026: candidate, supervisors, grading committee and opponent. Photo: Erik G. Larsson.</figcaption>
+</figure>
+
 - **2026-09-30** · Member of the grading committee (*betygsnämnd*) for R. Brännvall, *"Privacy Preserving and Scalable Machine Learning at the Edge,"* Luleå University of Technology (SE).
 - **2026-02-13** · Opponent for A. Klemetti, *"Practical Approaches to Cost-Efficient Deep Learning: Taxonomy, Experiments, and Industry Insights,"* University of Helsinki (FI).
 - **2026-01-26** · Faculty opponent (*fakultetsopponent*) for C.-H. Hu, *"Wireless Federated Learning: Efficient Communication and Resource Management,"* Linköping University (SE).
