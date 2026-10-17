@@ -56,6 +56,11 @@ Alle bisherigen Vorträge und Seminare im Überblick: [Talks & Seminars](/talks/
 
 ### Stimmen
 
+<figure style="margin:1.2em 0 1.6em;">
+  <img src="/images/KBWKirchheim2026Sketch.jpg" alt="Bleistiftskizze des Gruppenfotos mit dem Team des Katholischen Bildungswerks nach dem Vortrag von Alexander Jung in Kirchheim im Innkreis" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Mit dem Team des Katholischen Bildungswerks nach dem Vortrag <em>„Künstliche Intelligenz: Was sie kann, was sie nicht kann, und was das für uns bedeutet"</em> in Kirchheim im Innkreis, Mai 2026. Foto: KBW Oberösterreich.</figcaption>
+</figure>
+
 > *„Alexander Jung hat es in seinem Vortrag geschafft, das komplexe Thema Künstliche Intelligenz verständlich, praxisnah und mit einer guten Portion Humor zu vermitteln. Besonders geschätzt habe ich seine ausgewogene Herangehensweise: Seine Begeisterung für die faszinierenden Möglichkeiten, die KI eröffnet, war deutlich spürbar — gleichzeitig hat er offen über Risiken gesprochen. Durch seine offene und lockere Art ist eine angenehme Atmosphäre entstanden, die es leicht machte, Fragen zu stellen. Man merkt schnell, dass er über außergewöhnlich fundiertes Fachwissen aus seiner wissenschaftlichen Arbeit verfügt — und dass es ihm wichtig ist, dieses Wissen verständlich weiterzugeben."*
 >
 > — Petra Köppl, Katholisches Bildungswerk Oberösterreich
