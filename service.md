@@ -4,7 +4,24 @@ title: "Service"
 permalink: /service/
 ---
 
-Academic service beyond my own university: examining doctoral theses at other universities and committee work at Aalto. My volunteer work against academic bullying has its own [Activism]({{ site.baseurl }}/activism) page.
+Academic service beyond my own research and teaching: leading a professional society chapter, examining doctoral theses at other universities, and committee work at Aalto. My volunteer work against academic bullying has its own [Activism]({{ site.baseurl }}/activism) page.
+
+### Professional societies
+
+- **Chair of the IEEE Finland Section SP01/CAS04 Society Chapter, 2019–2023.**
+  The joint chapter of the Signal Processing and Circuits and Systems Societies is the local home of the two societies in Finland: it brings researchers from the Finnish universities and industry together around invited talks and events, and acts as the link between them and the societies' international activities.
+  Among other things, the chapter ran the annual IEEE Finland SP/CAS Paper Award during my term.
+  IEEE recognised the term with a certificate of appreciation for *"Notable Services and Contributions towards the advancement of IEEE and the Engineering Professions."*
+
+<figure style="margin:1.2em 0 1.6em;">
+  <img src="/images/IEEEFinlandSPCASChairCertificate.jpg" alt="IEEE certificate of appreciation to Alexander Jung for notable services and contributions as Chair of the SP01/CAS04 Society Chapter, Finland Section, 2019-2023" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">IEEE certificate of appreciation for the 2019–2023 term as chapter chair.</figcaption>
+</figure>
+
+<figure style="margin:1.2em 0 1.6em;">
+  <img src="/images/IEEEFinlandSPCASPaperAward2022Sketch.jpg" alt="Pencil-sketch rendering of Annamaria Mesaros holding the First Prize certificate of the IEEE Finland SP/CAS Paper Award 2022, with two colleagues" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Annamaria Mesaros (Tampere University) with the First Prize of the IEEE Finland SP/CAS Paper Award 2022.</figcaption>
+</figure>
 
 ### Doctoral thesis pre-examination
 
