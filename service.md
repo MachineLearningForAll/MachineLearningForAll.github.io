@@ -19,8 +19,8 @@ Academic service beyond my own research and teaching: leading a professional soc
 </figure>
 
 <figure style="margin:1.2em 0 1.6em;">
-  <img src="/images/IEEEFinlandSPCASPaperAward2022Sketch.jpg" alt="Pencil-sketch rendering of Annamaria Mesaros holding the First Prize certificate of the IEEE Finland SP/CAS Paper Award 2022, with two colleagues" style="max-width:100%;border-radius:6px;" />
-  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Annamaria Mesaros (Tampere University) with the First Prize of the IEEE Finland SP/CAS Paper Award 2022.</figcaption>
+  <img src="/images/IEEEFinlandSPCASPaperAward2022Sketch.jpg" alt="Pencil-sketch rendering of Ari Visa, Annamaria Mesaros holding the First Prize certificate of the IEEE Finland SP/CAS Paper Award 2022, and Alexander Jung" style="max-width:100%;border-radius:6px;" />
+  <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Annamaria Mesaros (Tampere University, centre) with the First Prize of the IEEE Finland SP/CAS Paper Award 2022, flanked by Ari Visa (left) and myself (right).</figcaption>
 </figure>
 
 ### Doctoral thesis pre-examination
