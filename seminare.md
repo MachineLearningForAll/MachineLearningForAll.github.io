@@ -4,10 +4,10 @@ title: "Vorträge &amp; Seminare (Deutsch · Österreich)"
 permalink: /seminare/
 ---
 
-**KI-Kompetenz für Ihr Team: verständlich, fundiert, AI-Act-konform.**
+**KI-Kompetenz für Ihr Team: verständlich, fundiert und am AI Act orientiert.**
 Ich bin **Prof. Dr. techn. Alexander Jung**, Machine-Learning-Forscher an der Aalto University, *Teacher of the Year 2018* (Informatik, Aalto) und Autor von *Machine Learning: The Basics* (Springer). Ich übersetze künstliche Intelligenz aus der Forschung in klare Sprache für Betriebsräte, Belegschaften, Führungskräfte und die interessierte Öffentlichkeit.
 
-> **Neu: gesetzliche Pflicht.** Artikel 4 des EU AI Act verpflichtet Anbieter *und* Betreiber von KI, für ausreichende **KI-Kompetenz** ihrer Beschäftigten zu sorgen (gültig seit 02.02.2025). Meine Formate erfüllen genau diese Anforderung, praxisnah und rechtssicher eingeordnet.
+> **Neu: gesetzliche Pflicht.** Artikel 4 des EU AI Act verpflichtet Anbieter *und* Betreiber von KI, für ausreichende **KI-Kompetenz** ihrer Beschäftigten zu sorgen (gültig seit 02.02.2025). Meine Formate unterstützen Organisationen dabei, diese Anforderung praxisnah umzusetzen und rechtlich fundiert einzuordnen.
 
 ### Formate
 
@@ -31,7 +31,7 @@ Was KI wirklich ist (Entzauberung) · LLMs & generative KI · **KI am Arbeitspla
 
 ### Seminar-Baukasten aus dem *Dictionary of Applied ML*
 
-Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im *Dictionary of Applied Machine Learning* (von mir verfasst) wählen Sie die Begriffe, die für Ihre Organisation zählen. Ihre Auswahl wird zum Inhaltsgerüst.
+Stellen Sie Ihr Seminar **thematisch selbst zusammen**: Im von mir mit herausgegebenen *Dictionary of Applied Machine Learning* wählen Sie die Begriffe, die für Ihre Organisation zählen. Ihre Auswahl wird zum Inhaltsgerüst.
 
 👉 **[Seminar-Baukasten öffnen](/baukasten/)**: Themen anklicken, Seminar anfragen.
 

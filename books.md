@@ -4,10 +4,10 @@ title: Books
 permalink: /books/
 ---
 
-During my academic career, I’ve taught and mentored thousands of students in machine learning and related fields. 
-I am passionate about breaking down complex concepts into clear, practical, and insightful materials that resonate 
-with learners and professionals alike. I particularly enjoy crafting textbooks that offer accessible introductions to the 
-core ideas of machine learning, bridging the gap between theory and application.
+My books approach machine learning as a coherent system of ideas rather than a collection
+of isolated algorithms. Together they form a learning path: begin with the foundations,
+continue to federated learning, and use the dictionary to look up the vocabulary and notation
+of applied ML. Several editions, drafts, and teaching resources are openly available.
 
 ---
 
@@ -41,7 +41,7 @@ This principle, referred to as generalized total variation minimization (GTVMin)
 which underpins classical machine learning systems. The book develops federated learning methods systematically from this perspective and builds 
 directly on my earlier textbook, *Machine Learning: The Basics*.
 
-[📖 Learn More or Purchase](https://link.springer.com/book/10.1007/978-981-95-1009-2)
+[📖 Book page, free draft, and lecture material](/flbook/)
 
 ---
 
@@ -57,7 +57,7 @@ The textbook *Machine Learning: The Basics* offers a comprehensive introduction 
 concepts of machine learning, covering key algorithms and techniques in an accessible way. This book 
 is ideal for newcomers and those seeking to strengthen their understanding of core principles.
 
-[📖 Learn More or Purchase](https://link.springer.com/book/10.1007/978-981-16-8193-6)
+[📖 Book page, free draft, translations, and video lectures](/mlbook/)
 
 ---
 
@@ -116,4 +116,6 @@ and professionals.
 - 🎥 [Watch my YouTube Channel for Video Lectures](https://www.youtube.com/@alexjung111)  
 
 
-Stay tuned for updates on upcoming books and projects!
+For a guided introduction, start with [*Machine Learning: The Basics*](/mlbook/). Readers
+already familiar with empirical risk minimization can continue with
+[*Federated Learning: From Theory to Practice*](/flbook/).

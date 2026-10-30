@@ -4,7 +4,11 @@ title: "Service"
 permalink: /service/
 ---
 
-Academic service beyond my own research and teaching: leading a professional society chapter, examining doctoral theses at other universities, and committee work at Aalto. My volunteer work against academic bullying has its own [Activism]({{ site.baseurl }}/activism) page.
+Academic service reflects the trust universities and professional communities place in
+researchers to evaluate work fairly, maintain standards, and support the next generation.
+My roles include leading a professional society chapter, examining doctoral theses at other
+universities, and committee work at Aalto. My independent volunteer work against academic
+bullying has its own [Activism]({{ site.baseurl }}/activism) page.
 
 ### Professional societies
 

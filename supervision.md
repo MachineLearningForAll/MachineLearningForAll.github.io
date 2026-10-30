@@ -4,9 +4,21 @@ title: "Supervision"
 permalink: /supervision/
 ---
 
-I supervise Master's theses across machine learning, federated learning, trustworthy AI, and applied ML topics, primarily within Aalto's Master's Programmes in *Computer, Communication and Information Sciences*, *Mathematics and Operations Research*, *Engineering Physics*, *Information Networks*, and *Life Science Technologies*. Many theses are co-supervised with industry partners.
+I have supervised more than 150 completed Bachelor's, Master's, and doctoral theses across
+machine learning, federated learning, trustworthy AI, and applied ML. The topics range from
+mathematical foundations to applications in health, telecommunications, industry, and public
+services; many are developed with industry partners.
 
-Prospective students: see [Research](/research/) for current group themes and reach out by [email](mailto:alexjung235@gmail.com) with a short note on your background and interests.
+At Aalto, I primarily supervise students in the Master's Programmes in *Computer, Communication
+and Information Sciences*, *Mathematics and Operations Research*, *Engineering Physics*,
+*Information Networks*, and *Life Science Technologies*.
+
+## For prospective students
+
+See [Research](/research/) for current group themes. When you [email me](mailto:alexjung235@gmail.com),
+please include your programme, relevant coursework or experience, the topic area that interests
+you, and your intended timetable. The complete record below also gives a sense of the range of
+methods, applications, and industry collaborations I supervise.
 
 <!-- theses:begin — generated from theses.csv by `compile_theses.py --supervision`; do not edit by hand -->
 

@@ -1,12 +1,26 @@
 ---
 layout: page
-title: "Towards Trustworthy AI"
+title: "Research"
 permalink: /research/
 ---
 
-The overarching motivation of my research is to advance the frontiers of trustworthy artificial intelligence (AI). 
-My current research focus is on the fundamental limits and practical methods for federated and explainable 
-machine learning. Several prestigious grants support these efforts:
+## Towards trustworthy AI
+
+How can machine-learning systems remain useful when data are distributed, heterogeneous,
+private, and interpreted by people with different needs? This question connects my work on
+federated learning, networked data, explainability, and robust optimization.
+
+I develop mathematical foundations and practical methods that make distributed learning
+systems more reliable, understandable, and responsive to their users. Three themes run
+through this work:
+
+- **Federated and networked learning:** learning across related datasets without centralising them.
+- **Personalised and explainable ML:** adapting predictions and explanations to different users and contexts.
+- **Robust, privacy-aware optimization:** designing scalable methods that tolerate imperfect data, communication, and computation.
+
+## Current projects
+
+Several grants support this research programme:
 
 - **A Mathematical Theory of Trustworthy Federated Learning (MATHFUL)**  
   *Funded by the Research Council of Finland (Decision #363624)*  
@@ -21,7 +35,7 @@ machine learning. Several prestigious grants support these efforts:
 
 ---
 
-## Federated Learning
+## Federated learning
 
 ![Federated Learning in Pandemic Management](/images/Pandemics.jpg)
 
@@ -37,7 +51,7 @@ My research introduces **networked exponential families**, a probabilistic model
 - **Privacy-Preserving Techniques**: Ensures data confidentiality in federated settings.
 - **Scalable Optimization**: Employs robust methods to handle imperfections in data and computation.
 
-#### Featured Publications
+#### Selected publications
 
 - **"Clustered Federated Learning via Generalized Total Variation Minimization"**  
   *Y. SarcheshmehPour, Y. Tian, L. Zhang, A. Jung, IEEE Transactions on Signal Processing, 2023.*  
@@ -70,13 +84,13 @@ For AI systems to gain widespread acceptance, their predictions must be explaina
 focuses on developing **personalized explanations** tailored to individual users. By measuring the 
 reduction in **conditional entropy**, this method ensures that explanations align with the user's knowledge and needs.
 
-#### Key Features
+#### Key features
 
 - **User-Centric Explanations**: Accounts for user background and preferences.
 - **Model-Agnostic Framework**: Compatible with any machine learning model.
 - **Efficient Implementation**: Requires minimal training data: just data points, predictions, and user-provided summaries.
 
-#### Featured Publications
+#### Selected publications
 
 - **"Explainable Empirical Risk Minimization"**  
   *L. Zhang, G. Karakasidis, A. Odnoblyudova, et al., Neural Computing and Applications, 2024.*  
@@ -85,4 +99,14 @@ reduction in **conditional entropy**, this method ensures that explanations alig
 - **"An Information-Theoretic Approach to Personalized Explainable Machine Learning"**  
   *A. Jung and P. H. J. Nardelli, IEEE Signal Processing Letters, 2020.*  
   [Read More](https://ieeexplore.ieee.org/document/9089200) (DOI: 10.1109/LSP.2020.2993176)
+
+## Work with me
+
+I welcome conversations with researchers and organisations working on federated learning,
+trustworthy AI, explainability, and learning over networks. Prospective Master's students
+can review current themes and application guidance on the [Supervision](/supervision/) page.
+
+For publications and researcher identifiers, see
+[Google Scholar](https://scholar.google.com/citations?user=mHjdZdwAAAAJ) and
+[ORCID](https://orcid.org/0000-0001-7538-0990), or [send me an email](mailto:alexjung235@gmail.com).
 

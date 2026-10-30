@@ -51,7 +51,10 @@ this network. The book builds directly on
     "@type": "Person",
     "name": "Alexander Jung",
     "url": "https://alexjung.at/",
-    "sameAs": "https://scholar.google.com/citations?user=mHjdZdwAAAAJ"
+    "sameAs": [
+      "https://scholar.google.com/citations?user=mHjdZdwAAAAJ",
+      "https://orcid.org/0000-0001-7538-0990"
+    ]
   },
   "publisher": {"@type": "Organization", "name": "Springer"},
   "datePublished": "2026",

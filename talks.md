@@ -4,20 +4,31 @@ title: "Talks & Seminars"
 permalink: /talks/
 ---
 
-Selected public talks, seminars, and outreach activities for general audiences: schools, adult education centres, civic organisations, business events, and community groups in Finland and Austria.
+I give public lectures and tailored seminars that make artificial intelligence understandable
+without oversimplifying it. Formats range from school visits and civic events to executive
+education and workplace AI-literacy training in Finland and Austria.
 
-For academic talks, please see the [Research](/research/) page.
+## Audiences and formats
+
+Talks are planned around the audience and occasion rather than taken from a fixed package.
+Typical formats include public evening lectures, school visits, keynote talks, hands-on
+workshops, and multi-session professional programmes. Common themes include how machine
+learning works, generative AI, trustworthy and explainable AI, federated learning, and the
+effects of AI in working life.
+
+For German-language talks and professional AI-literacy training in Austria, see
+[Vorträge & Seminare](/seminare/). For research topics and publications, see [Research](/research/).
 
 <figure style="margin:1.2em 0 1.6em;">
   <img src="/images/KBWFrankenburg2026Sketch.jpg" alt="Pencil-sketch rendering of Alexander Jung giving a public evening lecture on artificial intelligence in a packed parish hall in Frankenburg am Hausruck" style="max-width:100%;border-radius:6px;" />
   <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Public evening lecture <em>"Künstliche Intelligenz – Chance oder Risiko?"</em> at the Katholisches Bildungswerk Frankenburg am Hausruck, October 2026. Photo: KBW Frankenburg.</figcaption>
 </figure>
 
-### Upcoming
+## Upcoming
 
 - **2026-11-26, 19:00** · *"KI verstehen."* Free public science evening (admission by voluntary donation), hosted by the [Marktgemeinde Böheimkirchen](https://www.boeheimkirchen.eu/), Veranstaltungssaal im Bürgerzentrum, 3071 Böheimkirchen (AT). [Register here](https://anmeldung.alexjung.at/).
 
-### Past
+## Public talks and outreach archive
 
 - **2026-10-13** · *"Künstliche Intelligenz – Chance oder Risiko?"* Public evening lecture, [Katholisches Bildungswerk (KBW) Frankenburg am Hausruck](https://www.frankenburg.ooe.gv.at/Katholisches_Bildungswerk) (AT). [Slides on Zenodo](https://doi.org/10.5281/zenodo.23375005) (CC BY 4.0).
 - **2026-05-05** · *"Künstliche Intelligenz: Was sie kann, was sie nicht kann, und was das für uns bedeutet."* Invited public lecture, [Katholisches Bildungswerk Oberösterreich](https://www.dioezese-linz.at/kbw), Kirchheim im Innkreis (AT).
@@ -36,7 +47,7 @@ For academic talks, please see the [Research](/research/) page.
 - **2018-09-07** · *"Semi-Supervised Learning for Network-Structured Data."* Evening talk at the Turku.AI meetup, Turku (FI). [Recording on YouTube](https://www.youtube.com/watch?v=BxFKvYERFgc).
 - **2018-09-03** · *"Summer Coding School."* Full-day hands-on workshop (lectures and afternoon mentoring, up to 35 participants), organized by [Yrityssalo Oy](https://yrityssalo.fi/), Salo IoT Campus, Salo (FI). [Slides and notebooks on GitHub](https://github.com/alexjungaalto/SaloMLandAI2018).
 
-### Executive & professional education
+## Executive & professional education
 
 Trainer engagements for [Aalto University Executive Education (Aalto EE)](https://www.aaltoee.fi/en):
 

@@ -11,7 +11,17 @@ permalink: /teaching/
 
 ## Courses & Teaching
 
-A reverse-chronological list of courses I have lectured, co-taught, or delivered as guest teaching — most of them with **what the students themselves wrote about it**. The indented quotes are verbatim comments from the official course evaluations of that offering, reproduced exactly as students wrote them, typos included; the two teaching awards of Aalto's Department of Computer Science listed below came out of the same evaluations.
+I teach machine learning by reducing complex methods to a small number of reusable ideas,
+then connecting those ideas to code, applications, and critical reflection. Whenever possible,
+I publish the slides, notebooks, and assignments so that they remain useful beyond a single course.
+
+My teaching was recognised with the **Teacher of the Year 2018** award of Aalto's Department
+of Computer Science and its **3rd Best Course award for 2021–2022**. Prospective thesis
+students can find current topics and application guidance on the [Supervision](/supervision/) page.
+
+Below is a reverse-chronological archive of courses I have lectured, co-taught, or delivered
+as guest teaching—many with **what the students themselves wrote about them**. The indented
+quotes are verbatim comments from official course evaluations, reproduced with their original wording.
 
 Each entry is tagged with the host institution. Aalto codes follow the Aalto course catalogue; TU Wien codes (389.xxx) belong to the Institute of Telecommunications; IMC Krems courses run within the *RAI MA* (Master in Responsible AI / Applied AI) and *UF BA* (Bachelor in *Unternehmensführung und Digitales Management*) programmes. Open course materials (slides, notebooks, assignments) are linked per course and collected on [GitHub](https://github.com/alexjungaalto).
 

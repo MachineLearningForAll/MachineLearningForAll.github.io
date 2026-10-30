@@ -4,12 +4,25 @@ title: About Me
 permalink: /about/
 ---
 
-I am Alexander Jung, tenured Associate Professor of Machine Learning at Aalto University, Finland,
-where I lead the *Machine Learning for Big Data* group at the Department of Computer Science.
-With nearly two decades of experience in research and education, I care about advancing machine
-learning, and just as much about teaching it clearly to students, researchers, and professionals.
+I am Alexander Jung, a tenured Associate Professor of Machine Learning at Aalto University,
+Finland, where I lead the *Machine Learning for Big Data* group. I develop mathematical
+foundations and practical methods for trustworthy and federated machine learning. Just as
+importantly, I work to make machine learning understandable to students, researchers,
+professionals, and public audiences.
 
-## Background
+## From signal processing to trustworthy machine learning
+
+My background is in electrical engineering and signal processing. Questions about how to
+learn from data distributed across networks led me to graph-based learning, networked data,
+and ultimately federated learning. Today my research asks how machine-learning systems can
+remain useful when data are heterogeneous, private, and spread across many devices or
+organisations—and how their predictions can be explained to the people affected by them.
+
+Research and education are closely connected in my work. The same small set of ideas I use
+to structure research also shapes my courses, textbooks, open materials, and public talks:
+start from the problem, make assumptions visible, and build the method step by step.
+
+## Background and recognition
 
 I earned my Dipl.-Ing. (MSc, 2008) and Dr.techn. (PhD, 2012) degrees in electrical engineering and
 signal processing from TU Wien (Vienna University of Technology). My doctorate was awarded *sub auspiciis Praesidentis rei publicae*, Austria's highest distinction for a
@@ -22,9 +35,10 @@ Austrian doctoral graduates earn it, [around 20 out of some 2,500 per year](http
   <figcaption style="font-size:0.85em;color:#666;margin-top:0.4em;">Receiving the ring of honour from Austrian Federal President Heinz Fischer at the <em>promotio sub auspiciis</em> ceremony, TU Wien.</figcaption>
 </figure>
 
-My research focuses on federated learning, trustworthy AI, and machine learning for
-large-scale applications. See the [Research](/research/) page for current projects and
-publications, and the [Books](/books/) page for my textbooks.
+At Aalto, I received the Department of Computer Science's **Teacher of the Year 2018** award
+and the **3rd Best Course award for 2021–2022**. See [Research](/research/) for current
+projects, [Teaching](/teaching/) for courses and open materials, and [Books](/books/) for
+my textbooks.
 
 ## Follow me on YouTube 🎥
 
@@ -42,3 +56,6 @@ and researchers. Here is one on the three main components of ML:
 
 Have questions or want to collaborate? [Send me an email](mailto:alexjung235@gmail.com), and let's connect!
 You can also find my research record on [ORCID (0000-0001-7538-0990)](https://orcid.org/0000-0001-7538-0990).
+
+My [academic service](/service/) and independent [activism against bullying in academia](/activism/)
+are documented on their own pages.
