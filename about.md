@@ -41,3 +41,4 @@ and researchers. Here is one on the three main components of ML:
 ## Contact
 
 Have questions or want to collaborate? [Send me an email](mailto:alexjung235@gmail.com), and let's connect!
+You can also find my research record on [ORCID (0000-0001-7538-0990)](https://orcid.org/0000-0001-7538-0990).
